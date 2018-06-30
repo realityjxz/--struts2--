@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <!--<constant name="struts.devMode" value="true" />-->
+    <constant name="struts.custom.i18n.resources" value="global" />
+    <package name="default" extends="struts-default">
+        <!--用户登录验证-->
+    <action name="checkLogin" class="controller.CheckLogin">
+        <result name="success">/login_suc.jsp</result>
+        <!--<result name="redirect" type="redirect">/login_suc.jsp</result>&lt;!&ndash;//重定向&ndash;&gt;
+        <result name="forward">/login_suc.jsp</result>&lt;!&ndash;//转发&ndash;&gt;-->
+        <result name="fail">/login.jsp</result>
+        <result name="input">/login.jsp</result>
+    </action>
+        <!--用户注销登录-->
+        <action name="logout" class="controller.Logout">
+            <result type="redirect">/index.jsp</result>
+        </action>
+        <!--用户注册验证-->
+        <action name="regedit" class="controller.Regedit">
+            <result name ="success">/regedit_suc.jsp</result>
+            <result name ="error">/regedit_error.jsp</result>
+            <result name="input">/regedit.jsp</result>
+        </action>
+    </package>
+    <!--实现数据库中用户的增、删、查、改功能-->
+        <include file="jdbc.xml"/>
+</struts>

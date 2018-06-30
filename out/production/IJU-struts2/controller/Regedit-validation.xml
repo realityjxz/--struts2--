@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.3//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+    <!--<field name="test_int">
+        <field-validator type="int">
+            <param name="min">20</param>
+            <param name="max">50</param>
+            &lt;!&ndash; <message>超出范围[${min},${max}]</message> &ndash;&gt;
+            <message key="test_int.outof.range" />
+        </field-validator>
+    </field>
+    <field name="test_double">
+        <field-validator type="double">
+            <param name="minInclusive">30</param>
+            <param name="maxInclusive">60</param>
+            <message>超出范围[${minInclusive},${maxInclusive}]</message>
+        </field-validator>
+    </field>-->
+    <field name="user.username">
+        <field-validator type="requiredstring">
+            <message>用户名不能为空</message>
+        </field-validator>
+        <field-validator type="stringlength" short-circuit="true">
+            <param name="minLength">3</param>
+            <message>用户名至少3个字符，现在有${user.username.length()}</message>
+        </field-validator>
+    </field>
+    <field name="user.pass">
+        <field-validator type="requiredstring">
+            <message>密码不能为空</message>
+        </field-validator>
+        <field-validator type="stringlength" short-circuit="true">
+            <param name="minLength">3</param>
+            <message>密码至少3个字符，现在有${user.pass.length()}</message>
+        </field-validator>
+        <field-validator type="fieldexpression">
+            <param name="expression">user.pass.equals(repass)</param>
+            <message>两次输入密码不一致</message>
+        </field-validator>
+    </field>
+    <field name="user.birth">
+        <field-validator type="date">
+            <param name="minExpression">${minDate}</param>
+            <param name="maxExpression">${maxDate}</param>
+            <message>日期应在${getText('format.date.display',{min})}和${getText('format.date.display',{max})}之间</message>
+        </field-validator>
+    </field>
+    <validator type="regex">
+        <param name="fieldName">user.phone</param>
+        <param name="regexExpression">![CDATA[^1[358]\\d{9}$]]</param>
+        <message>请输入正确的手机号</message>
+    </validator>
+    <!--<field name="stu">
+        <field-validator type="visitor">
+            <param name="appendPrefix">true</param>
+            <message></message>
+        </field-validator>
+    </field>-->
+</validators>

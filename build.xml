@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="IJU-struts2" basedir="web">
+    <property name="prj.name" value="IJU-struts2" />
+    <property name="lib.dir" value="ant/lib" />
+    <property name="build.dir" value="ant/classes" />
+    <path id="cp">
+        <pathelement path="${build.dir}" />
+        <fileset dir="${lib.dir}" />
+    </path>
+    <target name="db-start">
+        <java classname="org.hsqldb.server.Server"
+              classpathref="cp" dir="${lib.dir}"
+              fork="true"/>
+    </target>
+    <target name="db-manager">
+        <java classname="org.hsqldb.util.DatabaseManagerSwing"
+              classpathref="cp" dir="${lib.dir}"
+              fork="true"/>
+    </target>
+    <target name="db-shutdown">
+        <sql
+                driver="org.hsqldb.jdbcDriver"
+                url="jdbc:hsqldb:hsql://localhost"
+                userid="sa"
+                password=""
+                classpathref="cp">shutdown</sql>
+    </target>
+</project>
