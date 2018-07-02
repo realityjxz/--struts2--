@@ -38,10 +38,10 @@ body a {
     -ms-transition: 0.5s all;
 }
 .top{
-    position: absolute;
+    position: fixed;
     top: 2%;
     right: 5%;
-    color:#FFFFFF;
+    color:crimson;
     font-size: 20px;
     text-align: right;
 }
