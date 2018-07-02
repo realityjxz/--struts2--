@@ -21,7 +21,7 @@ h1{
     margin-top: 5px;
 }
 .top{
-    position: absolute;
+    position: fixed;
     top: 2%;
     right: 5%;
     color:crimson;

@@ -39,7 +39,7 @@
     <div class="top">
         <a href="index.jsp">返回首页</a>
     </div>
-<h1>某某公司后台登录系统</h1>
+<%--<h1>某某公司后台登录系统</h1>
 <div class="container">
     <h2>现在登录</h2>
     <s:actionerror cssStyle="color:red;font-weight: bold"/>
@@ -47,12 +47,12 @@
     <form action="checkLogin" method="post">
         <div>
             <span>用户:</span>
-            <input type="text" name="user.username" class="name" placeholder="请输入用户名" > <%--required="required"此处判断action里不判断--%>
+            <input type="text" name="user.username" class="name" placeholder="请输入用户名" /> &lt;%&ndash;required="required"此处判断action里不判断&ndash;%&gt;
             <div class="clear"></div>
         </div>
         <div>
             <span>密码:</span>
-            <input type="password" name="user.pass" class="password" placeholder="请输入密码" >
+            <input type="password" name="user.pass" class="password" placeholder="请输入密码" />
             <div class="clear"></div>
         </div>
         <div class="rem-for-agile">
@@ -62,13 +62,42 @@
             <a href="#">忘记了密码</a><br>
         </div>
         <div class="login-w3">
-            <input type="submit" class="login" value="Login">
+            <input type="submit" class="login" value="Login"/>
         </div>
         <div class="clear"></div>
     </form>
 </div>
 <div class="footer-w3l">
     <p> 某某公司后台登录系统</p>
+</div>--%>
+<div class="container">
+    <section id="content">
+        <s:actionerror cssStyle="color:red;font-weight: bold"/>
+        <s:fielderror cssStyle="color:darkred;font-weight: bold" />
+        <form action="checkLogin" method="post">
+            <h1>会员登录</h1>
+            <div>
+                <input type="text" placeholder="请输入用户名" name="user.username" id="username" />
+            </div>
+            <div>
+                <input type="password" placeholder="请输入密码" name="user.pass" id="password" />
+            </div>
+            <div class="">
+                <span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>			</div>
+            <div>
+                <!-- <input type="submit" value="Log in" /> -->
+                <input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>
+                <a href="#">忘记密码?</a>
+                <!-- <a href="#">Register</a> -->
+            </div>
+        </form><!-- form -->
+        <div class="button">
+            <span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>
+            <a href="#">下载网盘</a>
+        </div> <!-- button -->
+    </section><!-- content -->
 </div>
+<!-- container -->
+
 </body>
 </html>
