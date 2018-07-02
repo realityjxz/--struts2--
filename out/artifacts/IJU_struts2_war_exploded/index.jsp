@@ -1,103 +1,292 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 张
-  Date: 2018/6/22
-  Time: 15:34
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page language="java" pageEncoding="utf-8" contentType="text/html;charset=utf-8" %>
-<%@ taglib prefix="s" uri="/struts-tags" %>
-<%--<%@ taglib prefix="c" uri="/struts-tags" %>--%>
-<%
-    String path = request.getContextPath();
-    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
-%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 
 <head>
-    <base href="<%=basePath%>">
-    <title>CSS+JS实现兼容性很好的无限级下拉菜单</title>
-
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta http-equiv="expires" content="0">
-    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-    <meta http-equiv="description" content="This is my page">
-    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
-    <link rel="stylesheet" type="text/css" href="css/slide_picture.css">
-
-    <%--<script type="text/javascript">document.execCommand("BackgroundImageCache", false, true);</script>--%>
-    <!-- IE6背景图片闪烁问题  -->
-
+<meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/skin_/index.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<title>首页</title>
 </head>
 <body>
-<%--<s:debug/>--%>
-<script language="javascript" src="js/slide_picture.js" charset="UTF-8"></script>
-<div class="page">
-        <h1>某某公司</h1>
-    <div class="top">
-    <%
-        String name=(String)session.getAttribute("username");
-        if (name==null){%>
-        <a href="login.jsp">登录</a>&nbsp/
-        <a href="regedit.jsp">注册</a>
-        <%
-            }
-            else {%>
-        <s:property value = "#session.username" /> 欢迎您！&nbsp&nbsp
-        <a href="logout.action">退出</a>
-        <%
-            }
-        %>
-
+<div id="container">
+	<div id="hd">
     </div>
-    <div class="menu1">
-        <div class="menu1-li">
-            <div class="tit">
-                一级标题
-            </div>
-            <ul>
-                <li>
-                    二级标题
-                    <div class="list-3">
-                        <div class="list-3Dom">
-                            三级栏目
-                        </div>
+    <div id="bd">
+    	<div id="main">
+            <ul class="nav-list ue-clear">
+            	<li class="nav-item desk">
+                	<a href="index.jsp">
+                        <p class="icon"></p>
+                        <p class="title">我的桌面</p>
+                    </a>
+                </li>
+                <li class="nav-item news">
+                	<a href="index.jsp">
+                        <p class="icon"></p>
+                        <p class="title">新闻资讯</p>
+                    </a>
+                </li>
+                <li class="nav-item notice">
+                	<a href="index.jsp">
+                        <p class="icon"></p>
+                        <p class="title">公告通知</p>
+                    </a>
+                </li>
+                
+                <li class="nav-item plan">
+                	<a href="index.html">
+                        <p class="icon"></p>
+                        <p class="title">工作计划</p>
+                    </a>
+                </li>
+                <li class="nav-item contacts">
+                	<a href="index.html">
+                        <p class="icon"></p>
+                        <p class="title">通讯录</p>
+                    </a>
+                </li>
+                <li class="nav-item mail">
+                	<a href="index.html">
+                        <p class="icon"></p>
+                        <p class="title">我的邮件</p>
+                    </a>
+                </li>
+                <li class="nav-item logs">
+                	<a href="index.html">
+                        <p class="icon"></p>
+                        <p class="title">我的日志</p>
+                    </a>
+                </li>
+                <li class="nav-item dosthings">
+                	<a href="index.html">
+                        <p class="icon"></p>
+                        <p class="title">待办事宜</p>
+                    </a>
+                </li>
+                <li class="nav-item fav">
+                	<a href="index.html">
+                        <p class="icon"></p>
+                        <p class="title">收藏夹</p>
+                    </a>
+                </li>
+                
+                <li class="nav-item browser">
+                	<a href="index.html">
+                        <p class="icon"></p>
+                        <p class="title">浏览器</p>
+                    </a>
+                </li>
+            </ul>
+            
+            <ul class="content-list">
+            	<li class="content-item system">
+                	<h2 class="content-hd">
+                    	<span class="opt">
+                        	<span class="refresh" title="刷新"></span>
+                            <span class="setting" title="设置"></span>
+                            <span class="report" title="导出"></span>
+                            <span class="close" title="关闭"></span>
+                        </span>
+                    	<span class="title">系统概况</span>
+                        
+                    </h2>
+                    <div class="content-bd">
+                    	<img src="img/skin_/pic1.png" />
+                    </div>
+                </li>
+                <li class="content-item dothings">
+                	<h2 class="content-hd">
+                    	<span class="opt">
+                        	<span class="refresh" title="刷新"></span>
+                            <span class="setting" title="设置"></span>
+                            <span class="report" title="导出"></span>
+                            <span class="close" title="关闭"></span>
+                        </span>
+                    	<span class="title">待办事项</span>
+                    </h2>
+                    <div class="content-bd">
+                    	<ul class="content-list things">
+                        	<li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">查干湖冬捕壮观景象</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">江西新余：一座城为重病男童圆梦</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">学生建4.5平米1室1厅1厨1卫 欲申请专利</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">央视直播曝光中纪委办公区</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">盘点那些年曾“脱光光”的十大女星</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="content-item richeng">
+                	<h2 class="content-hd">
+                    	<span class="opt">
+                        	<span class="refresh" title="刷新"></span>
+                            <span class="setting" title="设置"></span>
+                            <span class="report" title="导出"></span>
+                            <span class="close" title="关闭"></span>
+                        </span>
+                    	<span class="title">日程安排</span>
+                    </h2>
+                    <div class="content-bd">
+                    	<ul class="content-list things">
+                        	<li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">查干湖冬捕壮观景象</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">江西新余：一座城为重病男童圆梦</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">学生建4.5平米1室1厅1厨1卫 欲申请专利</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">央视直播曝光中纪委办公区</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">盘点那些年曾“脱光光”的十大女星</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="content-item system">
+                	<h2 class="content-hd">
+                    	<span class="opt">
+                        	<span class="refresh" title="刷新"></span>
+                            <span class="setting" title="设置"></span>
+                            <span class="report" title="导出"></span>
+                            <span class="close" title="关闭"></span>
+                        </span>
+                    	<span class="title">数据统计</span>
+                    </h2>
+                    <div class="content-bd">
+                    	<img src="img/skin_/pic2.png" />
+                    </div>
+                </li>
+                
+                <li class="content-item news">
+                	<h2 class="content-hd">
+                    	<span class="opt">
+                        	<span class="refresh" title="刷新"></span>
+                            <span class="setting" title="设置"></span>
+                            <span class="report" title="导出"></span>
+                            <span class="close" title="关闭"></span>
+                        </span>
+                    	<span class="title">新闻资讯</span>
+                    </h2>
+                    <div class="content-bd">
+                    	<ul class="content-list things">
+                        	<li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">查干湖冬捕壮观景象</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">江西新余：一座城为重病男童圆梦</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">学生建4.5平米1室1厅1厨1卫 欲申请专利</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">央视直播曝光中纪委办公区</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">盘点那些年曾“脱光光”的十大女星</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="content-item news">
+                	<h2 class="content-hd">
+                    	<span class="opt">
+                        	<span class="refresh" title="刷新"></span>
+                            <span class="setting" title="设置"></span>
+                            <span class="report" title="导出"></span>
+                            <span class="close" title="关闭"></span>
+                        </span>
+                    	<span class="title">我的邮件</span>
+                    </h2>
+                    <div class="content-bd">
+                    	<ul class="content-list things">
+                        	<li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">查干湖冬捕壮观景象</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">江西新余：一座城为重病男童圆梦</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">学生建4.5平米1室1厅1厨1卫 欲申请专利</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">央视直播曝光中纪委办公区</a>
+                            </li>
+                            <li class="content-list-item">
+                            	<i class="icon"></i>
+                                <a href="javascript:;">盘点那些年曾“脱光光”的十大女星</a>
+                            </li>
+                        </ul>
                     </div>
                 </li>
             </ul>
         </div>
-        <div class="menu1-li">
-            一级标题
-        </div>
-        <div class="menu1-li">
-            一级标题
-        </div>
-        <div class="menu1-li">
-            一级标题
-        </div>
-    </div>
-
-    <div id="container">
-        <div id="list" style="left: -900px;">
-            <img src="image/love.jpg" alt="1"/>
-            <img src="image/distance.jpg" alt="1"/>
-            <img src="image/horse.jpg" alt="2"/>
-            <img src="image/love.jpg" alt="3"/>
-            <%--<img src="image/distance.jpg" alt="3"/>--%>
-        </div>
-        <div id="buttons">
-            <span index="1" class="on"></span>
-            <span index="2"></span>
-            <span index="3"></span>
-        </div>
-        <a href="javascript:;" id="prev" class="arrow">&lt;</a>
-        <a href="javascript:;" id="next" class="arrow">&gt;</a>
     </div>
 </div>
+
+
+<script type="text/javascript">
+	var minwidth = 282;
+	resizeWidth();
+	$(top.window).resize(function(e) {
+       resizeWidth();
+    });
+	$(function() {
+		$( ".content-list" ).sortable({
+		  revert: true,
+		  handle:'h2'
+		});
+		
+	});
+	
+function resizeWidth (){
+	if($('#main').width() / 3 < minwidth){
+		$('.content-item').width(($('#main').width() / 2) - 15);
+	}else{
+		$('.content-item').width(($('#main').width() / 3) - 15);	
+	}
+		
+}
+</script>
+
 </body>
 </html>
-

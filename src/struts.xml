@@ -18,7 +18,7 @@
     </action>
         <!--用户注销登录-->
         <action name="logout" class="controller.Logout">
-            <result type="redirect">/index.jsp</result>
+            <result type="redirect">/index1.jsp</result>
         </action>
         <!--用户注册验证-->
         <action name="regedit" class="controller.Regedit">

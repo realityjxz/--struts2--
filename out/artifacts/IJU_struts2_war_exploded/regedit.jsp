@@ -36,7 +36,7 @@
 <body>
 <s:debug/>
 <div class="top">
-    <a href="index.jsp">返回首页</a>
+    <a href="index1.jsp">返回首页</a>
 </div>
 <%--<s:form action="regedit" method="post">
     <s:textfield name="username"  label="username" requiredLabel="true" requiredPosition="left" />

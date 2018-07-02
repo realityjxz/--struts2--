@@ -13,23 +13,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c57c0699-13b2-44a6-b12c-494953312aa8" name="默认" comment="">
+      <change afterPath="$PROJECT_DIR$/web/image/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/captcha.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/controller/Regedit-validation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/controller/Regedit-validation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.lck" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/css/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/css/regedit.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/css/regedit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/controller/Regedit-validation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/controller/Regedit-validation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Regedit-validation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Regedit-validation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/image/hr_login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/image/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/image/yonghu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/struts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/struts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/ant/lib/test.lck" beforeDir="false" afterPath="$PROJECT_DIR$/web/ant/lib/test.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/ant/lib/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/web/ant/lib/test.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/ant/lib/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/ant/lib/test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/regedit.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/regedit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/image/8bcLQqF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/image/cloud.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index1.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/regedit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/regedit.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,7 +84,7 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domain/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state>
               <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
               <folding>
                 <element signature="e#539#540#0" expanded="true" />
@@ -89,8 +93,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <file leaf-file-name="index1.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index1.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
               <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
@@ -101,56 +105,20 @@
       <file leaf-file-name="regedit.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/regedit.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+            <state relative-caret-position="140">
+              <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <file leaf-file-name="CheckLogin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controller/CheckLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+            <state relative-caret-position="242">
+              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
               <folding>
-                <element signature="e#1323#2412#0#JSP" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/login.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="629" column="48" lean-forward="true" selection-start-line="629" selection-start-column="48" selection-end-line="629" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/menu.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Regedit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/Regedit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="47" column="62" selection-start-line="47" selection-start-column="62" selection-end-line="47" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="regedit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/regedit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="74" column="6" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -172,9 +140,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>table</find>
-      <find>remember</find>
-      <find>ms-transition</find>
       <find>login-w3</find>
       <find>webkit-transition</find>
       <find>container</find>
@@ -202,6 +167,9 @@
       <find>js-btn-login</find>
       <find>cloud.jpg</find>
       <find>8bcLQqF.png</find>
+      <find>images</find>
+      <find>stu_login_error</find>
+      <find>screenbg ul li</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -254,8 +222,8 @@
         <option value="$PROJECT_DIR$/src/controller/Regedit-validation.xml" />
         <option value="$PROJECT_DIR$/web/css/regedit.css" />
         <option value="$PROJECT_DIR$/web/css/menu.css" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/css/login.css" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
       </list>
     </option>
   </component>
@@ -299,8 +267,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -324,17 +290,13 @@
               <item name="IJU-struts2" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="IJU-struts2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IJU-struts2" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,17 +315,18 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Program Files\IJU-struts2\web\image" />
+      <recent name="D:\Program Files\IJU-struts2\web\js" />
+      <recent name="D:\Program Files\IJU-struts2\web" />
+      <recent name="D:\Program Files\IJU-struts2\src" />
+      <recent name="D:\Program Files\IJU-struts2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Program Files\IJU-struts2\web" />
       <recent name="D:\Program Files\IJU-struts2" />
       <recent name="D:\Program Files\IJU-struts2\web\image" />
       <recent name="D:\Program Files\IJU-struts2\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Program Files\IJU-struts2\web\image" />
-      <recent name="D:\Program Files\IJU-struts2\web" />
-      <recent name="D:\Program Files\IJU-struts2\src" />
-      <recent name="D:\Program Files\IJU-struts2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -523,11 +486,12 @@
       <workItem from="1530371286714" duration="1460000" />
       <workItem from="1530408397250" duration="3250000" />
       <workItem from="1530456249533" duration="1932000" />
+      <workItem from="1530535963750" duration="6936000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209019000" />
+    <option name="totallyTimeSpent" value="215955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
@@ -552,11 +516,11 @@
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.31641287" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3293919" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987593" visible="true" weight="0.22314675" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987593" visible="true" weight="0.22617246" />
       <window_info anchor="bottom" id="Problems" order="17" weight="0.21283785" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info id="设计器" order="5" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293919" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3282572" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="3" sideWeight="0.5012407" side_tool="true" weight="0.20877458" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -596,19 +560,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/image/starSky.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/image/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/image/yanzhengma.png" />
-    <entry file="file://$PROJECT_DIR$/web/image/yonghu.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/image/mima.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/image/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -813,7 +764,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state>
           <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
           <folding>
             <element signature="e#539#540#0" expanded="true" />
@@ -825,16 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2397">
           <caret line="141" column="74" selection-start-line="141" selection-start-column="74" selection-end-line="141" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/CheckLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="39" column="66" lean-forward="true" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -867,24 +808,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+    <entry file="file://$PROJECT_DIR$/web/index1.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/regedit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -900,24 +827,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Regedit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
+        <state relative-caret-position="799">
           <caret line="47" column="62" selection-start-line="47" selection-start-column="62" selection-end-line="47" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jQuery1.7.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/image/captcha.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/image/starSky.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/menu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4267" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="61" lean-forward="true" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="629" column="48" lean-forward="true" selection-start-line="629" selection-start-column="48" selection-end-line="629" selection-end-column="48" />
+        <state relative-caret-position="-802">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+        <state relative-caret-position="283">
+          <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/regedit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/CheckLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
           <folding>
-            <element signature="e#1323#2412#0#JSP" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
