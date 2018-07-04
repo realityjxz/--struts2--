@@ -6,7 +6,193 @@ sex varchar(2)default null,
 phone varchar(11)default NULL,
 birth date default null,
 PRIMARY KEY (Id)
-)
+);
 
 insert into user(username,password,sex,phone,birth)
 values('zhang','111','男','18612345678','2018-06-20');
+
+-- 班级表
+Create Table tab_class(
+Sclass varchar(20) not null,
+Sclasstea varchar(20) default NULL,
+PRIMARY KEY (Sclass)
+);
+
+insert into tab_class(Sclass,Sclasstea)values('一班','王老师');
+insert into tab_class(Sclass,Sclasstea)values('二班','赵老师');
+insert into tab_class(Sclass,Sclasstea)values('三班','刘老师');
+
+-- 学生表
+CREATE TABLE tab_stu(
+Sno varchar (20) not null,
+Spass varchar(20) not NULL,
+Sname varchar(20) NOT NULL,
+Ssex varchar(2)default null,
+Sphone varchar(11)default NULL,
+Sbirth date default null,
+Sclass varchar(20) default null,
+constraint stu_fk_1 foreign key(Sclass) references tab_class(Sclass) on delete cascade,
+PRIMARY KEY (Sno)
+);
+--学号：年级+专业号+班号+排序
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010101','111','赵大','男','18612345678','2018-06-20','一班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010102','111','钱二','女','18612345678','2010-06-20','一班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010103','111','孙三','男','18612345678','2000-06-20','一班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010104','111','李四','男','18612345678','2018-06-20','一班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010105','111','周五','女','18612345678','2010-06-20','一班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010106','111','吴六','男','18612345678','2000-06-20','一班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010107','111','郑七','男','18612345678','2018-06-20','一班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010108','111','王八','男','18612345678','2010-06-20','一班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010201','111','赵大','男','18612345678','2000-06-20','二班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010202','111','钱二','女','18612345678','2010-06-20','二班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010203','111','孙三','男','18612345678','2000-06-20','二班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010204','111','李四','男','18612345678','2018-06-20','二班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010205','111','周五','女','18612345678','2010-06-20','二班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010206','111','吴六','男','18612345678','2000-06-20','二班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010207','111','郑七','男','18612345678','2018-06-20','二班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010208','111','王八','男','18612345678','2010-06-20','二班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010301','111','赵大','男','18612345678','2000-06-20','三班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010302','111','钱二','女','18612345678','2010-06-20','三班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010303','111','孙三','男','18612345678','2000-06-20','三班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010304','111','李四','男','18612345678','2018-06-20','三班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010305','111','周五','女','18612345678','2010-06-20','三班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010306','111','吴六','男','18612345678','2000-06-20','三班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010307','111','郑七','男','18612345678','2018-06-20','三班');
+insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)
+values('2015010308','111','王八','男','18612345678','2010-06-20','三班');
+
+
+-- 教师表
+CREATE TABLE tab_tea(
+Tno varchar (20) not null,
+Tpass varchar(20) not NULL,
+Tname varchar(20) NOT NULL,
+Tsex varchar(2)default null,
+Tphone varchar(11)default NULL,
+Tbirth date default null,
+PRIMARY KEY (Tno)
+);
+--工号：学院号+专业号+排序
+insert into tab_tea(Tno,Tpass,Tname,Tsex,Tphone,Tbirth)
+values('010101','111','刘老师','男','13243215678','1980-01-01');
+insert into tab_tea(Tno,Tpass,Tname,Tsex,Tphone,Tbirth)
+values('010102','111','王老师','男','13243215678','1980-01-01');
+insert into tab_tea(Tno,Tpass,Tname,Tsex,Tphone,Tbirth)
+values('010103','111','陈老师','男','13243215678','1980-01-01');
+insert into tab_tea(Tno,Tpass,Tname,Tsex,Tphone,Tbirth)
+values('010201','111','李老师','男','13243215678','1980-01-01');
+insert into tab_tea(Tno,Tpass,Tname,Tsex,Tphone,Tbirth)
+values('010202','111','赵老师','女','13243215678','1980-01-01');
+insert into tab_tea(Tno,Tpass,Tname,Tsex,Tphone,Tbirth)
+values('010203','111','曹老师','女','13243215678','1980-01-01');
+
+
+-- 课程表
+CREATE TABLE tab_cou(
+Cno varchar (20) not null,
+Cname varchar(20) NOT NULL,
+Cterm varchar(11) default NULL,
+credit integer default null,
+PRIMARY KEY (Cno)
+);
+
+--课程号：专业号+学期号+排序
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010101','数据库','15-16上学期',4);
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010102','java','15-16上学期',4);
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010103','高数(一)','15-16上学期',6);
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010104','英语(一)','15-16上学期',4);
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010105','计算机导论','15-16上学期',3);
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010201','操作系统','15-16下学期',3);
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010202','jsp','15-16下学期',3);
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010203','高数(二)','15-16下学期',6);
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010204','英语(二)','15-16下学期',3);
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010205','电路与电子技术','15-16下学期',3);
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010301','计算机网络','16-17上学期',3);
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010302','设计模式','16-17上学期',3);
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010303','大学物理(一)','16-17上学期',4);
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010304','英语(三)','16-17上学期',3);
+insert into tab_cou(Cno,Cname,Cterm,credit)
+values('010305','软件工程','16-17上学期',3);
+
+
+-- 授课表
+CREATE TABLE tab_tcou(
+Cno varchar (20) not null,
+Sclass varchar (20) not null,
+Tno varchar (20) not null,
+site varchar(20) default null,
+constraint teacou_fk_1 foreign key(Cno) references tab_cou(Cno) on delete cascade,
+constraint teacou_fk_2 foreign key(Tno) references tab_tea(Tno) on delete cascade,
+constraint teacou_fk_3 foreign key(Sclass) references tab_class(Sclass) on delete cascade,
+PRIMARY KEY (Cno,Sclass,Tno)
+);
+--15-16上学期课程安排
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010101','一班','010101','教学楼4220');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010101','二班','010101','');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010101','三班','010102','');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010102','一班','010103','');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010102','二班','010103','');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010102','三班','010103','');
+
+--15-16下学期课程安排
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010201','一班','010201','教学楼4220');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010201','二班','010201','');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010201','三班','010202','');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010203','一班','010203','教学楼4220');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010203','二班','010203','');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010203','三班','010202','');
+
+--16-17上学期课程安排
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010301','一班','010101','教学楼4220');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010301','二班','010101','');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010301','三班','010102','');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010305','一班','010203','');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010305','二班','010201','');
+insert into tab_tcou(Cno,Sclass,Tno,site)values('010305','三班','010202','');
+
+-- 成绩表
+CREATE TABLE tab_score(
+Cno varchar (20) not null,
+Sno varchar (20) not null,
+Score integer default null,
+constraint score_fk_1 foreign key(Cno) references tab_cou(Cno) on delete cascade,
+constraint score_fk_2 foreign key(Sno) references tab_stu(Sno) on delete cascade,
+PRIMARY KEY (Cno,Sno)
+);
