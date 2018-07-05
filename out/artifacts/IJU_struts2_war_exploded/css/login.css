@@ -21,6 +21,12 @@ body {
 ul, li {
     list-style:none
 }
+
+a:link { text-decoration: none;color: blue}
+a:visited { text-decoration: none;color: darkred}
+a:hover { text-decoration:underline;color: LawnGreen}
+a:active { text-decoration:blink}
+
 /*tab登录选项卡*/
 #tab {
     width:410px;

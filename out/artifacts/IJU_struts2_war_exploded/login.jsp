@@ -70,24 +70,25 @@
 <body>
 <div id="tab">
     <ul class="tab_menu">
-        <li class="selected">学生登录</li>
-        <li>导师登录</li>
-        <li>教务登录</li>
+        <li class="selected"><a href="login.jsp">学生登录</a></li>
+        <li><a href="login.jsp">导师登录</a></li>
+        <li><a href="login.jsp">教务登录</a></li>
     </ul>
     <div class="tab_box">
         <!-- 学生登录开始 -->
         <div>
             <br>
-
-        <form action="" method="post" >
+            <s:actionerror cssStyle="color:red;font-weight: bold"/>
+            <s:fielderror cssStyle="color:darkred;font-weight: bold" />
+        <form action="checkStu.action" method="post" >
                 <div>
                     <label>学&nbsp;&nbsp;&nbsp;号：</label>
-                    <input type="text" id="stu_username_hide" name="user.username" placeholder="输入学号" />
+                    <input type="text" id="stu_username_hide" name="stu.Sno" placeholder="输入学号" />
 
                 </div>
                 <div >
                     <label>密&nbsp;&nbsp;&nbsp;码：</label>
-                    <input type="password" id="stu_password_hide" name="user.pass" placeholder="输入密码" />
+                    <input type="password" id="stu_password_hide" name="stu.Spass" placeholder="输入密码" />
                 </div>
                 <div id="code">
                     <label>验证码：</label>
@@ -105,16 +106,18 @@
         <!-- 学生登录结束-->
         <!-- 导师登录开始-->
         <div class="hide">
-
-            <form action="" method="post" >
+        <br>
+            <s:actionerror cssStyle="color:red;font-weight: bold"/>
+            <s:fielderror cssStyle="color:darkred;font-weight: bold" />
+            <form action="checkTea.action" method="post" >
                 <div id="username">
                     <label>教工号：</label>
-                    <input type="text" id="tea_username_hide" name="username" placeholder="输入教工号" />
+                    <input type="text" id="tea_username_hide" name="tea.Tno" placeholder="输入教工号" />
 
                 </div>
                 <div id="password">
                     <label>密&nbsp;&nbsp;&nbsp;码：</label>
-                    <input type="password" id="tea_password_hide" name="password" placeholder="输入密码" />
+                    <input type="password" id="tea_password_hide" name="tea.Tpass" placeholder="输入密码" />
                 </div>
                 <div id="code">
                     <label>验证码：</label>
@@ -132,6 +135,7 @@
         <!-- 导师登录结束-->
         <!-- 教务登录开始-->
         <div class="hide">
+            <br>
             <s:actionerror cssStyle="color:red;font-weight: bold"/>
             <s:fielderror cssStyle="color:darkred;font-weight: bold" />
             <form action="checkLogin" method="post"">
@@ -160,7 +164,7 @@
         <!-- 教务登录结束-->
     </div>
 </div>
-<div class="bottom">©2018 Leting <a href="javascript:;" target="_blank">关于</a> <span>京ICP证030173号</span>  More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></div>
+<div class="bottom">©2018 Leting <a href="javascript:;" target="_blank">关于</a> <span>京ICP证030173号</span>  More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> </div>
 <div class="screenbg">
     <ul>
         <li><a href="javascript:;"><img src="image/0.jpg" alt="0"/></a></li>

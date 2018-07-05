@@ -14,9 +14,9 @@ import domain.*;
 
 public class CheckLogin extends ActionSupport {
 
-    User user;
-    Stu stu;
-    Tea tea;
+    private User user;
+    private Stu stu;
+    private Tea tea;
 
     public Stu getStu() {
         return stu;
@@ -42,8 +42,8 @@ public class CheckLogin extends ActionSupport {
         this.user = user;
     }
 
-    @Override
-    public void validate() {
+
+    public void validateCheckuser() {
         if (user.getUsername().isEmpty()) {
             addFieldError("user.username", getText("username.empty"));
         }
@@ -54,6 +54,10 @@ public class CheckLogin extends ActionSupport {
 
     @Override
     public String execute() throws Exception {
+        return super.execute();
+    }
+
+    public String checkuser(){
         UserDaoImp imp = new UserDaoImp();
         boolean isHave = imp.check(user.getUsername(),user.getPass());     //调用实现类中check方法
         if (isHave) {
@@ -70,6 +74,15 @@ public class CheckLogin extends ActionSupport {
         }
 
     }
+
+    public void validateCheckStu() {
+        if(stu.getSno().isEmpty()){
+            addFieldError("stu.Sno",getText("Sno.empty"));
+        }
+        if(stu.getSpass().isEmpty()){
+            addFieldError("stu.Spass",getText("pass.empty"));
+        }
+    }
     public String checkStu(){
         StuDaoImp simp = new StuDaoImp();
         boolean isHave=simp.check(stu.getSno(),stu.getSpass());
@@ -79,6 +92,17 @@ public class CheckLogin extends ActionSupport {
             return "suc";//自定义指向的页面
         }else
             return "fail";
+    }
+
+
+    public void validateCheckTea(){
+        if(tea.getTno().isEmpty()){
+            addFieldError("tea.Tno",getText("Tno.empty"));
+        }
+        if(tea.getTpass().isEmpty()){
+            addFieldError("tea.Tpass",getText("pass.empty"));
+        }
+
     }
     public String checkTea(){
         TeaDaoImp timp=new TeaDaoImp();

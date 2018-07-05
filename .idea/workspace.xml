@@ -13,31 +13,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c57c0699-13b2-44a6-b12c-494953312aa8" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/controller/CheckLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/controller/CheckLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/controller/Regedit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/controller/Regedit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/controller/UserAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/controller/UserAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/dao/TeaDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/dao/TeaDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/daoimp/TeaDaoImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/daoimp/UserDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/daoimp/UserDAOImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/db/DBConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/db/DBConn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/struts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/controller/CheckLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/controller/CheckLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/controller/CheckLogin.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/CheckLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CheckLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Regedit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Regedit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/TeaAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/TeaAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/UserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UserAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/StuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/StuDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/TeaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/TeaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoimp/StuDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoimp/StuDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoimp/TeaDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoimp/TeaDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoimp/UserDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoimp/UserDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/DBConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBConn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/CheckLogin_zh_CN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CheckLogin_zh_CN.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/CheckLogin_zh_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CheckLogin_zh_US.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index_stu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_stu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/regedit_error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ant/lib/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/web/ant/lib/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ant/lib/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/ant/lib/test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,41 +80,87 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TeaAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/TeaAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#331#332#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_stu.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index_stu.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index_stu.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="110" column="83" selection-start-line="110" selection-start-column="83" selection-end-line="110" selection-end-column="83" />
+            <state relative-caret-position="136">
+              <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StuAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/StuAction.java">
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/css/login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckLogin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/CheckLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/struts.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-26">
+              <caret line="11" column="77" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+        </entry>
+      </file>
+      <file leaf-file-name="index_tea.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index_tea.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1173">
+              <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header_tea.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/header_tea.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table_alluser.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/table_alluser.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5303">
+              <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_user.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index_user.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="1012" column="46" lean-forward="true" selection-start-line="1012" selection-start-column="46" selection-end-line="1012" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -148,7 +182,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>table</find>
       <find>bd</find>
       <find>define-input</find>
       <find>pagination</find>
@@ -178,6 +211,7 @@
       <find>sOrd</find>
       <find>sKnot</find>
       <find>huadong</find>
+      <find>fa-desktop</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,10 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/dao/UserDAOImp.java" />
-        <option value="$PROJECT_DIR$/web/404.jsp" />
-        <option value="$PROJECT_DIR$/web/login_s2_suc.jsp" />
         <option value="$PROJECT_DIR$/web/regedit_suc.jsp" />
         <option value="$PROJECT_DIR$/src/controller/Regedit.java" />
         <option value="$PROJECT_DIR$/src/controller/logout.java" />
@@ -200,7 +230,6 @@
         <option value="$PROJECT_DIR$/src/controller/Regedit-validation.xml" />
         <option value="$PROJECT_DIR$/web/css/regedit.css" />
         <option value="$PROJECT_DIR$/web/css/menu.css" />
-        <option value="$PROJECT_DIR$/web/css/login.css" />
         <option value="$PROJECT_DIR$/web/main.jsp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b5a378e-9fdc-488b-93c3-0679b8369412/console.sql" />
         <option value="$PROJECT_DIR$/user.sql" />
@@ -214,7 +243,6 @@
         <option value="$PROJECT_DIR$/src/daoimp/ClaDaoImp.java" />
         <option value="$PROJECT_DIR$/src/jdbc.xml" />
         <option value="$PROJECT_DIR$/web/system_user.jsp" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/regedit.jsp" />
         <option value="$PROJECT_DIR$/web/table_stu.jsp" />
         <option value="$PROJECT_DIR$/web/index_user.jsp" />
@@ -225,11 +253,9 @@
         <option value="$PROJECT_DIR$/src/jdbc_stu.xml" />
         <option value="$PROJECT_DIR$/src/controller/StuAction.java" />
         <option value="$PROJECT_DIR$/src/controller/UserAction.java" />
-        <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/web/header.jsp" />
         <option value="$PROJECT_DIR$/web/index_stu.jsp" />
         <option value="$PROJECT_DIR$/web/header_stu.jsp" />
-        <option value="$PROJECT_DIR$/src/controller/CheckLogin.java" />
         <option value="$PROJECT_DIR$/src/db/DBConn.java" />
         <option value="$PROJECT_DIR$/src/dao/StuDao.java" />
         <option value="$PROJECT_DIR$/src/daoimp/UserDaoImp.java" />
@@ -237,6 +263,14 @@
         <option value="$PROJECT_DIR$/src/daoimp/StuDaoImp.java" />
         <option value="$PROJECT_DIR$/src/daoimp/TeaDaoImp.java" />
         <option value="$PROJECT_DIR$/src/controller/TeaAction.java" />
+        <option value="$PROJECT_DIR$/web/index_tea.jsp" />
+        <option value="$PROJECT_DIR$/src/controller/CheckLogin_zh_CN.properties" />
+        <option value="$PROJECT_DIR$/src/controller/CheckLogin_zh_US.properties" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/src/controller/CheckLogin.java" />
+        <option value="$PROJECT_DIR$/web/header_tea.jsp" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/web/css/login.css" />
       </list>
     </option>
   </component>
@@ -268,7 +302,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="5" />
     <option name="y" value="42" />
     <option name="width" value="1346" />
@@ -300,6 +334,12 @@
               <item name="IJU-struts2" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="IJU-struts2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IJU-struts2" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -325,21 +365,21 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="daoimp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Program Files\IJU-struts2\web" />
+      <recent name="D:\Program Files\IJU-struts2\src" />
+      <recent name="D:\Program Files\IJU-struts2\web\image" />
+      <recent name="D:\Program Files\IJU-struts2\web\js" />
+      <recent name="D:\Program Files\IJU-struts2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Program Files\IJU-struts2\web" />
       <recent name="D:\Program Files\IJU-struts2" />
       <recent name="D:\Program Files\IJU-struts2\web\image" />
       <recent name="D:\Program Files\IJU-struts2\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Program Files\IJU-struts2\src" />
-      <recent name="D:\Program Files\IJU-struts2\web\image" />
-      <recent name="D:\Program Files\IJU-struts2\web\js" />
-      <recent name="D:\Program Files\IJU-struts2\web" />
-      <recent name="D:\Program Files\IJU-struts2" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="daoimp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -506,16 +546,15 @@
       <workItem from="1530686337943" duration="9902000" />
       <workItem from="1530709989906" duration="7950000" />
       <workItem from="1530746550809" duration="22789000" />
-      <workItem from="1530772432654" duration="5075000" />
+      <workItem from="1530772432654" duration="10515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271662000" />
+    <option name="totallyTimeSpent" value="277102000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Event Log" order="16" sideWeight="0.5015129" side_tool="true" weight="0.31925675" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
@@ -529,14 +568,15 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="调试" order="13" weight="0.45777026" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3282572" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" weight="0.3293919" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32994923" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.27580371" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.3790186" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3293919" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987593" visible="true" weight="0.25189108" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987593" visible="true" weight="0.25189108" />
       <window_info anchor="bottom" id="Problems" order="17" weight="0.21150592" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info id="设计器" order="5" />
@@ -544,7 +584,6 @@
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="3" sideWeight="0.5012407" side_tool="true" weight="0.20877458" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3282572" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.3282572" />
@@ -565,7 +604,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="18" />
+      <option name="time" value="19" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -581,19 +620,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dao/CouDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/table.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/img/skin_/ico01.png" />
-    <entry file="file://$PROJECT_DIR$/web/img/skin_/ico02_1.png" />
-    <entry file="file://$PROJECT_DIR$/web/img/skin_/ico02.png" />
-    <entry file="file://$PROJECT_DIR$/web/img/skin_/ico01_1.png" />
-    <entry file="file://$PROJECT_DIR$/web/js/login.js" />
     <entry file="file://$PROJECT_DIR$/web/js/Menu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51" />
@@ -655,31 +681,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/form.jsp" />
     <entry file="file://$PROJECT_DIR$/web/table_stu.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="16" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/table_alluser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#a#0;n#li#4;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#a#0;n#li#6;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -690,13 +696,6 @@
         </state>
       </provider>
       <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/struts-2.5.14.1/lib/struts2-core-2.5.14.1.jar!/com/opensymphony/xwork2/ActionSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="141" column="5" lean-forward="true" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jdbc_stu.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -743,21 +742,6 @@
     <entry file="file://$PROJECT_DIR$/web/regedit_error.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="26" column="52" lean-forward="true" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index_user.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="1639" column="41" lean-forward="true" selection-start-line="1639" selection-start-column="41" selection-end-line="1639" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/Cla.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -778,31 +762,6 @@
           <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding>
             <element signature="e#227#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/header_stu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3383">
-          <caret line="199" column="20" selection-start-line="199" selection-start-column="20" selection-end-line="199" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/CheckLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="82" column="29" lean-forward="true" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -897,10 +856,114 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/struts-2.5.14.1/lib/struts2-core-2.5.14.1.jar!/com/opensymphony/xwork2/ActionSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="143" column="18" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index_stu.jsp">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/header_stu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="199" column="20" selection-start-line="199" selection-start-column="20" selection-end-line="199" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/table_alluser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5303">
+          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="1012" column="46" lean-forward="true" selection-start-line="1012" selection-start-column="46" selection-end-line="1012" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/global_zh_CN.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/CheckLogin_zh_CN.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/CheckLogin_zh_US.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_tea.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/header_tea.jsp">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="110" column="83" selection-start-line="110" selection-start-column="83" selection-end-line="110" selection-end-column="83" />
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="11" column="77" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/CheckLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/regedit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
         </state>
       </provider>
     </entry>
