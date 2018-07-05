@@ -18,7 +18,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>软件学院毕业设计选题管理系统用户登录</title>
+    <title>软件学院管理系统用户登录</title>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <link href="css/login.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="js/jQuery1.7.js"></script>
@@ -78,9 +78,8 @@
         <!-- 学生登录开始 -->
         <div>
             <br>
-            <s:actionerror cssStyle="color:red;font-weight: bold"/>
-            <s:fielderror cssStyle="color:darkred;font-weight: bold" />
-        <form action="checkLogin" method="post" >
+
+        <form action="" method="post" >
                 <div>
                     <label>学&nbsp;&nbsp;&nbsp;号：</label>
                     <input type="text" id="stu_username_hide" name="user.username" placeholder="输入学号" />
@@ -133,15 +132,17 @@
         <!-- 导师登录结束-->
         <!-- 教务登录开始-->
         <div class="hide">
-            <form action="" method="post"">
+            <s:actionerror cssStyle="color:red;font-weight: bold"/>
+            <s:fielderror cssStyle="color:darkred;font-weight: bold" />
+            <form action="checkLogin" method="post"">
                 <div id="username">
                     <label>教务号：</label>
-                    <input type="text" id="sec_username_hide" name="username" placeholder="输入教务号" />
+                    <input type="text" id="sec_username_hide" name="user.username" placeholder="输入教务号" />
 
                 </div>
                 <div id="password">
                     <label>密&nbsp;&nbsp;&nbsp;码：</label>
-                    <input type="password" id="sec_password_hide" name="password" placeholder="输入密码"  />
+                    <input type="password" id="sec_password_hide" name="user.pass" placeholder="输入密码"  />
                 </div>
                 <div id="code">
                     <label>验证码：</label>
@@ -171,58 +172,3 @@
 
 </body>
 </html>
-<%--<html>
-<head>
-    <base href="<%=basePath%>">
-
-    <title>用户登录</title>
-
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta http-equiv="expires" content="0">
-    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-    <meta http-equiv="description" content="This is my page">
-    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/login.css">
-    <!--
-    <link rel="bookmark" href="favicon.ico" />
-    <link rel="shortcut icon" href="https://tool.lu/favicon.ico">
-    -->
-</head>
-
-<body>
-<s:debug/>
-    <div class="top">
-        <a href="index1.jsp">返回首页</a>
-    </div>
-<div class="container">
-    <section id="content">
-        <s:actionerror cssStyle="color:red;font-weight: bold"/>
-        <s:fielderror cssStyle="color:darkred;font-weight: bold" />
-        <form action="checkLogin" method="post">
-            <h1>会员登录</h1>
-            <div>
-                <input type="text" placeholder="请输入用户名" name="user.username" id="username" />
-            </div>
-            <div>
-                <input type="password" placeholder="请输入密码" name="user.pass" id="password" />
-            </div>
-            <div class="">
-                <span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>			</div>
-            <div>
-                <!-- <input type="submit" value="Log in" /> -->
-                <input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>
-                <a href="#">忘记密码?</a>
-                <!-- <a href="#">Register</a> -->
-            </div>
-        </form><!-- form -->
-        <div class="button">
-            <span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>
-            <a href="#">下载网盘</a>
-        </div> <!-- button -->
-    </section><!-- content -->
-</div>
-<!-- container -->
-
-</body>
-</html>--%>

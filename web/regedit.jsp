@@ -16,8 +16,6 @@
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
     <meta http-equiv="description" content="This is my page">
     <link rel="stylesheet" href="http://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
-    <%--<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="http://apps.bdimg.com/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>--%>
     <sj:head compressed="true" jquerytheme="redmond" ajaxcache="false"/>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/regedit.css">
@@ -26,38 +24,13 @@
     -->
     <s:head/>
     <sj:head/>
-    <%--<script>
-        $(function() {
-            $("#datepicker").datepicker({ minDate: -100, maxDate: "+1D" });
-        });
-        <%System.out.print("日期");%>
-    </script>--%>
 </head>
 <body>
 <s:debug/>
 <div class="top">
-    <a href="index1.jsp">返回首页</a>
+    <a href="system_user.jsp">返回首页</a>
 </div>
-<%--<s:form action="regedit" method="post">
-    <s:textfield name="username"  label="username" requiredLabel="true" requiredPosition="left" />
-    <s:password name="pass" label="pass" errorPosition="bottom"/>
-     <s:password name="repass" label="repass"/>
-     <s:select name="sex" label="sex"  list="#{'男':'男', '女':'女'}" />
-    <sj:datepicker name="birth" label="your birthday"
-                   displayFormat="%{getText('format.date.input')}"
-                   changeMonth="true" changeYear="true" />
-    <s:textfield name="phone"  label="phone" />
-    &lt;%&ndash;<s:textfield name="user.username" label="username"/>
-    <sjr:ckeditor
-            id="richtextEditor"
-            name="echo"
-            rows="10"
-            cols="80"
-            width="730"
-            height="250"/>&ndash;%&gt;
-    <s:submit/>
-</s:form>--%>
-<%--<h1>某某公司用户注册系统</h1>--%>
+<%--<h1>软件学院后台管理注册系统</h1>--%>
 <div class="container">
     <h2>现在注册</h2>
     <s:actionerror/>
@@ -106,7 +79,7 @@
     </s:form>
 </div>
 <div class="footer-w3l">
-    <p> 某某公司用户注册系统</p>
+    <p> 软件学院后台注册系统</p>
 </div>
 </body>
 </html>

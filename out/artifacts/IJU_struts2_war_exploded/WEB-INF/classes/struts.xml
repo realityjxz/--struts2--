@@ -10,7 +10,7 @@
     <package name="default" extends="struts-default">
         <!--用户登录验证-->
     <action name="checkLogin" class="controller.CheckLogin">
-        <result name="success">/login_suc.jsp</result>
+        <result name="success">/index_user.jsp</result>
         <!--<result name="redirect" type="redirect">/login_suc.jsp</result>&lt;!&ndash;//重定向&ndash;&gt;
         <result name="forward">/login_suc.jsp</result>&lt;!&ndash;//转发&ndash;&gt;-->
         <result name="fail">/login.jsp</result>
@@ -18,7 +18,7 @@
     </action>
         <!--用户注销登录-->
         <action name="logout" class="controller.Logout">
-            <result type="redirect">/index1.jsp</result>
+            <result type="redirect">/system_user.jsp</result>
         </action>
         <!--用户注册验证-->
         <action name="regedit" class="controller.Regedit">

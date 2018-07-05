@@ -7,7 +7,7 @@ import java.util.Map;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
-import dao.*;
+import daoimp.UserDAOImp;
 import domain.*;
 
 public class CheckLogin extends ActionSupport {
@@ -50,6 +50,26 @@ public class CheckLogin extends ActionSupport {
         }
 
     }
+//    public String checkStu()throws Exception{
+//        StuDAO dao=new StuDAOImp();
+//        boolean isHave=dao.check(username);
+//        if(isHave){
+//            Map session=ActionContext.getContext().getSession();
+//            session.put("username", username);
+//            return "suc";//自定义指向的页面
+//        }else
+//            return "fail";
+//    }
+//    public String checkTea()throws Exception{
+//        StuDAO dao=new StuDAOImp();
+//        boolean isHave=dao.check(username);
+//        if(isHave){
+//            Map session=ActionContext.getContext().getSession();
+//            session.put("username", username);
+//            return "suc";//自定义指向的页面
+//        }else
+//            return "fail";
+//    }
 
 }
 

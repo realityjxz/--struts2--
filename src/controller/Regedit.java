@@ -4,7 +4,7 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import java.util.*;
 
-import dao.*;
+import daoimp.UserDAOImp;
 import domain.User;
 
 public class Regedit extends ActionSupport {

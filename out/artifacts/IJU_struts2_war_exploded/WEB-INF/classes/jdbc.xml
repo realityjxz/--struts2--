@@ -7,10 +7,10 @@
 <struts>
         <package name="jdbc" extends="struts-default">
             <action name="user_list" class="controller.UserAction">
-                <result>/user_list.jsp</result>
+                <result>/table_alluser.jsp</result>
             </action>
             <action name="user_edit" class="controller.UserAction" method="edit">
-                <result>/user_edit.jsp</result>
+                <result>/table_alluser.jsp</result>
             </action>
             <action name="user_save" class="controller.UserAction" method="save">
                 <result type="redirect">/user_save_suc.jsp</result>
