@@ -5,7 +5,7 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
-        <package name="jdbc" extends="struts-default">
+        <package name="jdbc_user" extends="struts-default">
             <action name="user_list" class="controller.UserAction">
                 <result>/table_alluser.jsp</result>
             </action>

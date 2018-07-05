@@ -87,7 +87,6 @@ public Stu findBySno(String sno) {       //通过ID号精确查找
     @Override
     public boolean save(Stu stu) {
     boolean isSuc=false;
-
         String sql = "insert into tab_stu(Sno,Spass,Sname,Ssex,Sphone,Sbirth,Sclass)values(?,?,?,?,?,?,?)";
         Connection conn = DBConn.getConnection();
         PreparedStatement ps = DBConn.prepare(conn,sql);
@@ -115,7 +114,7 @@ public Stu findBySno(String sno) {       //通过ID号精确查找
     @Override
     public boolean update(Stu stu) {
         boolean isSuc=false;
-        String sql = "update stu set Spass=?,Sname=?,Ssex=?,Sphone=?,Sbirth=?,Sclass=? where Sno=?";
+        String sql = "update tab_stu set Spass=?,Sname=?,Ssex=?,Sphone=?,Sbirth=?,Sclass=? where Sno=?";
         Connection conn = DBConn.getConnection();
         PreparedStatement ps = DBConn.prepare(conn,sql);
         try{

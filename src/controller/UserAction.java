@@ -4,11 +4,11 @@ import java.util.List;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-import daoimp.UserDAOImp;
+import daoimp.UserDaoImp;
 import domain.User;
 
 public class UserAction extends ActionSupport {
-    private UserDAOImp imp =new UserDAOImp();
+    private UserDaoImp imp =new UserDaoImp();
     private List<String[]> users;
     private List<User> usersByObj;
 

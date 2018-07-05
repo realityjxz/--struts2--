@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+        <package name="jdbc_stu" extends="struts-default">
+            <action name="stu_list" class="controller.StuAction">
+                <result>/table_allstu.jsp</result>
+            </action>
+            <action name="stu_edit" class="controller.StuAction" method="edit">
+                <result>/table_allstu.jsp</result>
+            </action>
+            <action name="stu_save" class="controller.StuAction" method="save">
+                <result type="redirect">/stu_save_suc.jsp</result>
+                <result name="error" type="redirect">/stu_save_error.jsp</result>
+            </action>
+            <action name="stu_update" class="controller.StuAction" method="update">
+                <result type="redirect">/stu_update_suc.jsp</result>
+                <result name="error" type="redirect">/stu_update_error.jsp</result>
+            </action>
+            <action name="stu_del" class="controller.StuAction" method="del">
+                <result type="redirect">/stu_del_suc.jsp</result>
+                <result name="error" type="redirect">/stu_del_error.jsp</result>
+            </action>
+            <!-- <action name="stu_*" class="controller.StuAction" method="{1}">
+               <result type="redirect">/stu_{1}_suc.jsp</result>
+               <result name="error" type="redirect">/stu_{1}_error.jsp</result>
+               <allowed-methods>update,del</allowed-methods>
+            </action> -->
+            <!--  <action name="visitorAction" class="domain.VisitorAction">
+                <result type="redirect">/stu_list.jsp</result>
+                <result name="input" type="redirect">/stu_new.jsp</result>
+             </action> -->
+        </package>
+</struts>

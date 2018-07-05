@@ -4,7 +4,7 @@ import java.util.List;
 import domain.User;
 
 
-public interface UserDAO {
+public interface UserDao {
     boolean check(String username,String password);
     List<String[]> getAllUsers();
     List<User> getAllUsersByObj();

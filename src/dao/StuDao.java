@@ -5,7 +5,7 @@ import domain.Stu;
 import java.util.List;
 
 public interface StuDao {
-    boolean check(String username,String password);
+    boolean check(String sno,String Spass);
     List<Stu> getAllStusByObj();
     Stu findBySno(String sno);
     boolean save(Stu stu);

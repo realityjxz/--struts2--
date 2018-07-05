@@ -7,12 +7,32 @@ import java.util.Map;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
-import daoimp.UserDAOImp;
+import daoimp.TeaDaoImp;
+import daoimp.UserDaoImp;
+import daoimp.StuDaoImp;
 import domain.*;
 
 public class CheckLogin extends ActionSupport {
 
     User user;
+    Stu stu;
+    Tea tea;
+
+    public Stu getStu() {
+        return stu;
+    }
+
+    public void setStu(Stu stu) {
+        this.stu = stu;
+    }
+
+    public Tea getTea() {
+        return tea;
+    }
+
+    public void setTea(Tea tea) {
+        this.tea = tea;
+    }
 
     public User getUser() {
         return user;
@@ -34,7 +54,7 @@ public class CheckLogin extends ActionSupport {
 
     @Override
     public String execute() throws Exception {
-        UserDAOImp imp = new UserDAOImp();
+        UserDaoImp imp = new UserDaoImp();
         boolean isHave = imp.check(user.getUsername(),user.getPass());     //调用实现类中check方法
         if (isHave) {
             Map session = ActionContext.getContext().getSession();
@@ -50,26 +70,26 @@ public class CheckLogin extends ActionSupport {
         }
 
     }
-//    public String checkStu()throws Exception{
-//        StuDAO dao=new StuDAOImp();
-//        boolean isHave=dao.check(username);
-//        if(isHave){
-//            Map session=ActionContext.getContext().getSession();
-//            session.put("username", username);
-//            return "suc";//自定义指向的页面
-//        }else
-//            return "fail";
-//    }
-//    public String checkTea()throws Exception{
-//        StuDAO dao=new StuDAOImp();
-//        boolean isHave=dao.check(username);
-//        if(isHave){
-//            Map session=ActionContext.getContext().getSession();
-//            session.put("username", username);
-//            return "suc";//自定义指向的页面
-//        }else
-//            return "fail";
-//    }
+    public String checkStu(){
+        StuDaoImp simp = new StuDaoImp();
+        boolean isHave=simp.check(stu.getSno(),stu.getSpass());
+        if(isHave){
+            Map session=ActionContext.getContext().getSession();
+            session.put("username", stu.getSname());
+            return "suc";//自定义指向的页面
+        }else
+            return "fail";
+    }
+    public String checkTea(){
+        TeaDaoImp timp=new TeaDaoImp();
+        boolean isHave=timp.check(tea.getTno(),tea.getTpass());
+        if(isHave){
+            Map session=ActionContext.getContext().getSession();
+            session.put("username", tea.getTname());
+            return "suc";//自定义指向的页面
+        }else
+            return "fail";
+    }
 
 }
 

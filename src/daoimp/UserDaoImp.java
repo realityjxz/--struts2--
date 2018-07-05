@@ -3,11 +3,11 @@ package daoimp;
 import java.sql.*;
 import java.util.*;
 
-import dao.UserDAO;
+import dao.UserDao;
 import domain.User;
 import db.DBConn;
 
-public class UserDAOImp implements UserDAO {
+public class UserDaoImp implements UserDao {
 
     //用户名密码检测
     @Override

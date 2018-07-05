@@ -16,17 +16,29 @@
         <result name="fail">/login.jsp</result>
         <result name="input">/login.jsp</result>
     </action>
+        <action name="checkStu" class="controller.CheckLogin" method="checkStu">
+            <result name="suc">/index_stu.jsp</result>
+            <result name="fail">/login.jsp</result>
+            <result name="input">/login.jsp</result>
+        </action>
+        <action name="checkTea" class="controller.CheckLogin" method="checkTea">
+            <result name="suc">/index_tea.jsp</result>
+            <result name="fail">/login.jsp</result>
+            <result name="input">/login.jsp</result>
+        </action>
+
         <!--用户注销登录-->
         <action name="logout" class="controller.Logout">
-            <result type="redirect">/system_user.jsp</result>
+            <result type="redirect">/login.jsp</result>
         </action>
         <!--用户注册验证-->
         <action name="regedit" class="controller.Regedit">
             <result name ="success">/regedit_suc.jsp</result>
-            <result name ="error">/regedit_error.jsp</result>
+            <result name ="error">/regedit.jsp</result>
             <result name="input">/regedit.jsp</result>
         </action>
     </package>
     <!--实现数据库中用户的增、删、查、改功能-->
-        <include file="jdbc.xml"/>
+        <include file="jdbc_user.xml"/>
+        <include file="jdbc_stu.xml"/>
 </struts>

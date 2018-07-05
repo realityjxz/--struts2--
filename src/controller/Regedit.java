@@ -4,7 +4,7 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import java.util.*;
 
-import daoimp.UserDAOImp;
+import daoimp.UserDaoImp;
 import domain.User;
 
 public class Regedit extends ActionSupport {
@@ -47,7 +47,7 @@ public class Regedit extends ActionSupport {
     public  String execute() throws Exception{
         Map session = ActionContext.getContext().getSession();
         session.put("username", user.getUsername());
-        UserDAOImp imp = new UserDAOImp();
+        UserDaoImp imp = new UserDaoImp();
         boolean isSuc = imp.save(user);    //调用实现类中save方法
         return isSuc?SUCCESS:ERROR;
     }
