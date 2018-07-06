@@ -168,14 +168,20 @@ body {
 	color: #646987;
 	background-color: #e3e8ee;
 	padding: 0 30px;
-	text-align: left;
+	text-align: certer;
+}
+.tableHeader .row {
+	margin-top: 10px;
+	background-color: #fff;
+	height: 70px;
+	line-height: 70px;
 }
 .codeTop {
 	text-align: right;
 }
 .tablebody {
 	margin: 20px 30px;
-	text-align: left;
+	text-align: certer;
 }
 .tablebody .row {
 	margin-top: 10px;

@@ -12,23 +12,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="左右结构项目，属于大人员的社交工具">
-    <meta name="keywords" content="左右结构项目 社交">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="左右结构项目 社交 占座 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, cla-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <title>Bootstrap后台管理-教师</title>
+    <title>Bootstrap后台管理-班级</title>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
+
 <div id="wrap">
     <!-- 左侧菜单栏目块 -->
     <s:include value="side_user.jsp"></s:include>
     <%--右侧菜单栏--%>
     <div id="rightContent">
-        <div role="tabpanel" class="tab-pane" id="user">
+        <div role="tabpanel" class="tab-pane" id="cla">
             <div class="check-div form-inline">
                 <div class="col-xs-3">
-                    <button class="btn btn-yellow btn-xs" data-toggle="modal" data-target="#addUser">添加用户 </button>
+                    <button class="btn btn-yellow btn-xs" data-toggle="modal" data-target="#addUser">添加学生 </button>
                 </div>
                 <div class="col-xs-4">
                     <input type="text" class="form-control input-sm" placeholder="输入文字搜索">
@@ -37,7 +37,6 @@
                 <div class="col-lg-3 col-lg-offset-2 col-xs-4" style=" padding-right: 40px;text-align: right;">
                     <label for="paixu">排序:&nbsp;</label>
                     <select class=" form-control">
-                        <option>地区</option>
                         <option>地区</option>
                         <option>班期</option>
                         <option>性别</option>
@@ -49,42 +48,33 @@
             <div class="data-div">
                 <table class="data-div">
                     <thead class="row tableHeader">
-                    <div class="row">
-                        <div class="col-xs-2 "> 工号</div>
-                        <div class="col-xs-2 "> 密码</div>
-                        <div class="col-xs-1 "> 姓名</div>
-                        <div class="col-xs-1 ">性别</div>
-                        <div class="col-xs-2 ">手机号</div>
-                        <div class="col-xs-2 ">出生年月</div>
+                    <<div class="row">
+                        <div class="col-xs-5 "> 班级</div>
+                        <div class="col-xs-5 "> 班主任</div>
                         <div class="col-xs-1 "> 修改</div>
                         <div class="col-xs-1 "> 删除</div>
                     </div>
                     </thead>
 
                     <tbody class="tablebody">
-                    <s:iterator value="teasByObj" var="tea">
+                    <s:iterator value="clasByObj" var="cla">
                         <div class="row">
-                            <div class="col-xs-2"><s:property value="#tea.Tno"/></div>
-                            <div class="col-xs-2"><s:property value="#tea.Tpass"/></div>
-                            <div class="col-xs-1"><s:property value="#tea.Tname"/></div>
-                            <div class="col-xs-1"><s:property value="#tea.Tsex"/></div>
-                            <div class="col-xs-2"><s:property value="#tea.Tphone"/></div>
-                            <div class="col-xs-2"><s:property value="#tea.Tbirth"/></div>
-                            <div class="col-xs-1"><s:url var="editUrl" action="tea_edit">
-                                <s:param name="tea.tno" value="#tea.Tno"/>
+                            <div class="col-xs-5"><s:property value="#cla.Sclass"/></div>
+                            <div class="col-xs-5"><s:property value="#cla.Sclasstea"/></div>
+                            <div class="col-xs-1"><s:url var="editUrl" action="cla_edit">
+                                <s:param name="cla.sclass" value="#cla.Sclass"/>
                             </s:url>
                                 <a href="${editUrl}">edit</a></div>
                             <div class="col-xs-1">
-                                <s:url var="delUrl" action="tea_del">
-                                    <s:param name="tea.tno" value="#tea.Tno"/>
+                                <s:url var="delUrl" action="cla_del">
+                                    <s:param name="cla.sclass" value="#cla.Sclass"/>
                                 </s:url>
                                 <a href="${delUrl}" onClick="return readyDel(<s:property
-                                        value='#tea.tno'/>);">del</a></div>
+                                        value='#cla.Sclass'/>);">del</a></div>
                         </div>
                     </s:iterator>
                     </tbody>
                 </table>
-
             </div>
             <!--页码块-->
             <footer class="footer">
@@ -292,5 +282,12 @@
         </div>
     </div>
 </div>
+<script>
+    function readyDel(id) {
+        return confirm("是否真的删除学号为" + id + "的用户？");
+    }
+</script>
+
+
 </body>
 </html>

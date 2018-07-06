@@ -14,7 +14,7 @@ public class StuDaoImp implements StuDao {
         boolean isHave = false;
         String sql = "select * from tab_stu where Sno =? AND Spass=?";
         Connection conn = DBConn.getConnection();
-        PreparedStatement ps = DBConn.prepare(conn, sql);
+        PreparedStatement ps = DBConn.prepare(conn,sql);
         try {
             ps.setString(1, Sno);
             ps.setString(2, Spass);
@@ -33,7 +33,7 @@ public class StuDaoImp implements StuDao {
         List<Stu> stus = new ArrayList<>();
         String sql = "select * from tab_stu";
         Connection conn = DBConn.getConnection();
-        PreparedStatement ps = DBConn.prepare(conn, sql);
+        PreparedStatement ps = DBConn.prepare(conn,sql);
         try {
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {// 保存每行的数据
@@ -83,6 +83,8 @@ public Stu findBySno(String sno) {       //通过ID号精确查找
     }
     return stu;
 }
+
+
 
     @Override
     public boolean save(Stu stu) {
@@ -142,16 +144,21 @@ public Stu findBySno(String sno) {       //通过ID号精确查找
         String sql = "delete from tab_stu where Sno=?";
         Connection conn = DBConn.getConnection();
         PreparedStatement ps = DBConn.prepare(conn,sql);
-    try{
-        ps.setString(1,sno);
-        int row = ps.executeUpdate();
-        isSuc = row > 0;
-    } catch (SQLException e) {
-        e.printStackTrace();
-    }finally {
-        DBConn.close(ps);
-        DBConn.close(conn);
+        isSuc = isSuc(sno, isSuc, conn, ps);
+        return isSuc;
     }
+
+    static boolean isSuc(String sno, boolean isSuc, Connection conn, PreparedStatement ps) {
+        try{
+            ps.setString(1,sno);
+            int row = ps.executeUpdate();
+            isSuc = row > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            DBConn.close(ps);
+            DBConn.close(conn);
+        }
         return isSuc;
     }
 

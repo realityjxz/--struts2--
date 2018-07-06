@@ -2,7 +2,16 @@ package domain;
 
 
 public class Cou {
-    private String Cno,Cname, Cterm,Credit;
+    private String Cno,Cname, Cterm;
+    private Integer Credit;
+
+    public Integer getCredit() {
+        return Credit;
+    }
+
+    public void setCredit(Integer credit) {
+        Credit = credit;
+    }
 
     public String getCno() {
         return Cno;
@@ -28,11 +37,4 @@ public class Cou {
         Cterm = cterm;
     }
 
-    public String getCredit() {
-        return Credit;
-    }
-
-    public void setCredit(String credit) {
-        Credit = credit;
-    }
 }

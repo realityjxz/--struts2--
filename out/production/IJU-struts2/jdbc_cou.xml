@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+        <package name="jdbc_cou" extends="struts-default">
+            <action name="cou_list" class="controller.CouAction">
+                <result>/index_user_allcou.jsp</result>
+            </action>
+            <action name="cou_edit" class="controller.CouAction" method="edit">
+                <result>/table_allcou.jsp</result>
+            </action>
+            <action name="cou_save" class="controller.CouAction" method="save">
+                <result type="redirect">/cou_save_suc.jsp</result>
+                <result name="error" type="redirect">/cou_save_error.jsp</result>
+            </action>
+            <action name="cou_update" class="controller.CouAction" method="update">
+                <result type="redirect">/cou_update_suc.jsp</result>
+                <result name="error" type="redirect">/cou_update_error.jsp</result>
+            </action>
+            <action name="cou_del" class="controller.CouAction" method="del">
+                <result type="redirect">/cou_del_suc.jsp</result>
+                <result name="error" type="redirect">/cou_del_error.jsp</result>
+            </action>
+            <!-- <action name="cou_*" class="controller.CouAction" method="{1}">
+               <result type="redirect">/cou_{1}_suc.jsp</result>
+               <result name="error" type="redirect">/cou_{1}_error.jsp</result>
+               <allowed-methods>update,del</allowed-methods>
+            </action> -->
+            <!--  <action name="visitorAction" class="domain.VisitorAction">
+                <result type="redirect">/cou_list.jsp</result>
+                <result name="input" type="redirect">/cou_new.jsp</result>
+             </action> -->
+        </package>
+</struts>

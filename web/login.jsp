@@ -169,7 +169,7 @@
     <ul>
         <li><a href="javascript:;"><img src="image/0.jpg" alt="0"/></a></li>
         <li><a href="javascript:;"><img src="image/1.jpg" alt="1"/></a></li>
-        <li><a href="javascript:;"><img src="image/2.jpg" alt="2"/></a></li>
+        <li><a href="javascript:;"><img src="image/distance.jpg" alt="2"/></a></li>
     </ul>
 </div>
 

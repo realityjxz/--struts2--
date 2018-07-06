@@ -15,7 +15,7 @@
     </schema>
     <schema id="5" parent="2" name="SYSTEM_LOBS"/>
     <table id="6" parent="4" name="STU"/>
-    <table id="7" parent="4" name="TAB_CLASS"/>
+    <table id="7" parent="4" name="TAB_CLA"/>
     <table id="8" parent="4" name="TAB_COU"/>
     <table id="9" parent="4" name="TAB_SCORE"/>
     <table id="10" parent="4" name="TAB_STU"/>
@@ -65,7 +65,7 @@
       <DataType>VARCHAR(20)|12s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
     </column>
-    <key id="23" parent="7" name="SYS_PK_10111">
+    <key id="23" parent="7" name="SYS_PK_10110">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>SCLASS</ColNames>
       <Primary>1</Primary>
@@ -90,7 +90,7 @@
       <DataType>INTEGER|4s</DataType>
       <DefaultExpression>NULL</DefaultExpression>
     </column>
-    <key id="28" parent="8" name="SYS_PK_10134">
+    <key id="28" parent="8" name="SYS_PK_10132">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>CNO</ColNames>
       <Primary>1</Primary>
@@ -110,7 +110,7 @@
       <DataType>INTEGER|4s</DataType>
       <DefaultExpression>NULL</DefaultExpression>
     </column>
-    <key id="32" parent="9" name="SYS_PK_10154">
+    <key id="32" parent="9" name="SYS_PK_10153">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>CNO
 SNO</ColNames>
@@ -120,7 +120,7 @@ SNO</ColNames>
       <ColNames>CNO</ColNames>
       <RefSchemaName>PUBLIC</RefSchemaName>
       <RefTableName>TAB_COU</RefTableName>
-      <RefKeyName>SYS_PK_10134</RefKeyName>
+      <RefKeyName>SYS_PK_10132</RefKeyName>
       <RefColNames>CNO</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
@@ -128,7 +128,7 @@ SNO</ColNames>
       <ColNames>SNO</ColNames>
       <RefSchemaName>PUBLIC</RefSchemaName>
       <RefTableName>TAB_STU</RefTableName>
-      <RefKeyName>SYS_PK_10117</RefKeyName>
+      <RefKeyName>SYS_PK_10114</RefKeyName>
       <RefColNames>SNO</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
@@ -167,7 +167,7 @@ SNO</ColNames>
       <DataType>VARCHAR(20)|12s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
     </column>
-    <key id="42" parent="10" name="SYS_PK_10117">
+    <key id="42" parent="10" name="SYS_PK_10114">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>SNO</ColNames>
       <Primary>1</Primary>
@@ -175,8 +175,8 @@ SNO</ColNames>
     <foreign-key id="43" parent="10" name="STU_FK_1">
       <ColNames>SCLASS</ColNames>
       <RefSchemaName>PUBLIC</RefSchemaName>
-      <RefTableName>TAB_CLASS</RefTableName>
-      <RefKeyName>SYS_PK_10111</RefKeyName>
+      <RefTableName>TAB_CLA</RefTableName>
+      <RefKeyName>SYS_PK_10110</RefKeyName>
       <RefColNames>SCLASS</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
@@ -200,7 +200,7 @@ SNO</ColNames>
       <DataType>VARCHAR(20)|12s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
     </column>
-    <key id="48" parent="11" name="SYS_PK_10141">
+    <key id="48" parent="11" name="SYS_PK_10140">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>CNO
 SCLASS
@@ -211,15 +211,15 @@ TNO</ColNames>
       <ColNames>CNO</ColNames>
       <RefSchemaName>PUBLIC</RefSchemaName>
       <RefTableName>TAB_COU</RefTableName>
-      <RefKeyName>SYS_PK_10134</RefKeyName>
+      <RefKeyName>SYS_PK_10132</RefKeyName>
       <RefColNames>CNO</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
     <foreign-key id="50" parent="11" name="TEACOU_FK_3">
       <ColNames>SCLASS</ColNames>
       <RefSchemaName>PUBLIC</RefSchemaName>
-      <RefTableName>TAB_CLASS</RefTableName>
-      <RefKeyName>SYS_PK_10111</RefKeyName>
+      <RefTableName>TAB_CLA</RefTableName>
+      <RefKeyName>SYS_PK_10110</RefKeyName>
       <RefColNames>SCLASS</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
@@ -227,7 +227,7 @@ TNO</ColNames>
       <ColNames>TNO</ColNames>
       <RefSchemaName>PUBLIC</RefSchemaName>
       <RefTableName>TAB_TEA</RefTableName>
-      <RefKeyName>SYS_PK_10127</RefKeyName>
+      <RefKeyName>SYS_PK_10124</RefKeyName>
       <RefColNames>TNO</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
@@ -261,7 +261,7 @@ TNO</ColNames>
       <DataType>DATE|91s</DataType>
       <DefaultExpression>NULL</DefaultExpression>
     </column>
-    <key id="58" parent="12" name="SYS_PK_10127">
+    <key id="58" parent="12" name="SYS_PK_10124">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>TNO</ColNames>
       <Primary>1</Primary>

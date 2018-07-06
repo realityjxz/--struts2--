@@ -141,16 +141,7 @@ public class TeaDaoImp implements TeaDao {
         String sql = "delete from tab_tea where Tno=?";
         Connection conn = DBConn.getConnection();
         PreparedStatement ps = DBConn.prepare(conn,sql);
-        try{
-            ps.setString(1,tno);
-            int row = ps.executeUpdate();
-            isSuc = row > 0;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }finally {
-            DBConn.close(ps);
-            DBConn.close(conn);
-        }
+        isSuc = StuDaoImp.isSuc(tno, isSuc, conn, ps);
         return isSuc;
     }
 }

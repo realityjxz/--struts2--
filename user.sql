@@ -12,15 +12,15 @@ insert into user(username,password,sex,phone,birth)
 values('zhang','111','男','18612345678','2018-06-20');
 
 -- 班级表
-Create Table tab_class(
+Create Table tab_cla(
 Sclass varchar(20) not null,
 Sclasstea varchar(20) default NULL,
 PRIMARY KEY (Sclass)
 );
 
-insert into tab_class(Sclass,Sclasstea)values('一班','王老师');
-insert into tab_class(Sclass,Sclasstea)values('二班','赵老师');
-insert into tab_class(Sclass,Sclasstea)values('三班','刘老师');
+insert into TAB_CLA(Sclass,Sclasstea)values('一班','王老师');
+insert into TAB_CLA(Sclass,Sclasstea)values('二班','赵老师');
+insert into TAB_CLA(Sclass,Sclasstea)values('三班','刘老师');
 
 -- 学生表
 CREATE TABLE tab_stu(
@@ -31,7 +31,7 @@ Ssex varchar(2)default null,
 Sphone varchar(11)default NULL,
 Sbirth date default null,
 Sclass varchar(20) default null,
-constraint stu_fk_1 foreign key(Sclass) references tab_class(Sclass) on delete cascade,
+constraint stu_fk_1 foreign key(Sclass) references TAB_CLA(Sclass) on delete cascade,
 PRIMARY KEY (Sno)
 );
 --学号：年级+专业号+班号+排序
@@ -160,7 +160,7 @@ Tno varchar (20) not null,
 site varchar(20) default null,
 constraint teacou_fk_1 foreign key(Cno) references tab_cou(Cno) on delete cascade,
 constraint teacou_fk_2 foreign key(Tno) references tab_tea(Tno) on delete cascade,
-constraint teacou_fk_3 foreign key(Sclass) references tab_class(Sclass) on delete cascade,
+constraint teacou_fk_3 foreign key(Sclass) references TAB_CLA(Sclass) on delete cascade,
 PRIMARY KEY (Cno,Sclass,Tno)
 );
 --15-16上学期课程安排

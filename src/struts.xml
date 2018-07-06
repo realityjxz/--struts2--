@@ -42,4 +42,6 @@
         <include file="jdbc_user.xml"/>
         <include file="jdbc_stu.xml"/>
         <include file="jdbc_tea.xml"/>
+        <include file="jdbc_cou.xml"/>
+        <include file="jdbc_cla.xml"/>
 </struts>
