@@ -41,4 +41,5 @@
     <!--实现数据库中用户的增、删、查、改功能-->
         <include file="jdbc_user.xml"/>
         <include file="jdbc_stu.xml"/>
+        <include file="jdbc_tea.xml"/>
 </struts>

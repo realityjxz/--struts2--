@@ -21,7 +21,7 @@ body {
 ul, li {
     list-style:none
 }
-
+a{font-weight: bolder }
 a:link { text-decoration: none;color: blue}
 a:visited { text-decoration: none;color: darkred}
 a:hover { text-decoration:underline;color: LawnGreen}

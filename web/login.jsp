@@ -164,7 +164,7 @@
         <!-- 教务登录结束-->
     </div>
 </div>
-<div class="bottom">©2018 Leting <a href="javascript:;" target="_blank">关于</a> <span>京ICP证030173号</span>  More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> </div>
+<div class="bottom">©2018 Leting <a href="javascript:;" target="_blank">关于</a>学生成绩管理系统</div>
 <div class="screenbg">
     <ul>
         <li><a href="javascript:;"><img src="image/0.jpg" alt="0"/></a></li>

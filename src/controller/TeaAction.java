@@ -8,39 +8,39 @@ import java.util.List;
 
 public class TeaAction extends ActionSupport {
     private TeaDaoImp imp=new TeaDaoImp();
-    private Tea stu;
-    private List<Tea> userByObj;
+    private Tea tea;
+    private List<Tea> teasByObj;
 
     public Tea getTea() {
-        return stu;
+        return tea;
     }
 
     public void setTea(Tea stu) {
-        this.stu = stu;
+        this.tea = stu;
     }
 
-    public List<Tea> getUserByObj() {
-        return userByObj;
+    public List<Tea> getTeasByObj() {
+        return teasByObj;
     }
 
     public String execute(){
-        userByObj = imp.getAllTeasByObj();
+        teasByObj = imp.getAllTeasByObj();
         return SUCCESS;
     }
     public String save(){
-        boolean isSuc=imp.save(stu);
+        boolean isSuc=imp.save(tea);
         return isSuc?SUCCESS:ERROR;
     }
     public String edit() {
-        stu=imp.findByTno(stu.getTno());
+        tea=imp.findByTno(tea.getTno());
         return SUCCESS;
     }
     public String update(){
-        boolean isSuc=imp.update(stu);
+        boolean isSuc=imp.update(tea);
         return isSuc?SUCCESS:ERROR;
     }
     public String del() {
-        boolean isSuc=imp.delByTno(stu.getTno());
+        boolean isSuc=imp.delByTno(tea.getTno());
         return isSuc?SUCCESS:ERROR;
     }
 

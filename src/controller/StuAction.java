@@ -9,7 +9,7 @@ import java.util.List;
 public class StuAction extends ActionSupport {
     private StuDaoImp imp=new StuDaoImp();
     private Stu stu;
-    private List<Stu> userByObj;
+    private List<Stu> stusByObj;
 
     public Stu getStu() {
         return stu;
@@ -19,13 +19,13 @@ public class StuAction extends ActionSupport {
         this.stu = stu;
     }
 
-    public List<Stu> getUserByObj() {
-        return userByObj;
+    public List<Stu> getStusByObj() {
+        return stusByObj;
     }
 
 
     public String execute(){
-        userByObj = imp.getAllStusByObj();
+        stusByObj = imp.getAllStusByObj();
         return SUCCESS;
     }
     public String save(){

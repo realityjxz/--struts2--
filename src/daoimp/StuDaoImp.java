@@ -46,7 +46,7 @@ public class StuDaoImp implements StuDao {
                 stu.setSbirth(rs.getDate("Sbirth"));
                 stu.setSclass(rs.getString("Sclass"));
                 stus.add(stu);
-            }
+               }
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {

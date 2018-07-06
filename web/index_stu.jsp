@@ -6,9 +6,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>成绩管理系统-学生</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
@@ -24,7 +25,8 @@
 
 <body>
 <div id="wrapper">
-    <s:include value="header_stu.jsp"></s:include>
+    <s:include value="header_stu.jsp">
+    </s:include>
     <!--/. NAV TOP  -->
     <nav class="navbar-default navbar-side" role="navigation">
         <div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
@@ -59,26 +61,24 @@
                     </ul>
                 </li>
                 <li>
-                    <a  href="index_stu.jsp"><i class="fa fa-dashboard"></i> Dashboard</a>
+                <a href="form.html"><i class="fa fa-edit"></i> 修改密码 </a>
+                </li>
+
+                <li>
+                <a href="table.html"><i class="fa fa-table"></i>课表查询</a>
                 </li>
                 <li>
-                    <a href="ui-elements.html"><i class="fa fa-desktop"></i> UI Elements</a>
+                <a href="chart.html"><i class="fa fa-bar-chart-o"></i> 图表展示</a>
                 </li>
                 <li>
-                    <a href="chart.html"><i class="fa fa-bar-chart-o"></i> Charts</a>
+                    <a href="ui-elements.html"><i class="fa fa-desktop"></i> 学生通讯录</a>
+                </li>
+                <li>
+                    <a  href="index_stu.jsp"><i class="fa fa-dashboard"></i> 老师通讯录</a>
                 </li>
                 <li>
                     <a href="tab-panel.html"><i class="fa fa-qrcode"></i> Tabs & Panels</a>
                 </li>
-
-                <li>
-                    <a href="table.html"><i class="fa fa-table"></i> Responsive Tables</a>
-                </li>
-                <li>
-                    <a href="form.html"><i class="fa fa-edit"></i> Forms </a>
-                </li>
-
-
 
                 <li>
                     <a href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>

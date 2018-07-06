@@ -7,7 +7,7 @@
 <struts>
         <package name="jdbc_user" extends="struts-default">
             <action name="user_list" class="controller.UserAction">
-                <result>/table_alluser.jsp</result>
+                <result>/index_user_alluser.jsp</result>
             </action>
             <action name="user_edit" class="controller.UserAction" method="edit">
                 <result>/table_alluser.jsp</result>

@@ -17,6 +17,7 @@
             <file>jar://$APPLICATION_HOME_DIR$/struts-2.5.14.1/lib/struts2-core-2.5.14.1.jar!/struts-default.xml</file>
             <file>file://$MODULE_DIR$/src/jdbc_user.xml</file>
             <file>file://$MODULE_DIR$/src/jdbc_stu.xml</file>
+            <file>file://$MODULE_DIR$/src/jdbc_tea.xml</file>
           </fileset>
           <propertiesKeys disabled="false" />
         </configuration>
