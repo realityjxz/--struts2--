@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface CouDao {
     List<Cou> getAllCousByObj();
-    Cou findByCno(String sno);
+    Cou findByCno(String cno);
     boolean save(Cou cou);
     boolean delByCno(String cno);
     boolean update(Cou cou);

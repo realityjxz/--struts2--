@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+        <package name="jdbc_tcou" extends="struts-default">
+            <action name="tcou_list" class="controller.TcouAction">
+                <result>/index_user_alltcou.jsp</result>
+            </action>
+            <action name="tcou_edit" class="controller.TcouAction" method="edit">
+                <result>/table_alltcou.jsp</result>
+            </action>
+            <action name="tcou_save" class="controller.TcouAction" method="save">
+                <result type="redirect">/tcou_save_suc.jsp</result>
+                <result name="error" type="redirect">/tcou_save_error.jsp</result>
+            </action>
+            <action name="tcou_update" class="controller.TcouAction" method="update">
+                <result type="redirect">/tcou_update_suc.jsp</result>
+                <result name="error" type="redirect">/tcou_update_error.jsp</result>
+            </action>
+            <action name="tcou_del" class="controller.TcouAction" method="del">
+                <result type="redirect">/tcou_del_suc.jsp</result>
+                <result name="error" type="redirect">/tcou_del_error.jsp</result>
+            </action>
+            <!-- <action name="tcou_*" class="controller.TcouAction" method="{1}">
+               <result type="redirect">/tcou_{1}_suc.jsp</result>
+               <result name="error" type="redirect">/tcou_{1}_error.jsp</result>
+               <allowed-methods>update,del</allowed-methods>
+            </action> -->
+            <!--  <action name="visitorAction" class="domain.VisitorAction">
+                <result type="redirect">/tcou_list.jsp</result>
+                <result name="input" type="redirect">/tcou_new.jsp</result>
+             </action> -->
+        </package>
+</struts>

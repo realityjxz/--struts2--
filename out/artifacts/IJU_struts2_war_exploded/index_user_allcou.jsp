@@ -15,7 +15,7 @@
     <meta name="keywords" content="左右结构项目 社交 占座 ">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, cla-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <title>Bootstrap后台管理—班级</title>
+    <title>Bootstrap后台管理-课程</title>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="data-div">
-                <table class="data-div">
+                <table>
                     <thead class="row tableHeader">
                     <div class="row">
                         <div class="col-xs-2 "> 课程号</div>
@@ -64,7 +64,7 @@
                             <div class="col-xs-2"><s:property value="#cou.Cno"/></div>
                             <div class="col-xs-2"><s:property value="#cou.Cname"/></div>
                             <div class="col-xs-3"><s:property value="#cou.Cterm"/></div>
-                            <div class="col-xs-1"><s:property value="#cou.Cerdit"/></div>
+                            <div class="col-xs-1"><s:property value="#cou.Credit"/></div>
                             <div class="col-xs-1"><s:url var="editUrl" action="cou_edit">
                                 <s:param name="cou.cno" value="#cou.Cno"/>
                             </s:url>

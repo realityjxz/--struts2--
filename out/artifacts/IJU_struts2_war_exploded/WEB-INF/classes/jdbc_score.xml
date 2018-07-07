@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+        <package name="jdbc_score" extends="struts-default">
+            <action name="score_list" class="controller.ScoreAction">
+                <result>/index_tea_allscore.jsp</result>
+            </action>
+            <action name="score_edit" class="controller.ScoreAction" method="edit">
+                <result>/table_allscore.jsp</result>
+            </action>
+            <action name="score_save" class="controller.ScoreAction" method="save">
+                <result type="redirect">/score_save_suc.jsp</result>
+                <result name="error" type="redirect">/score_save_error.jsp</result>
+            </action>
+            <action name="score_update" class="controller.ScoreAction" method="update">
+                <result type="redirect">/score_update_suc.jsp</result>
+                <result name="error" type="redirect">/score_update_error.jsp</result>
+            </action>
+            <action name="score_del" class="controller.ScoreAction" method="del">
+                <result type="redirect">/score_del_suc.jsp</result>
+                <result name="error" type="redirect">/score_del_error.jsp</result>
+            </action>
+            <!-- <action name="score_*" class="controller.ScoreAction" method="{1}">
+               <result type="redirect">/score_{1}_suc.jsp</result>
+               <result name="error" type="redirect">/score_{1}_error.jsp</result>
+               <allowed-methods>update,del</allowed-methods>
+            </action> -->
+            <!--  <action name="visitorAction" class="domain.VisitorAction">
+                <result type="redirect">/score_list.jsp</result>
+                <result name="input" type="redirect">/score_new.jsp</result>
+             </action> -->
+        </package>
+</struts>

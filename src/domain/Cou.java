@@ -3,13 +3,13 @@ package domain;
 
 public class Cou {
     private String Cno,Cname, Cterm;
-    private Integer Credit;
+    private int Credit;
 
-    public Integer getCredit() {
+    public int getCredit() {
         return Credit;
     }
 
-    public void setCredit(Integer credit) {
+    public void setCredit(int credit) {
         Credit = credit;
     }
 

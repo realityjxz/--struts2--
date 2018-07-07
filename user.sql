@@ -196,3 +196,13 @@ constraint score_fk_1 foreign key(Cno) references tab_cou(Cno) on delete cascade
 constraint score_fk_2 foreign key(Sno) references tab_stu(Sno) on delete cascade,
 PRIMARY KEY (Cno,Sno)
 );
+
+--插入成绩
+insert into tab_score(Cno,Sno,Score)values('010101','2015010101',96);
+insert into tab_score(Cno,Sno,Score)values('010101','2015010102',90);
+insert into tab_score(Cno,Sno,Score)values('010101','2015010201',80);
+insert into tab_score(Cno,Sno,Score)values('010102','2015010101',89);
+insert into tab_score(Cno,Sno,Score)values('010201','2015010201',91);
+insert into tab_score(Cno,Sno,Score)values('010201','2015010308',85);
+insert into tab_score(Cno,Sno,Score)values('010202','2015010302',50);
+insert into tab_score(Cno,Sno,Score)values('010202','2015010306',100);

@@ -15,7 +15,7 @@
     <meta name="keywords" content="左右结构项目 社交  ">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <title>Bootstrap后台管理</title>
+    <title>Bootstrap后台管理-管理员</title>
 <body>
 <div id="wrap">
     <!-- 左侧菜单栏目块 -->
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="data-div">
-            <table class="data-div">
+            <table>
                 <thead class="row tableHeader">
                 <div class="row">
                     <div class="col-xs-1 "> ID</div>
@@ -65,7 +65,7 @@
                         <div class="col-xs-2"><s:property value="#user.username"/></div>
                         <div class="col-xs-2"><s:property value="#user.pass"/></div>
                         <div class="col-xs-1"><s:property value="#user.sex"/></div>
-                        <div class="col-xs-2"><s:property value="#user.phone"/></div>
+                        <div class="col-xs-2"><input type="text" value="<s:property value="#user.phone"/>"/></div>
                         <div class="col-xs-2"><s:property value="#user.birth"/></div>
                         <div class="col-xs-1"><s:url var="editUrl" action="user_edit">
                             <s:param name="user.id" value="#user.id"/>

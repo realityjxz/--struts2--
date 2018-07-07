@@ -36,9 +36,8 @@
                     <button class="btn btn-white btn-xs ">查 询 </button>
                 </div>
                 <div class="col-lg-3 col-lg-offset-2 col-xs-4" style=" padding-right: 40px;text-align: right;">
-                    <label for="paixu">排序:&nbsp;</label>
+                    <label>排序:&nbsp;</label>
                     <select class=" form-control">
-                        <option>地区</option>
                         <option>地区</option>
                         <option>班期</option>
                         <option>性别</option>
@@ -87,7 +86,6 @@
                     </s:iterator>
                     </tbody>
                 </table>
-
             </div>
             <!--页码块-->
             <footer class="footer">

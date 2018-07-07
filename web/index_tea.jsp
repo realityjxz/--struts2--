@@ -2,7 +2,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -28,7 +27,11 @@
     <s:include value="header_tea.jsp"></s:include>
     <!--/. NAV TOP  -->
     <nav class="navbar-default navbar-side" role="navigation">
-        <div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
+        <div id="sideNav" href="">
+            <i class="fa fa-caret-right"></i>
+
+        </div>
+
         <div class="sidebar-collapse">
             <ul class="nav" id="main-menu">
 
@@ -41,7 +44,7 @@
                         <li>
                             <a href="#">修改密码</a>
                         </li>
-                        <li>
+                        <%--<li>
                             <a href="#">Second Level Link<span class="fa arrow"></span></a>
                             <ul class="nav nav-third-level">
                                 <li>
@@ -56,31 +59,28 @@
 
                             </ul>
 
-                        </li>
+                        </li>--%>
                     </ul>
                 </li>
                 <li>
-                    <a  href="index_stu.jsp"><i class="fa fa-dashboard"></i> 学生成绩录入</a>
-                </li>
-                <li>
-                    <a href="ui-elements.html"><i class="fa fa-desktop"></i> 学生成绩查询</a>
-                </li>
-                <li>
-                    <a href="chart.html"><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
-                </li>
-                <li>
-                    <a href="tab-panel.html"><i class="fa fa-qrcode"></i> Tabs & Panels</a>
+                    <a href="index_tea_logscore.jsp"><i class="fa fa-edit"></i>学生成绩录入</a>
                 </li>
 
                 <li>
-                    <a href="table.html"><i class="fa fa-table"></i> Responsive Tables</a>
+                    <a href="score_list.action"><i class="fa fa-table"></i> 学生成绩查询</a>
                 </li>
                 <li>
-                    <a href="form.html"><i class="fa fa-edit"></i> Forms </a>
+                    <a href=""><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
                 </li>
-
-
-
+                <li>
+                    <a  href="table.html"><i class="fa fa-dashboard"></i> 图表展示</a>
+                </li>
+                <li>
+                <a href="tab-panel.html"><i class="fa fa-qrcode"></i> Tabs & Panels</a>
+            </li>
+                <li>
+                    <a href="form.html"><i class="fa fa-desktop"></i> Forms </a>
+                </li>
                 <li>
                     <a href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
                 </li>
@@ -197,7 +197,7 @@
                     <div class="panel panel-default">
                         <div class="panel-body easypiechart-panel">
                             <h4>Customers</h4>
-                            <div class="easypiechart" id="easypiechart-blue" data-percent="82" ><span class="percent">82%</span>
+                            <div class="easypiechart" id="easypiechart-blue" data-percent="10" ><span class="percent">10%</span>
                             </div>
                         </div>
                     </div>
@@ -380,7 +380,7 @@
             <!-- /. ROW  -->
 
 
-            <footer><p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+            <footer><p>Copyright &copy; 2018.Company name All rights reserved.More Templates</p>
 
 
             </footer>

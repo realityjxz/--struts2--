@@ -63,28 +63,40 @@ public Stu findBySno(String sno) {       //通过ID号精确查找
     String sql = "select * from tab_stu where Sno=?";
     Connection conn = DBConn.getConnection();
     PreparedStatement ps = DBConn.prepare(conn,sql);
-    try{
-        ps.setString(1,sno);
-        ResultSet rs = ps.executeQuery();
-        rs.next();
-        stu.setSno(rs.getString("Sno"));
-        stu.setSpass(rs.getString("Spass"));
-        stu.setSname(rs.getString("Sname"));
-        stu.setSsex(rs.getString("Ssex"));
-        stu.setSphone(rs.getString("Sphone"));
-        stu.setSbirth(rs.getDate("Sbirth"));
-        stu.setSclass(rs.getString("Sclass"));
-    } catch (SQLException e) {
-        e.printStackTrace();
-    }
-    finally {
-        DBConn.close(ps);
-        DBConn.close(conn);
-    }
+    fingStu(sno, stu, conn, ps);
     return stu;
 }
 
+    @Override
+    public Stu findBySclass(String sclass) {
+        Stu stu=new Stu();
+        String sql = "select * from tab_stu where Sclass=?";
+        Connection conn = DBConn.getConnection();
+        PreparedStatement ps = DBConn.prepare(conn,sql);
+        fingStu(sclass, stu, conn, ps);
+        return stu;
+    }
 
+    private void fingStu(String sclass, Stu stu, Connection conn, PreparedStatement ps) {       //提取方法——（学号、班级）查询
+        try{
+            ps.setString(1,sclass);
+            ResultSet rs = ps.executeQuery();
+            rs.next();
+            stu.setSno(rs.getString("Sno"));
+            stu.setSpass(rs.getString("Spass"));
+            stu.setSname(rs.getString("Sname"));
+            stu.setSsex(rs.getString("Ssex"));
+            stu.setSphone(rs.getString("Sphone"));
+            stu.setSbirth(rs.getDate("Sbirth"));
+            stu.setSclass(rs.getString("Sclass"));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
+            DBConn.close(ps);
+            DBConn.close(conn);
+        }
+    }
 
     @Override
     public boolean save(Stu stu) {

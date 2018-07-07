@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index_stu.jsp"><i class="fa fa-gear"></i> <strong>成绩管理-教师</strong></a>
+            <a class="navbar-brand" href="index_tea.jsp"><i class="fa fa-gear"></i> <strong>成绩管理-教师</strong></a>
         </div>
 
         <ul class="nav navbar-top-links navbar-right">

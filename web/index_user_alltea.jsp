@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="data-div">
-                <table class="data-div">
+                <table>
                     <thead class="row tableHeader">
                     <div class="row">
                         <div class="col-xs-2 "> 工号</div>

@@ -46,11 +46,11 @@
                 </div>
             </div>
             <div class="data-div">
-                <table class="data-div">
+                <table>
                     <thead class="row tableHeader">
                     <<div class="row">
-                        <div class="col-xs-5 "> 班级</div>
-                        <div class="col-xs-5 "> 班主任</div>
+                        <div class="col-xs-3 "> 班级</div>
+                        <div class="col-xs-3 "> 班主任</div>
                         <div class="col-xs-1 "> 修改</div>
                         <div class="col-xs-1 "> 删除</div>
                     </div>
@@ -59,8 +59,8 @@
                     <tbody class="tablebody">
                     <s:iterator value="clasByObj" var="cla">
                         <div class="row">
-                            <div class="col-xs-5"><s:property value="#cla.Sclass"/></div>
-                            <div class="col-xs-5"><s:property value="#cla.Sclasstea"/></div>
+                            <div class="col-xs-3"><s:property value="#cla.Sclass"/></div>
+                            <div class="col-xs-3"><s:property value="#cla.Sclasstea"/></div>
                             <div class="col-xs-1"><s:url var="editUrl" action="cla_edit">
                                 <s:param name="cla.sclass" value="#cla.Sclass"/>
                             </s:url>

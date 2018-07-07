@@ -84,10 +84,10 @@
         <div class="meun-item"><img src="images/icon_user_grey.png">成绩管理</div>
         <div class="meun-item" href="#chan" aria-controls="chan" role="tab" data-toggle="tab"><img src="images/icon_change_grey.png">修改</div>
         <div class="meun-title">教师-班级</div>
+        <div class="meun-item"><a href="tea_list.action"><img src="images/icon_card_grey.png">教师信息</a></div>
         <div class="meun-item"><a href="cla_list.action"><img src="images/icon_house_grey.png">班级管理</a></div>
         <div class="meun-item"><a href="cou_list.action"><img src="images/icon_rule_grey.png">课程管理</a></div>
-        <div class="meun-item"><a href="tea_list.action"><img src="images/icon_card_grey.png">教师信息</a></div>
-        <div class="meun-item" href="#sitt" aria-controls="sitt" role="tab" data-toggle="tab"><img src="images/icon_char_grey.png">图表展示</div>
+        <div class="meun-item"><a href="tcou_list.action"><img src="images/icon_char_grey.png">授课管理</a></div>
     </div>
 </div>
 </body>

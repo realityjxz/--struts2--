@@ -44,4 +44,6 @@
         <include file="jdbc_tea.xml"/>
         <include file="jdbc_cou.xml"/>
         <include file="jdbc_cla.xml"/>
+        <include file="jdbc_tcou.xml"/>
+        <include file="jdbc_score.xml"/>
 </struts>

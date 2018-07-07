@@ -139,18 +139,20 @@ body {
 	line-height: 70px;
 	*line-height: 60px;
 	background-color: #fff;
+	padding-top:25px;
 	padding-left: 30px;
 	min-width: 824px !important;
 	box-sizing: border-box;
 }
 .check-div button {
-	font-size: 12px;
+	font-size: 14px;
+	display: inline;
 	font-weight: bold;
 }
 .check-div select {
 	height: 26px;
 	width: 120px!important;
-	display: inline;
+
 	color: #ccc;
 }
 .check-div input {
@@ -160,6 +162,15 @@ body {
 .tab-pane {
 	color: #9095ab;
 }
+.data-div {
+	height: 30px;
+	line-height: 25px;
+	*line-height: 20px;
+	background-color: #fff;
+	padding-top:10px;
+	padding-left:30px;
+	box-sizing: border-box;
+}
 .tableHeader {
 	height: 35px;
 	line-height: 35px;
@@ -168,26 +179,24 @@ body {
 	color: #646987;
 	background-color: #e3e8ee;
 	padding: 0 30px;
-	text-align: certer;
+
 }
 .tableHeader .row {
 	margin-top: 10px;
 	background-color: #fff;
-	height: 70px;
-	line-height: 70px;
+	height: 30px;
+	line-height: 30px;
+	text-align: certer;
 }
-.codeTop {
-	text-align: right;
-}
+
 .tablebody {
 	margin: 20px 30px;
-	text-align: certer;
 }
 .tablebody .row {
 	margin-top: 10px;
 	background-color: #fff;
-	height: 70px;
-	line-height: 70px;
+	height: 30px;
+	line-height: 30px;
 }
 .footer {
 	float: right;

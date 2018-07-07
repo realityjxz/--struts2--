@@ -15,7 +15,7 @@
     <meta name="keywords" content="左右结构项目 社交">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <title>Bootstrap后台管理</title>
+    <title>Bootstrap后台管理-教师</title>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
 </head>
 
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="data-div">
-                <table class="data-div">
+                <table>
                     <thead class="row tableHeader">
                     <div class="row">
                         <div class="col-xs-2 "> 工号</div>
