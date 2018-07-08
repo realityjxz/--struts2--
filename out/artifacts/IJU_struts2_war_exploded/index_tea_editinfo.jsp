@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>学生成绩</title>
+    <title>修改密码</title>
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
@@ -39,7 +39,7 @@
                             <a href="#">个人信息查询</a>
                         </li>
                         <li>
-                            <a href="index_tea_editinfo.jsp">修改密码</a>
+                            <a class="active-menu" href="index_tea_editinfo.jsp">修改密码</a>
                         </li>
                         <%--<li>
                             <a href="#">Second Level Link<span class="fa arrow"></span></a>
@@ -64,7 +64,7 @@
                 </li>
 
                 <li>
-                    <a class="active-menu" href="score_list.action"><i class="fa fa-table"></i> 学生成绩查询</a>
+                    <a  href="score_list.action"><i class="fa fa-table"></i> 学生成绩查询</a>
                 </li>
                 <li>
                     <a href=""><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
@@ -92,71 +92,54 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-header">
-                        成绩 <small>所有学生</small>
+                        edit <small>password</small>
                     </h1>
                 </div>
             </div>
             <!-- /. ROW  -->
-
             <div class="row">
-                <div class="col-md-12">
-                    <!-- Advanced Tables -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Advanced Tables
-                        </div>
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
-                                    <thead>
-                                    <tr>
-                                        <th>学号</th>
-                                        <th>学生姓名</th>
-                                        <th>课程号</th>
-                                        <th>课程名</th>
-                                        <th>班级</th>
-                                        <th>成绩</th>
-                                        <th>修改</th>
-                                        <th>删除</th>
-                                    </tr>
-                                    </thead>
-
-                                    <tbody>
-                                    <s:iterator value="scoresByObj" var="score">
-                                        <tr>
-                                            <td><s:property value="#score.Sno"/></td>
-                                            <td><s:property value="#score.Sname"/></td>
-                                            <td><s:property value="#score.Cno"/></td>
-                                            <td><s:property value="#score.Cname"/></td>
-                                            <td><s:property value="#score.Sclass"/></td>
-                                            <s:if test="#score.Score>=60">
-                                                <td><s:property value="#score.Score"/></td>
-                                            </s:if>
-                                            <s:else>
-                                                <td style="background-color: #00a1cb"><s:property value="#score.Score"/></td>
-                                            </s:else>
-                                            <td><s:url var="editUrl" action="score_edit">
-                                                <s:param name="score.score" value="#score.Score"/>
-                                            </s:url>
-                                                <a href="${editUrl}">edit</a></td>
-                                            <td>
-                                                <s:url var="delUrl" action="score_del">
-                                                    <s:param name="score.score" value="#score.score"/>
-                                                </s:url>
-                                                <a href="${delUrl}" onClick="return readyDel(<s:property
-                                                        value='#score.score'/>);">del</a></td>
-                                        </tr>
-                                    </s:iterator>
-                                    </tbody>
-                                </table>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label>原密码：</label>
+                                        <input class="form-control" placeholder="Enter old password">
+                                        <p class="help-block">Example block-level help text here.</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>新密码：</label>
+                                        <input class="form-control" placeholder="Enter new password">
+                                        <p class="help-block">Example block-level help text here.</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>确认密码：</label>
+                                        <input class="form-control" placeholder="Enter password again">
+                                        <p class="help-block">Example block-level  here.</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-circle"><i class="fa fa-list"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-success btn-circle"><i class="fa fa-link"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-info btn-circle"><i class="fa fa-check"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-money"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-danger btn-circle"><i class="fa fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
-
                         </div>
                     </div>
-                    <!--End Advanced Tables -->
                 </div>
             </div>
-            <!-- /. ROW  -->
+
+
         </div>
         <!-- /. PAGE INNER  -->
     </div>

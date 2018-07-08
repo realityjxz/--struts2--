@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="s" uri="/struts-tags" %>
-<%@ taglib prefix="sj" uri="/struts-jquery-tags" %>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<%@ taglib prefix="sj" uri="/struts-jquery-tags"%>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
@@ -28,7 +28,7 @@
 <body>
 <s:debug/>
 <div class="top">
-    <a href="system_user.jsp">返回首页</a>
+    <a href="login.jsp">返回登录</a>
 </div>
 <%--<h1>软件学院后台管理注册系统</h1>--%>
 <div class="container">

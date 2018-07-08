@@ -45,11 +45,18 @@ public class Regedit extends ActionSupport {
 
     @Override
     public  String execute() throws Exception{
-        Map session = ActionContext.getContext().getSession();
-        session.put("username", user.getUsername());
+
         UserDaoImp imp = new UserDaoImp();
-        boolean isSuc = imp.save(user);    //调用实现类中save方法
-        return isSuc?SUCCESS:ERROR;
+        boolean isHave = imp.checkregedit(user.getUsername());     //调用实现类中checkregedit方法-验证账户名是否存在
+        if (isHave) {
+            addActionError(getText("账号已存在"));
+            return "fail";
+        }else {
+            Map session = ActionContext.getContext().getSession();
+            session.put("username", user.getUsername());
+            boolean isSuc = imp.save(user);          //调用实现类中save方法
+            return isSuc ? SUCCESS : ERROR;
+        }
     }
 }
 

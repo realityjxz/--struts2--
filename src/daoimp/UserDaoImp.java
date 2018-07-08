@@ -9,6 +9,26 @@ import db.DBConn;
 
 public class UserDaoImp implements UserDao {
 
+    //注册时核对账户名是否存在
+    @Override
+    public boolean checkregedit(String username) {
+        boolean isHave = false;
+        Connection conn = DBConn.getConnection();
+        String sql = "select * from user where username =?";
+        PreparedStatement ps = DBConn.prepare(conn,sql);
+        try{
+            ps.setString(1, username);
+            ResultSet rs = ps.executeQuery();
+            isHave = rs.next();
+        }catch(SQLException e){
+            e.printStackTrace();
+        }finally {
+            DBConn.close(ps);
+            DBConn.close(conn);
+        }
+        return isHave;
+    }
+
     //用户名密码检测
     @Override
     public boolean check(String username,String password){

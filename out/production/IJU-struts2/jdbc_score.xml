@@ -8,6 +8,11 @@
         <package name="jdbc_score" extends="struts-default">
             <action name="score_list" class="controller.ScoreAction">
                 <result>/index_tea_allscore.jsp</result>
+                <!--显示成绩表-->
+            </action>
+            <action name="score_input" class="controller.ScoreAction" method="stuscore">
+                <result>/index_tea_logscore.jsp</result>
+                <!--录入成绩-->
             </action>
             <action name="score_edit" class="controller.ScoreAction" method="edit">
                 <result>/table_allscore.jsp</result>

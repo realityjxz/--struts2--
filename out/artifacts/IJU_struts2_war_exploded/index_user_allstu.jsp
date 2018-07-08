@@ -72,10 +72,12 @@
                             <div class="col-xs-2"><s:property value="#stu.Sphone"/></div>
                             <div class="col-xs-1"><s:property value="#stu.Sbirth"/></div>
                             <div class="col-xs-2"><s:property value="#stu.Sclass"/></div>
-                            <div class="col-xs-1"><s:url var="editUrl" action="stu_edit">
+                            <div class="col-xs-1">
+                                <s:url var="editUrl" action="stu_edit">
                                 <s:param name="stu.sno" value="#stu.Sno"/>
-                            </s:url>
-                                <a href="${editUrl}">edit</a></div>
+                                </s:url>
+                                <a href="${editUrl}">edit</a>
+                            </div>
                             <div class="col-xs-1">
                                 <s:url var="delUrl" action="stu_del">
                                     <s:param name="stu.sno" value="#stu.Sno"/>
@@ -293,5 +295,10 @@
         </div>
     </div>
 </div>
+<script>
+    function readyDel(id) {
+        return confirm("是否真的删除学号为" + id + "的用户？");
+    }
+</script>
 </body>
 </html>

@@ -7,7 +7,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>学生成绩</title>
-    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
@@ -34,13 +33,13 @@
             <ul class="nav" id="main-menu">
 
                 <li>
-                    <a class="active-menu" href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
+                    <a  href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
                             <a href="#">个人信息查询</a>
                         </li>
                         <li>
-                            <a href="#">修改密码</a>
+                            <a href="index_tea_editinfo.jsp">修改密码</a>
                         </li>
                         <%--<li>
                             <a href="#">Second Level Link<span class="fa arrow"></span></a>
@@ -61,11 +60,11 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="index_tea_logscore.jsp"><i class="fa fa-edit"></i>学生成绩录入</a>
+                    <a href="score_input.action"><i class="fa fa-edit"></i>学生成绩录入</a>
                 </li>
 
                 <li>
-                    <a href="score_list.action"><i class="fa fa-table"></i> 学生成绩查询</a>
+                    <a class="active-menu" href="score_list.action"><i class="fa fa-table"></i> 学生成绩查询</a>
                 </li>
                 <li>
                     <a href=""><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
@@ -130,7 +129,12 @@
                                             <td><s:property value="#score.Cno"/></td>
                                             <td><s:property value="#score.Cname"/></td>
                                             <td><s:property value="#score.Sclass"/></td>
-                                            <td><s:property value="#score.Score"/></td>
+                                            <s:if test="#score.Score>=60">
+                                                <td><s:property value="#score.Score"/></td>
+                                            </s:if>
+                                            <s:else>
+                                                <td style="background-color: #00a1cb"><s:property value="#score.Score"/></td>
+                                            </s:else>
                                             <td><s:url var="editUrl" action="score_edit">
                                                 <s:param name="score.score" value="#score.Score"/>
                                             </s:url>
@@ -156,11 +160,11 @@
         </div>
         <!-- /. PAGE INNER  -->
     </div>
-    <!-- /. PAGE WRAPPER  -->
 </div>
+<!-- /. PAGE WRAPPER  -->
 <!-- /. WRAPPER  -->
 <!-- JS Scripts-->
-
+<!-- jQuery Js -->
 <script src="assets/js/jquery-1.10.2.js"></script>
 <!-- Bootstrap Js -->
 <script src="assets/js/bootstrap.min.js"></script>
@@ -169,13 +173,9 @@
 <!-- DATA TABLE SCRIPTS -->
 <script src="assets/js/dataTables/jquery.dataTables.js"></script>
 <script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
-<!-- Custom Js -->
-<script src="assets/js/custom-scripts.js"></script>
-
-
 <script>
     function readyDel(id) {
-        return confirm("是否真的删除学号为" + id + "的用户？");
+        return confirm("是否真的删除成绩为" + id + "的用户？");
     }
 </script>
 <script>
@@ -196,6 +196,9 @@
         }
     });
 </script>
+<!-- Custom Js -->
+<script src="assets/js/custom-scripts.js"></script>
+
 
 </body>
 </html>

@@ -13,6 +13,8 @@
     <meta name="format-detection" content="telephone=no">
     <title>Bootstrap后台管理</title>
     <script src="js/jquery.min.js"></script>
+
+    <script src="js/jquery-ui-datepicker.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
         $(function() {

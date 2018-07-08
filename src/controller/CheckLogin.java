@@ -90,8 +90,10 @@ public class CheckLogin extends ActionSupport {
             Map session=ActionContext.getContext().getSession();
             session.put("username", stu.getSname());
             return "suc";//自定义指向的页面
-        }else
+        }else{
+            addActionError(getText("login.fail"));
             return "fail";
+        }
     }
 
 
@@ -111,8 +113,11 @@ public class CheckLogin extends ActionSupport {
             Map session=ActionContext.getContext().getSession();
             session.put("username", tea.getTname());
             return "suc";//自定义指向的页面
-        }else
+        }else{
+            addActionError(getText("login.fail"));
             return "fail";
+        }
+
     }
 
 }

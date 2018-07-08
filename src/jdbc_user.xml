@@ -10,19 +10,19 @@
                 <result>/index_user_alluser.jsp</result>
             </action>
             <action name="user_edit" class="controller.UserAction" method="edit">
-                <result>/.jsp</result>
+                <result>/index_user_edituser.jsp</result>
             </action>
             <action name="user_save" class="controller.UserAction" method="save">
-                <result type="redirect">/user_save_suc.jsp</result>
-                <result name="error" type="redirect">/user_save_error.jsp</result>
+                <result type="redirectAction">user_list</result>
+                <result name="error" type="redirectAction">user_list</result>
             </action>
             <action name="user_update" class="controller.UserAction" method="update">
-                <result type="redirect">/user_update_suc.jsp</result>
-                <result name="error" type="redirect">/user_update_error.jsp</result>
+                <result type="redirectAction">user_list</result>
+                <result name="error" type="redirectAction">user_list</result>
             </action>
             <action name="user_del" class="controller.UserAction" method="del">
-                <result type="redirect">/user_del_suc.jsp</result>
-                <result name="error" type="redirect">/user_del_error.jsp</result>
+                <result type="redirectAction">user_list</result>
+                <result name="error" type="redirectAction">user_list</result>
             </action>
             <!-- <action name="user_*" class="controller.UserAction" method="{1}">
                <result type="redirect">/user_{1}_suc.jsp</result>

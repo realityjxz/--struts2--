@@ -141,7 +141,7 @@
         <div class="p">恭喜你<br/>
             username-session <s:property value="#session.username"/></div>
 
-        <div class="p"><button type="button" onclick="window.location.href='/'">回首页</button></div>
+        <div class="p"><button type="button" onclick="window.location.href='login.jsp'">去登录</button></div>
     </div>
 </div>
 <div class="footer text-center">
