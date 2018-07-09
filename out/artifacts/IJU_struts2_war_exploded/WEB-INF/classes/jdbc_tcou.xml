@@ -9,6 +9,9 @@
             <action name="tcou_list" class="controller.TcouAction">
                 <result>/index_user_alltcou.jsp</result>
             </action>
+            <action name="tcou_Cname" class="controller.TcouAction" method="getAllCname">
+                <result>/index_tea.jsp</result>
+            </action>
             <action name="tcou_edit" class="controller.TcouAction" method="edit">
                 <result>/table_alltcou.jsp</result>
             </action>

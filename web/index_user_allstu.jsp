@@ -36,18 +36,18 @@
                     <button class="btn btn-white btn-xs ">查 询 </button>
                 </div>
                 <div class="col-lg-3 col-lg-offset-2 col-xs-4" style=" padding-right: 40px;text-align: right;">
-                    <label>排序:&nbsp;</label>
+                    <label for="paixu">排序:&nbsp;</label>
                     <select class=" form-control">
-                        <option>地区</option>
                         <option>班期</option>
                         <option>性别</option>
                         <option>年龄</option>
                         <option>份数</option>
                     </select>
                 </div>
+
             </div>
             <div class="data-div">
-                <table class="data-div">
+                <table>
                     <thead class="row tableHeader">
                     <div class="row">
                         <div class="col-xs-1 "> 学号</div>
@@ -74,52 +74,28 @@
                             <div class="col-xs-2"><s:property value="#stu.Sclass"/></div>
                             <div class="col-xs-1">
                                 <s:url var="editUrl" action="stu_edit">
-                                <s:param name="stu.sno" value="#stu.Sno"/>
+                                    <s:param name="stu.sno" value="#stu.sno"/>
                                 </s:url>
-                                <a href="${editUrl}">edit</a>
+                                <a href="${editUrl}"><button class="btn btn-success btn-xs">
+                                    修改
+                                </button></a>
                             </div>
                             <div class="col-xs-1">
                                 <s:url var="delUrl" action="stu_del">
-                                    <s:param name="stu.sno" value="#stu.Sno"/>
+                                    <s:param name="stu.sno" value="#stu.sno"/>
                                 </s:url>
                                 <a href="${delUrl}" onClick="return readyDel(<s:property
-                                        value='#stu.Sno'/>);">del</a></div>
+                                        value='#stu.sno'/>);">
+                                    <button class="btn btn-danger btn-xs">
+                                        删除
+                                    </button></a>
+                            </div>
                         </div>
                     </s:iterator>
                     </tbody>
                 </table>
             </div>
             <!--页码块-->
-            <footer class="footer">
-                <ul class="pagination">
-                    <li>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                        </select>
-                        页
-                    </li>
-                    <li class="gray">
-                        共20页
-                    </li>
-                    <li>
-                        <i class="glyphicon glyphicon-menu-left">
-                        </i>
-                    </li>
-                    <li>
-                        <i class="glyphicon glyphicon-menu-right">
-                        </i>
-                    </li>
-                </ul>
-            </footer>
 
             <!--弹出添加用户窗口-->
             <div class="modal fade" id="addUser" role="dialog" aria-labelledby="gridSystemModalLabel">
@@ -177,11 +153,11 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="situation" class="col-xs-3 control-label">状态：</label>
+                                        <label  class="col-xs-3 control-label">状态：</label>
                                         <div class="col-xs-8">
-                                            <label class="control-label" for="anniu">
+                                            <label class="control-label">
                                                 <input type="radio" name="situation" id="normal">正常</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <label class="control-label" for="meun">
+                                            <label class="control-label">
                                                 <input type="radio" name="situation" id="forbid"> 禁用</label>
                                         </div>
                                     </div>
@@ -270,34 +246,14 @@
             <!-- /.modal -->
 
             <!--弹出删除用户警告窗口-->
-            <div class="modal fade" id="deleteUser" role="dialog" aria-labelledby="gridSystemModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="gridSystemModalLabel">提示</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                确定要删除该用户？删除后不可恢复！
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-xs btn-white" data-dismiss="modal">取 消</button>
-                            <button type="button" class="btn  btn-xs btn-danger">保 存</button>
-                        </div>
-                    </div>
-                    <!-- /.modal-content -->
-                </div>
-                <!-- /.modal-dialog -->
-            </div>
+
             <!-- /.modal -->
         </div>
     </div>
 </div>
 <script>
     function readyDel(id) {
-        return confirm("是否真的删除学号为" + id + "的用户？");
+        return confirm("是否真的删除学号为" + id + "的学生吗？");
     }
 </script>
 </body>

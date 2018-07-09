@@ -88,7 +88,7 @@ public class CheckLogin extends ActionSupport {
         boolean isHave=simp.check(stu.getSno(),stu.getSpass());
         if(isHave){
             Map session=ActionContext.getContext().getSession();
-            session.put("username", stu.getSname());
+            session.put("sno", stu.getSno());
             return "suc";//自定义指向的页面
         }else{
             addActionError(getText("login.fail"));
@@ -111,7 +111,11 @@ public class CheckLogin extends ActionSupport {
         boolean isHave=timp.check(tea.getTno(),tea.getTpass());
         if(isHave){
             Map session=ActionContext.getContext().getSession();
-            session.put("username", tea.getTname());
+            session.put("tno", tea.getTno());
+            List args = new ArrayList();
+            args.add(tea.getTno());
+            args.add(tea.getTname());
+            System.out.println(getText("tea.info", args));
             return "suc";//自定义指向的页面
         }else{
             addActionError(getText("login.fail"));

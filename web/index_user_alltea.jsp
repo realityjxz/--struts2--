@@ -37,14 +37,13 @@
                 <div class="col-lg-3 col-lg-offset-2 col-xs-4" style=" padding-right: 40px;text-align: right;">
                     <label for="paixu">排序:&nbsp;</label>
                     <select class=" form-control">
-                        <option>地区</option>
-                        <option>地区</option>
                         <option>班期</option>
                         <option>性别</option>
                         <option>年龄</option>
                         <option>份数</option>
                     </select>
                 </div>
+
             </div>
             <div class="data-div">
                 <table>
@@ -87,36 +86,6 @@
 
             </div>
             <!--页码块-->
-            <footer class="footer">
-                <ul class="pagination">
-                    <li>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                        </select>
-                        页
-                    </li>
-                    <li class="gray">
-                        共20页
-                    </li>
-                    <li>
-                        <i class="glyphicon glyphicon-menu-left">
-                        </i>
-                    </li>
-                    <li>
-                        <i class="glyphicon glyphicon-menu-right">
-                        </i>
-                    </li>
-                </ul>
-            </footer>
 
             <!--弹出添加用户窗口-->
             <div class="modal fade" id="addUser" role="dialog" aria-labelledby="gridSystemModalLabel">

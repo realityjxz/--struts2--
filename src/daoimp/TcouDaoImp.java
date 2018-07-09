@@ -38,10 +38,35 @@ public  class TcouDaoImp implements TcouDao {
         return tcous;
     }
 
+    //教师授课表查询
+    @Override
+    public List<Tcou> getAllCname(String tno) {                            //通过教师号查所教课程名
+        List<Tcou> couscores = new ArrayList<>();
+        String sql = "select DISTINCT Cno,Cname,Cterm from TAB_COU,TAB_TCOU where TAB_TCOU.CNO=TAB_COU.CNO and TNO="+tno;
+        Connection conn = DBConn.getConnection();
+        PreparedStatement ps = DBConn.prepare(conn,sql);
+        try{
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()){
+                Tcou couscore=new Tcou();
+                couscore.setCno(rs.getString("Cno"));
+                couscore.setCname(rs.getString("Cname"));
+                couscore.setCterm(rs.getString("Cterm"));
+                couscores.add(couscore);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return couscores;
+    }
+
+
+
+
     @Override
     public Tcou findByCno(String cno) {
         Tcou tcou = new Tcou();
-        String sql = "select from tab_tcou where Cno=?";
+        String sql = "select * from (select tab_tcou.Cno,tab_tcou.Tno,tab_tcou.Sclass,Site,Cname,Tname FROM tab_tcou,tab_cou,tab_tea WHERE tab_tcou.Cno=tab_cou.Cno AND tab_tcou.Tno=tab_tea.Tno) as t  where t.Cno=?";
         Connection conn = DBConn.getConnection();
         PreparedStatement ps = DBConn.prepare(conn, sql);
         findTcou(cno, tcou, conn, ps);
@@ -51,7 +76,7 @@ public  class TcouDaoImp implements TcouDao {
     @Override
     public Tcou findByTno(String tno) {
         Tcou tcou = new Tcou();
-        String sql = "select from tab_tcou where Tno=?";
+        String sql = "select * from (select tab_tcou.Cno,tab_tcou.Tno,tab_tcou.Sclass,Site,Cname,Tname FROM tab_tcou,tab_cou,tab_tea WHERE tab_tcou.Cno=tab_cou.Cno AND tab_tcou.Tno=tab_tea.Tno) as t   where t.Tno=?";
         Connection conn = DBConn.getConnection();
         PreparedStatement ps = DBConn.prepare(conn, sql);
         findTcou(tno, tcou, conn, ps);
@@ -64,7 +89,9 @@ public  class TcouDaoImp implements TcouDao {
             ResultSet rs = ps.executeQuery();
             rs.next();
             tcou.setCno(rs.getString("Cno"));
+            tcou.setCno(rs.getString("Cname"));
             tcou.setTno(rs.getString("Tno"));
+            tcou.setTno(rs.getString("Tname"));
             tcou.setSclass(rs.getString("Sclass"));
             tcou.setSite(rs.getString("Site"));
         } catch (SQLException e) {
@@ -78,7 +105,7 @@ public  class TcouDaoImp implements TcouDao {
     @Override
     public Tcou findBySclass(String sclass) {
         Tcou tcou = new Tcou();
-        String sql = "select from tab_tcou where Sclass=?";
+        String sql = "select * from (select tab_tcou.Cno,tab_tcou.Tno,tab_tcou.Sclass,Site,Cname,Tname FROM tab_tcou,tab_cou,tab_tea WHERE tab_tcou.Cno=tab_cou.Cno AND tab_tcou.Tno=tab_tea.Tno) as t  where Sclass=?";
         Connection conn = DBConn.getConnection();
         PreparedStatement ps = DBConn.prepare(conn, sql);
         findTcou(sclass, tcou, conn, ps);

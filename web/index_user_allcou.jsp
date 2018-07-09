@@ -81,36 +81,6 @@
                 </table>
             </div>
             <!--页码块-->
-            <footer class="footer">
-                <ul class="pagination">
-                    <li>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                        </select>
-                        页
-                    </li>
-                    <li class="gray">
-                        共20页
-                    </li>
-                    <li>
-                        <i class="glyphicon glyphicon-menu-left">
-                        </i>
-                    </li>
-                    <li>
-                        <i class="glyphicon glyphicon-menu-right">
-                        </i>
-                    </li>
-                </ul>
-            </footer>
 
             <!--弹出添加用户窗口-->
             <div class="modal fade" id="addUser" role="dialog" aria-labelledby="gridSystemModalLabel">

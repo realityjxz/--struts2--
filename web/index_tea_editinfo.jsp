@@ -33,13 +33,13 @@
             <ul class="nav" id="main-menu">
 
                 <li>
-                    <a  href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
+                    <a  class="active-menu" href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">个人信息查询</a>
+                            <a href="index_tea_info.jsp">个人信息查询</a>
                         </li>
                         <li>
-                            <a class="active-menu" href="index_tea_editinfo.jsp">修改密码</a>
+                            <a  href="index_tea_editinfo.jsp">修改密码</a>
                         </li>
                         <%--<li>
                             <a href="#">Second Level Link<span class="fa arrow"></span></a>
@@ -67,7 +67,7 @@
                     <a  href="score_list.action"><i class="fa fa-table"></i> 学生成绩查询</a>
                 </li>
                 <li>
-                    <a href=""><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
+                    <a href="index_tea_tcou.jsp"><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
                 </li>
                 <li>
                     <a  href="table.html"><i class="fa fa-dashboard"></i> 图表展示</a>
@@ -92,7 +92,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-header">
-                        edit <small>password</small>
+                        info <small>teacher</small>
                     </h1>
                 </div>
             </div>
@@ -102,34 +102,25 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-6">
-                                <form role="form">
+                                <form role="form" action="tea_update.action">
                                     <div class="form-group">
+                                        <input name=""  hidden/>
                                         <label>原密码：</label>
-                                        <input class="form-control" placeholder="Enter old password">
+                                        <input name="tea.Tpass" class="form-control"  placeholder="Enter old password">
                                         <p class="help-block">Example block-level help text here.</p>
                                     </div>
                                     <div class="form-group">
                                         <label>新密码：</label>
-                                        <input class="form-control" placeholder="Enter new password">
+                                        <input name="pass" class="form-control" placeholder="Enter new password">
                                         <p class="help-block">Example block-level help text here.</p>
                                     </div>
                                     <div class="form-group">
                                         <label>确认密码：</label>
-                                        <input class="form-control" placeholder="Enter password again">
+                                        <input name="pass" class="form-control" placeholder="Enter password again">
                                         <p class="help-block">Example block-level  here.</p>
                                     </div>
-                                    <div class="form-group">
-                                        <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-primary btn-circle"><i class="fa fa-list"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-success btn-circle"><i class="fa fa-link"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-info btn-circle"><i class="fa fa-check"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-money"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-danger btn-circle"><i class="fa fa-heart"></i>
+                                    <div class="form-group" style="float: right">
+                                        <button type="submit" class="btn btn-info btn-circle"><i class="fa fa-check"></i>
                                         </button>
                                     </div>
                                 </form>

@@ -22,7 +22,7 @@
             <result name="input">/login.jsp</result>
         </action>
         <action name="checkTea" class="controller.CheckLogin" method="checkTea">
-            <result name="suc">/index_tea.jsp</result>
+            <result name="suc" type="redirectAction">tcou_Cname</result>             <!--跳转到教工号查找课程名.action-->
             <result name="fail">/login.jsp</result>
             <result name="input">/login.jsp</result>
         </action>

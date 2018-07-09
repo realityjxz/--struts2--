@@ -67,7 +67,7 @@
                     <a  href="score_list.action"><i class="fa fa-table"></i> 学生成绩查询</a>
                 </li>
                 <li>
-                    <a href=""><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
+                    <a href="index_tea_tcou.jsp"><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
                 </li>
                 <li>
                     <a  href="table.html"><i class="fa fa-dashboard"></i> 图表展示</a>
@@ -92,7 +92,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-header">
-                        成绩 <small>所有学生</small>
+                        成绩 录入<small>所有学生</small>
                     </h1>
                 </div>
             </div>
@@ -108,6 +108,7 @@
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <%--<s:form action="score_update" method="post">--%>
                                     <thead>
                                     <tr>
                                         <th>学号</th>
@@ -116,8 +117,6 @@
                                         <th>课程名</th>
                                         <th>班级</th>
                                         <th>成绩</th>
-                                        <th>修改</th>
-                                        <th>删除</th>
                                     </tr>
                                     </thead>
 
@@ -129,20 +128,12 @@
                                             <td><s:property value="#score.Cno"/></td>
                                             <td><s:property value="#score.Cname"/></td>
                                             <td><s:property value="#score.Sclass"/></td>
-                                            <td><s:property value="#score.Score"/></td>
-                                            <td><s:url var="editUrl" action="score_edit">
-                                                <s:param name="score.score" value="#score.Score"/>
-                                            </s:url>
-                                                <a href="${editUrl}">edit</a></td>
-                                            <td>
-                                                <s:url var="delUrl" action="score_del">
-                                                    <s:param name="score.score" value="#score.score"/>
-                                                </s:url>
-                                                <a href="${delUrl}" onClick="return readyDel(<s:property
-                                                        value='#score.score'/>);">del</a></td>
-                                        </tr>
+                                            <td><input type="text" value="<s:property value="#score.Score"/>"/></td>
                                     </s:iterator>
+                                    
                                     </tbody>
+
+                                    <%--</s:form>--%>
                                 </table>
                             </div>
 
@@ -152,6 +143,14 @@
                 </div>
             </div>
             <!-- /. ROW  -->
+            <div class="row" style="float: right">
+                <button type="submit" class="btn btn-info btn-circle"><i class="fa fa-check"></i>
+                </button>
+                <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-money"></i>
+                </button>
+                <button type="reset" class="btn btn-danger btn-circle"><i class="fa fa-heart"></i>
+                </button>
+            </div>
         </div>
         <!-- /. PAGE INNER  -->
     </div>

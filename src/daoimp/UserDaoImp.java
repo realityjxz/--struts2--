@@ -111,7 +111,7 @@ public class UserDaoImp implements UserDao {
     }
     @Override
     public User findById(long id) {       //通过ID号精确查找
-        User users=new User();
+        User user=new User();
         String sql = "select * from user where id=?";
         Connection conn = DBConn.getConnection();
         PreparedStatement ps = DBConn.prepare(conn,sql);
@@ -119,11 +119,11 @@ public class UserDaoImp implements UserDao {
             ps.setLong(1,id);
             ResultSet rs = ps.executeQuery();
                 rs.next();
-                users.setId(rs.getLong("id"));
-                users.setUsername(rs.getString("username"));
-                users.setSex(rs.getString("sex"));
-                users.setPhone(rs.getString("phone"));
-                users.setBirth(rs.getDate("birth"));
+                user.setId(rs.getLong("id"));
+                user.setUsername(rs.getString("username"));
+                user.setSex(rs.getString("sex"));
+                user.setPhone(rs.getString("phone"));
+                user.setBirth(rs.getDate("birth"));
             } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -131,7 +131,7 @@ public class UserDaoImp implements UserDao {
             DBConn.close(ps);
             DBConn.close(conn);
         }
-        return users;
+        return user;
     }
 
     @Override

@@ -1,5 +1,6 @@
 package controller;
 
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import daoimp.TeaDaoImp;
 import domain.Tea;
@@ -31,8 +32,9 @@ public class TeaAction extends ActionSupport {
         boolean isSuc=imp.save(tea);
         return isSuc?SUCCESS:ERROR;
     }
-    public String edit() {
-        tea=imp.findByTno(tea.getTno());
+
+    public String edit() {              //老师自己查找、修改
+        tea=imp.findByTno((String)ActionContext.getContext().getSession().get("tno"));
         return SUCCESS;
     }
     public String update(){

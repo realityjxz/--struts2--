@@ -36,7 +36,7 @@
                     <a  href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">个人信息查询</a>
+                            <a href="index_tea_info.jsp">个人信息查询</a>
                         </li>
                         <li>
                             <a href="index_tea_editinfo.jsp">修改密码</a>
@@ -67,7 +67,7 @@
                     <a class="active-menu" href="score_list.action"><i class="fa fa-table"></i> 学生成绩查询</a>
                 </li>
                 <li>
-                    <a href=""><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
+                    <a href="index_tea_tcou.jsp"><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
                 </li>
                 <li>
                     <a  href="table.html"><i class="fa fa-dashboard"></i> 图表展示</a>

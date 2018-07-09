@@ -3,7 +3,40 @@ package domain;
 public class Score {
     private String Cno,Sno;
     private Integer Score;
-    private String Cname,Sname,Sclass;    //和课程表、学生表连接
+    private Integer Credit;
+    private String Cname,Sname,Sclass,Tno,Tname,Cterm;    //和课程表、学生表、教师表连接
+
+    public Integer getCredit() {
+        return Credit;
+    }
+
+    public void setCredit(Integer credit) {
+        Credit = credit;
+    }
+
+    public String getTno() {
+        return Tno;
+    }
+
+    public void setTno(String tno) {
+        Tno = tno;
+    }
+
+    public String getTname() {
+        return Tname;
+    }
+
+    public void setTname(String tname) {
+        Tname = tname;
+    }
+
+    public String getCterm() {
+        return Cterm;
+    }
+
+    public void setCterm(String cterm) {
+        Cterm = cterm;
+    }
 
     public String getSclass() {
         return Sclass;

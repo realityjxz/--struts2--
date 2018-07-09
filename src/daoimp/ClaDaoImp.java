@@ -35,7 +35,7 @@ public class ClaDaoImp implements ClaDao {
     @Override
     public Cla findBySclass(String sclass) {
         Cla cla=new Cla();
-        String sql = "select from tab_cla where Sclass=?";
+        String sql = "select * from tab_cla where Sclass=?";
         Connection conn = DBConn.getConnection();
         PreparedStatement ps = DBConn.prepare(conn, sql);
         try {

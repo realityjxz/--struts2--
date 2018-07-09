@@ -39,12 +39,12 @@
                     <button class="btn btn-white btn-xs ">查 询</button>
                 </div>
                 <div class="col-lg-3 col-lg-offset-2 col-xs-4" style=" padding-right: 40px;text-align: right;">
-                    <label>排序:&nbsp;</label>
+                    <label for="paixu">排序:&nbsp;</label>
                     <select class=" form-control">
-                        <option>地区</option>
                         <option>班期</option>
                         <option>性别</option>
                         <option>年龄</option>
+                        <option>份数</option>
                     </select>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                                     <s:param name="user.id" value="#user.id"/>
                                 </s:url>
                                 <a href="${delUrl}" onClick="return readyDel(<s:property
-                                        value='#tea.tno'/>);">
+                                        value='#user.id'/>);">
                                 <button class="btn btn-danger btn-xs">
                                         删除
                                     </button></a>

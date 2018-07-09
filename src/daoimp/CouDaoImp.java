@@ -37,7 +37,7 @@ public class CouDaoImp implements CouDao {
     @Override
     public Cou findByCno(String cno) {
         Cou cou = new Cou();
-        String sql = "select from tab_cou where Cno=?";
+        String sql = "select * from tab_cou where Cno=?";
         Connection conn = DBConn.getConnection();
         PreparedStatement ps = DBConn.prepare(conn, sql);
         try {
