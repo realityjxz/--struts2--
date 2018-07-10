@@ -58,13 +58,14 @@ public class TeaDaoImp implements TeaDao {
             return teas;
         }
     @Override
-    public Tea findByTno(String tno) {
+    public Tea findByTno(String tno) {               //老师自己查询信息
         Tea tea=new Tea();
-        String sql = "select * from tab_tea where Tno=?";
+        String sql = "select * from tab_tea where Tno="+tno;
         Connection conn = DBConn.getConnection();
         PreparedStatement ps = DBConn.prepare(conn,sql);
+        System.out.println(ps.toString());
+
         try{
-            ps.setString(1,tno);
             ResultSet rs = ps.executeQuery();
             rs.next();
             tea.setTno(rs.getString("Tno"));
@@ -81,6 +82,26 @@ public class TeaDaoImp implements TeaDao {
             DBConn.close(conn);
         }
         return tea;
+    }
+
+    @Override
+    public boolean updatepass(Tea tea) {               //老师自己修改密码
+        boolean isSuc=false;
+        String sql = "update tab_tea set Tpass=? where Tno=?";
+        Connection conn = DBConn.getConnection();
+        PreparedStatement ps = DBConn.prepare(conn,sql);
+        try{
+            ps.setString(1,tea.getTpass());
+            ps.setString(2,tea.getTno());
+            int row = ps.executeUpdate();
+            isSuc = row > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            DBConn.close(ps);
+            DBConn.close(conn);
+        }
+        return isSuc;
     }
 
     @Override

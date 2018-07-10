@@ -36,10 +36,10 @@
                     <a  class="active-menu" href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="index_tea_info.jsp">个人信息查询</a>
+                            <a href="tea_find.action">个人信息查询</a>
                         </li>
                         <li>
-                            <a  href="index_tea_editinfo.jsp">修改密码</a>
+                            <a  href="tea_edit.action">修改密码</a>
                         </li>
                         <%--<li>
                             <a href="#">Second Level Link<span class="fa arrow"></span></a>
@@ -102,9 +102,11 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-6">
-                                <form role="form" action="tea_update.action">
+                                <form role="form" action="tea_updatepass.action">
                                     <div class="form-group">
-                                        <input name=""  hidden/>
+                                        <s:actionerror/>
+                                        <s:fielderror/>
+                                        <input name="tea.tno" value="<s:property value="tea.tno"/>" />
                                         <label>原密码：</label>
                                         <input name="tea.Tpass" class="form-control"  placeholder="Enter old password">
                                         <p class="help-block">Example block-level help text here.</p>
@@ -116,7 +118,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>确认密码：</label>
-                                        <input name="pass" class="form-control" placeholder="Enter password again">
+                                        <input name="repass" class="form-control" placeholder="Enter password again">
                                         <p class="help-block">Example block-level  here.</p>
                                     </div>
                                     <div class="form-group" style="float: right">

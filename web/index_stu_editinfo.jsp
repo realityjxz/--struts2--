@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>个人信息</title>
+    <title>修改密码</title>
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
@@ -22,7 +22,7 @@
 </head>
 <body>
 <div id="wrapper">
-    <s:include value="header_tea.jsp"></s:include>
+    <s:include value="header_stu.jsp"></s:include>
     <!--/. NAV TOP  -->
     <nav class="navbar-default navbar-side" role="navigation">
         <div id="sideNav" href="">
@@ -33,53 +33,36 @@
             <ul class="nav" id="main-menu">
 
                 <li>
-                    <a  class="active-menu" href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
+                    <a class="active-menu" href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="tea_find.action">个人信息查询</a>
+                            <a href="stu_find.action">个人信息查询</a>
                         </li>
-                        <li>
-                            <a  href="index_tea_editinfo.jsp">修改密码</a>
-                        </li>
-                        <%--<li>
-                            <a href="#">Second Level Link<span class="fa arrow"></span></a>
-                            <ul class="nav nav-third-level">
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-
-                            </ul>
-
-                        </li>--%>
                     </ul>
                 </li>
                 <li>
-                    <a href="score_input.action"><i class="fa fa-edit"></i>学生成绩录入</a>
+                    <a href="stu_edit.action"><i class="fa fa-edit"></i> 修改密码 </a>
                 </li>
 
                 <li>
-                    <a  href="score_list.action"><i class="fa fa-table"></i> 学生成绩查询</a>
+                    <a href="table.html"><i class="fa fa-table"></i>课表查询</a>
+                </li>
+
+                <li>
+                    <a href="ui-elements.html"><i class="fa fa-desktop"></i> 学生通讯录</a>
                 </li>
                 <li>
-                    <a href="index_tea_tcou.jsp"><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
+                    <a  href="index_stu.jsp"><i class="fa fa-dashboard"></i> 老师通讯录</a>
                 </li>
                 <li>
-                    <a  href="table.html"><i class="fa fa-dashboard"></i> 图表展示</a>
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> 成绩查询</a>
                 </li>
                 <li>
-                    <a href="tab-panel.html"><i class="fa fa-qrcode"></i> Tabs & Panels</a>
+                    <a href="#"><i class="fa fa-qrcode"></i> kecehngbiao</a>
                 </li>
+
                 <li>
-                    <a href="form.html"><i class="fa fa-desktop"></i> Forms </a>
-                </li>
-                <li>
-                    <a href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
+                    <a href="#"><i class="fa fa-fw fa-file"></i> Empty Page</a>
                 </li>
             </ul>
 
@@ -92,7 +75,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-header">
-                        edit <small>password</small>
+                        info <small>teacher</small>
                     </h1>
                 </div>
             </div>
@@ -102,29 +85,29 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-6">
-                                <form role="form">
+                                <form role="form" action="tea_updatepass.action">
                                     <div class="form-group">
-                                        <label>工号：</label>
-                                        <input value="<s:property value="tea.Tno"/>" class="form-control"  type="text"  disabled="">
+                                        <s:actionerror/>
+                                        <s:fielderror/>
+                                        <input name="stu.Sno" value="<s:property value="stu.Sno"/>" />
+                                        <label>原密码：</label>
+                                        <input name="stu.Spass" class="form-control"  placeholder="Enter old password">
+                                        <p class="help-block">Example block-level help text here.</p>
                                     </div>
                                     <div class="form-group">
-                                        <label>姓名：</label>
-                                        <input value="<s:property value="tea.Tname"/>" class="form-control"  type="text"  disabled="">
+                                        <label>新密码：</label>
+                                        <input name="pass" class="form-control" placeholder="Enter new password">
+                                        <p class="help-block">Example block-level help text here.</p>
                                     </div>
                                     <div class="form-group">
-                                        <label>性别：</label>
-                                        <select name="tea.Tsex" id="disabledSelect" class="form-control" disabled="">
-                                            <option><s:property value="tea.Tsex"/> </option>
-                                        </select>
+                                        <label>确认密码：</label>
+                                        <input name="repass" class="form-control" placeholder="Enter password again">
+                                        <p class="help-block">Example block-level  here.</p>
                                     </div>
-                                    <div class="form-group">
-                                        <label>生日：</label>
-                                        <input vlaue="<s:property value="tea.Tbirth"/>" class="form-control"  type="text"  disabled="">
+                                    <div class="form-group" style="float: right">
+                                        <button type="submit" class="btn btn-info btn-circle"><i class="fa fa-check"></i>
+                                        </button>
                                     </div>
-                                    <div class="form-group">
-                                    <label>手机号：</label>
-                                    <input value="<s:property value="tea.Tphone"/>" class="form-control"  type="text"  disabled="">
-                                </div>
                                 </form>
                             </div>
                         </div>

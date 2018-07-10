@@ -37,39 +37,18 @@
                     <a class="active-menu" href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">个人信息查询</a>
-                        </li>
-                        <li>
-                            <a href="#">修改密码</a>
-                        </li>
-                        <li>
-                            <a href="#">Second Level Link<span class="fa arrow"></span></a>
-                            <ul class="nav nav-third-level">
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-
-                            </ul>
-
+                            <a href="stu_find.action">个人信息查询</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                <a href="form.html"><i class="fa fa-edit"></i> 修改密码 </a>
+                <a href="stu_edit.action"><i class="fa fa-edit"></i> 修改密码 </a>
                 </li>
 
                 <li>
                 <a href="table.html"><i class="fa fa-table"></i>课表查询</a>
                 </li>
-                <li>
-                <a href="chart.html"><i class="fa fa-bar-chart-o"></i> 图表展示</a>
-                </li>
+
                 <li>
                     <a href="ui-elements.html"><i class="fa fa-desktop"></i> 学生通讯录</a>
                 </li>
@@ -77,11 +56,14 @@
                     <a  href="index_stu.jsp"><i class="fa fa-dashboard"></i> 老师通讯录</a>
                 </li>
                 <li>
-                    <a href="tab-panel.html"><i class="fa fa-qrcode"></i> Tabs & Panels</a>
+                <a href="#"><i class="fa fa-bar-chart-o"></i> 成绩查询</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-qrcode"></i> kecehngbiao</a>
                 </li>
 
                 <li>
-                    <a href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
+                    <a href="#"><i class="fa fa-fw fa-file"></i> Empty Page</a>
                 </li>
             </ul>
 
@@ -108,7 +90,6 @@
 
 
             <!-- /. ROW  -->
-            <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
 
             <div class="row">
                 <div class="col-md-3 col-sm-12 col-xs-12">

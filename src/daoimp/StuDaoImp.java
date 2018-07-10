@@ -58,28 +58,27 @@ public class StuDaoImp implements StuDao {
 
 //    按学号查找
 @Override
-public Stu findBySno(String sno) {       //通过ID号精确查找
+public Stu findBySno(String sno) {                           //通过学号精确查找
     Stu stu=new Stu();
-    String sql = "select * from tab_stu where Sno=?";
+    String sql = "select * from tab_stu where Sno="+sno;
     Connection conn = DBConn.getConnection();
     PreparedStatement ps = DBConn.prepare(conn,sql);
-    fingStu(sno, stu, conn, ps);
+    fingStu(stu, conn, ps);
     return stu;
 }
 
     @Override
     public Stu findBySclass(String sclass) {
         Stu stu=new Stu();
-        String sql = "select * from tab_stu where Sclass=?";
+        String sql = "select * from tab_stu where Sclass="+sclass;
         Connection conn = DBConn.getConnection();
         PreparedStatement ps = DBConn.prepare(conn,sql);
-        fingStu(sclass, stu, conn, ps);
+        fingStu(stu, conn, ps);
         return stu;
     }
 
-    private void fingStu(String sclass, Stu stu, Connection conn, PreparedStatement ps) {       //提取方法——（学号、班级）查询
+    private void fingStu(Stu stu, Connection conn, PreparedStatement ps) {       //提取方法——（学号、班级）查询
         try{
-            ps.setString(1,sclass);
             ResultSet rs = ps.executeQuery();
             rs.next();
             stu.setSno(rs.getString("Sno"));
@@ -96,6 +95,27 @@ public Stu findBySno(String sno) {       //通过ID号精确查找
             DBConn.close(ps);
             DBConn.close(conn);
         }
+    }
+
+    @Override
+    public boolean updatepass(Stu stu) {
+
+        boolean isSuc=false;
+        String sql = "update tab_stu set Spass=? where Sno=?";
+        Connection conn = DBConn.getConnection();
+        PreparedStatement ps = DBConn.prepare(conn,sql);
+        try{
+            ps.setString(1,stu.getSpass());
+            ps.setString(2,stu.getSno());
+            int row = ps.executeUpdate();
+            isSuc = row > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            DBConn.close(ps);
+            DBConn.close(conn);
+        }
+        return isSuc;
     }
 
     @Override

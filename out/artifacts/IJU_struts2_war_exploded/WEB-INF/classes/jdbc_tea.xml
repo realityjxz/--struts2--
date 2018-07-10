@@ -9,16 +9,23 @@
             <action name="tea_list" class="controller.TeaAction">
                 <result>/index_user_alltea.jsp</result>
             </action>
+            <action name="tea_find" class="controller.TeaAction" method="find">
+                <result>/index_tea_info.jsp</result>
+            </action>
             <action name="tea_edit" class="controller.TeaAction" method="edit">
-                <result>/table_alltea.jsp</result>
+                <result>/index_tea_editinfo.jsp</result>
             </action>
             <action name="tea_save" class="controller.TeaAction" method="save">
-                <result type="redirect">/tea_save_suc.jsp</result>
-                <result name="error" type="redirect">/tea_save_error.jsp</result>
+                <result type="redirect">/index_tea_info.jsp</result>
+                <result name="error" type="redirect">/index_tea_info.jsp</result>
+            </action>
+            <action name="tea_updatepass" class="controller.TeaAction" method="updatepass">           <!--老师修改密码-->
+                <result type="redirect">/index_tea_info.jsp</result>
+                <result name="error" type="redirect">/index_tea_editinfo.jsp</result>
             </action>
             <action name="tea_update" class="controller.TeaAction" method="update">
-                <result type="redirect">/tea_update_suc.jsp</result>
-                <result name="error" type="redirect">/tea_update_error.jsp</result>
+                <result type="redirect">/tea_del_suc.jsp</result>
+                <result name="error" type="redirect">/tea_del_error.jsp</result>
             </action>
             <action name="tea_del" class="controller.TeaAction" method="del">
                 <result type="redirect">/tea_del_suc.jsp</result>

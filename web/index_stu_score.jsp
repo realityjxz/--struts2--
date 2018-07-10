@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>授课表查询</title>
+    <title>学生成绩</title>
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
@@ -33,53 +33,36 @@
             <ul class="nav" id="main-menu">
 
                 <li>
-                    <a  href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
+                    <a class="active-menu" href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="tea_find.action">个人信息查询</a>
+                            <a href="stu_find.action">个人信息查询</a>
                         </li>
-                        <li>
-                            <a href="index_tea_editinfo.jsp">修改密码</a>
-                        </li>
-                        <%--<li>
-                            <a href="#">Second Level Link<span class="fa arrow"></span></a>
-                            <ul class="nav nav-third-level">
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-
-                            </ul>
-
-                        </li>--%>
                     </ul>
                 </li>
                 <li>
-                    <a href="score_input.action"><i class="fa fa-edit"></i>学生成绩录入</a>
+                    <a href="stu_edit.action"><i class="fa fa-edit"></i> 修改密码 </a>
                 </li>
 
                 <li>
-                    <a  href="score_list.action"><i class="fa fa-table"></i> 学生成绩查询</a>
+                    <a href="table.html"><i class="fa fa-table"></i>课表查询</a>
+                </li>
+
+                <li>
+                    <a href="ui-elements.html"><i class="fa fa-desktop"></i> 学生通讯录</a>
                 </li>
                 <li>
-                    <a class="active-menu" href="index_tea_tcou.jsp"><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
+                    <a  href="index_stu.jsp"><i class="fa fa-dashboard"></i> 老师通讯录</a>
                 </li>
                 <li>
-                    <a  href="table.html"><i class="fa fa-dashboard"></i> 图表展示</a>
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> 成绩查询</a>
                 </li>
                 <li>
-                    <a href="tab-panel.html"><i class="fa fa-qrcode"></i> Tabs & Panels</a>
+                    <a href="#"><i class="fa fa-qrcode"></i> kecehngbiao</a>
                 </li>
+
                 <li>
-                    <a href="form.html"><i class="fa fa-desktop"></i> Forms </a>
-                </li>
-                <li>
-                    <a href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
+                    <a href="#"><i class="fa fa-fw fa-file"></i> Empty Page</a>
                 </li>
             </ul>
 
@@ -92,7 +75,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-header">
-                        课表 <small>教师专用</small>
+                        成绩 <small>所有学生</small>
                     </h1>
                 </div>
             </div>
@@ -110,24 +93,41 @@
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                     <tr>
+                                        <th>学号</th>
+                                        <th>学生姓名</th>
                                         <th>课程号</th>
                                         <th>课程名</th>
-                                        <th>学分</th>
                                         <th>班级</th>
-                                        <th>学期</th>
-                                        <th>授课教室</th>
+                                        <th>成绩</th>
+                                        <th>修改</th>
+                                        <th>删除</th>
                                     </tr>
                                     </thead>
 
                                     <tbody>
-                                    <s:iterator value="" var="tcou">
+                                    <s:iterator value="scoresByObj" var="score">
                                         <tr>
-                                            <td><s:property value="#tcou.Cno"/></td>
-                                            <td><s:property value="#tcou.Cname"/></td>
-                                            <td><s:property value="#tcou.Sclass"/></td>
-                                            <td><s:property value="#tcou.Term"/></td>
-                                            <td><s:property value="#tcou.Credit"/></td>
-                                            <td><s:property value="#tcou.Site"/></td>
+                                            <td><s:property value="#score.Sno"/></td>
+                                            <td><s:property value="#score.Sname"/></td>
+                                            <td><s:property value="#score.Cno"/></td>
+                                            <td><s:property value="#score.Cname"/></td>
+                                            <td><s:property value="#score.Sclass"/></td>
+                                            <s:if test="#score.Score>=60">
+                                                <td><s:property value="#score.Score"/></td>
+                                            </s:if>
+                                            <s:else>
+                                                <td style="background-color: #00a1cb"><s:property value="#score.Score"/></td>
+                                            </s:else>
+                                            <td><s:url var="editUrl" action="score_edit">
+                                                <s:param name="score.score" value="#score.Score"/>
+                                            </s:url>
+                                                <a href="${editUrl}">edit</a></td>
+                                            <td>
+                                                <s:url var="delUrl" action="score_del">
+                                                    <s:param name="score.score" value="#score.score"/>
+                                                </s:url>
+                                                <a href="${delUrl}" onClick="return readyDel(<s:property
+                                                        value='#score.score'/>);">del</a></td>
                                         </tr>
                                     </s:iterator>
                                     </tbody>

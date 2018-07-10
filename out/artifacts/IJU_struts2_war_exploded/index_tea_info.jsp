@@ -36,7 +36,7 @@
                     <a  class="active-menu" href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="index_tea_info.jsp">个人信息查询</a>
+                            <a href="tea_find.action">个人信息查询</a>
                         </li>
                         <li>
                             <a  href="index_tea_editinfo.jsp">修改密码</a>
@@ -104,27 +104,26 @@
                             <div class="col-lg-6">
                                 <form role="form">
                                     <div class="form-group">
-                                        <label>学号：</label>
-                                        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled="">
+                                        <label>工号：</label>
+                                        <input value="<s:property value="tea.Tno"/>" class="form-control"  type="text"  disabled="">
                                     </div>
                                     <div class="form-group">
                                         <label>姓名：</label>
-                                        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled="">
+                                        <input value="<s:property value="tea.Tname"/>" class="form-control"  type="text"  disabled="">
                                     </div>
                                     <div class="form-group">
                                         <label>性别：</label>
-                                        <select id="disabledSelect" class="form-control" disabled="">
-                                            <option>Disabled select</option>
+                                        <select name="tea.Tsex" id="disabledSelect" class="form-control" disabled="">
+                                            <option><s:property value="tea.Tsex"/> </option>
                                         </select>
                                     </div>
                                     <div class="form-group">
                                         <label>生日：</label>
-                                        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled="">
+                                        <input vlaue="<s:property value="tea.Tbirth"/>" class="form-control"  type="text"  disabled="">
                                     </div>
                                     <div class="form-group">
                                     <label>手机号：</label>
-                                    <label>Disabled input</label>
-                                    <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled="">
+                                    <input value="<s:property value="tea.Tphone"/>" class="form-control"  type="text"  disabled="">
                                 </div>
                                 </form>
                             </div>

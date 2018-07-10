@@ -7,7 +7,7 @@
 <struts>
         <package name="jdbc_score" extends="struts-default">
             <action name="score_list" class="controller.ScoreAction">
-                <result>/index_tea_allscore.jsp</result>
+                <result>/index_user_score.jsp</result>
                 <!--显示成绩表-->
             </action>
             <action name="score_input" class="controller.ScoreAction" method="stuscore">

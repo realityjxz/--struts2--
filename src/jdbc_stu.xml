@@ -9,12 +9,18 @@
             <action name="stu_list" class="controller.StuAction">
                 <result>/index_user_allstu.jsp</result>
             </action>
+            <action name="stu_find" class="controller.StuAction" method="find">
+                <result>/index_stu_info.jsp</result>
+            </action>
+            <action name="stu_updatepass" class="controller.StuAction" method="updatepass">
+                <result>/index_stu_editinfo.jsp</result>
+            </action>
             <action name="stu_edit" class="controller.StuAction" method="edit">
-                <result>/table_allstu.jsp</result>
+                <result>/index_stu_editinfo.jsp</result>
             </action>
             <action name="stu_save" class="controller.StuAction" method="save">
-                <result type="redirect">/stu_save_suc.jsp</result>
-                <result name="error" type="redirect">/stu_save_error.jsp</result>
+                <result type="redirect">/index_stu_info.jsp</result>
+                <result name="error" type="redirect">/index</result>
             </action>
             <action name="stu_update" class="controller.StuAction" method="update">
                 <result type="redirect">/stu_update_suc.jsp</result>

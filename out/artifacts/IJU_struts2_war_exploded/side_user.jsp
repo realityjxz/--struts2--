@@ -83,8 +83,7 @@
         <%--meun-item-active激活不能共享--%>
         <div class="meun-item "><a href="user_list.action"><img src="images/icon_source.png">管理员信息</a> </div>
         <div class="meun-item"><a href="stu_list.action"><img src="images/icon_chara_grey.png">学生管理</a></div>
-        <div class="meun-item"><img src="images/icon_user_grey.png">成绩管理</div>
-        <div class="meun-item" href="#chan" aria-controls="chan" role="tab" data-toggle="tab"><img src="images/icon_change_grey.png">修改</div>
+        <div class="meun-item"><a href="score_list.action"><img src="images/icon_user_grey.png">成绩管理</a></div>
         <div class="meun-title">教师-班级</div>
         <div class="meun-item"><a href="tea_list.action"><img src="images/icon_card_grey.png">教师信息</a></div>
         <div class="meun-item"><a href="cla_list.action"><img src="images/icon_house_grey.png">班级管理</a></div>

@@ -36,7 +36,7 @@
                     <a  href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">个人信息查询</a>
+                            <a href="tea_find.action">个人信息查询</a>
                         </li>
                         <li>
                             <a href="index_tea_editinfo.jsp">修改密码</a>
@@ -120,7 +120,7 @@
                                     </thead>
 
                                     <tbody>
-                                    <s:iterator value="scoresByObj" var="tcou">
+                                    <s:iterator value="" var="tcou">
                                         <tr>
                                             <td><s:property value="#tcou.Cno"/></td>
                                             <td><s:property value="#tcou.Cname"/></td>

@@ -39,10 +39,10 @@
                     <a class="active-menu" href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="index_tea_info.jsp">个人信息查询</a>
+                            <a href="tea_find.action">个人信息查询</a>
                         </li>
                         <li>
-                            <a href="index_tea_editinfo.jsp">修改密码</a>
+                            <a href="tea_edit.action">修改密码</a>
                         </li>
                         <%--<li>
                             <a href="#">Second Level Link<span class="fa arrow"></span></a>
@@ -114,7 +114,7 @@
                                 <s:iterator value="cnameByTnoByobj" var="score">
                                     <tr>
                                         <td><s:property value="#score.Cno" /></td>
-                                        <td><s:property value="#score.Cname" /></td>
+                                        <a href=""><td><s:property value="#score.Cname" /></td></a>
                                         <td><s:property value="#score.Cterm" /></td>
                                     </tr>
                                     </s:iterator>

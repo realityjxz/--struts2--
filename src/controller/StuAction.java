@@ -1,5 +1,6 @@
 package controller;
 
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import daoimp.StuDaoImp;
 import domain.Stu;
@@ -32,8 +33,33 @@ public class StuAction extends ActionSupport {
         boolean isSuc=imp.save(stu);
         return isSuc?SUCCESS:ERROR;
     }
+    public String find() {                     //学生自己查找、修改
+        stu=imp.findBySno((String)ActionContext.getContext().getSession().get("sno"));
+        System.out.print((String)ActionContext.getContext().getSession().get("sno"));
+        return SUCCESS;
+    }
+
+    public String updatepass() {                 //学生修改密码
+        System.out.print("修改");
+        boolean isHave = imp.check(stu.getSno(), stu.getSpass());
+        if (isHave) {
+            boolean isSuc = imp.updatepass(stu);
+            if(isSuc){
+                return SUCCESS;
+            }else{
+                addActionError(getText("update.fail"));
+                return ERROR;
+            }
+
+        } else {
+            addActionError(getText("login.fail"));
+            return ERROR;
+        }
+    }
     public String edit() {
-        stu=imp.findBySno(stu.getSno());
+        System.out.print("111");
+        stu=imp.findBySno((String)ActionContext.getContext().getSession().get("sno"));
+        System.out.println((String)ActionContext.getContext().getSession().get("sno"));
         return SUCCESS;
     }
     public String update(){
