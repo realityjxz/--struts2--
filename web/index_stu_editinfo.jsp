@@ -7,6 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>修改密码</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
@@ -33,7 +34,7 @@
             <ul class="nav" id="main-menu">
 
                 <li>
-                    <a class="active-menu" href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
+                    <a " href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
                             <a href="stu_find.action">个人信息查询</a>
@@ -41,26 +42,22 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="stu_edit.action"><i class="fa fa-edit"></i> 修改密码 </a>
+                    <a class="active-menu href="stu_edit.action"><i class="fa fa-edit"></i> 修改密码 </a>
                 </li>
 
                 <li>
-                    <a href="table.html"><i class="fa fa-table"></i>课表查询</a>
+                    <a href="tcou_sno.action"><i class="fa fa-table"></i>课表查询</a>
                 </li>
 
                 <li>
-                    <a href="ui-elements.html"><i class="fa fa-desktop"></i> 学生通讯录</a>
+                    <a href="#"><i class="fa fa-desktop"></i> 学生通讯录</a>
                 </li>
                 <li>
-                    <a  href="index_stu.jsp"><i class="fa fa-dashboard"></i> 老师通讯录</a>
+                    <a  href="#"><i class="fa fa-dashboard"></i> 老师通讯录</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-bar-chart-o"></i> 成绩查询</a>
+                    <a href="score_sno.action"><i class="fa fa-bar-chart-o"></i> 成绩查询</a>
                 </li>
-                <li>
-                    <a href="#"><i class="fa fa-qrcode"></i> kecehngbiao</a>
-                </li>
-
                 <li>
                     <a href="#"><i class="fa fa-fw fa-file"></i> Empty Page</a>
                 </li>
@@ -75,7 +72,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-header">
-                        info <small>teacher</small>
+                        info <small>student</small>
                     </h1>
                 </div>
             </div>

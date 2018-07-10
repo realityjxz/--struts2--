@@ -12,6 +12,12 @@
             <action name="tcou_Cname" class="controller.TcouAction" method="getAllCname">
                 <result>/index_tea.jsp</result>
             </action>
+            <action name="tcou_tno" class="controller.TcouAction" method="findByTno">
+                <result>/index_tea_tcou.jsp</result>
+            </action>
+            <action name="tcou_sno" class="controller.TcouAction" method="findBySno">
+                <result>/index_stu_tcou.jsp</result>
+            </action>
             <action name="tcou_edit" class="controller.TcouAction" method="edit">
                 <result>/table_alltcou.jsp</result>
             </action>

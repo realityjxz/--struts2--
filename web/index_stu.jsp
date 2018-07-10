@@ -46,22 +46,18 @@
                 </li>
 
                 <li>
-                <a href="table.html"><i class="fa fa-table"></i>课表查询</a>
+                <a href="tcou_sno.action"><i class="fa fa-table"></i>课表查询</a>
                 </li>
 
                 <li>
-                    <a href="ui-elements.html"><i class="fa fa-desktop"></i> 学生通讯录</a>
+                    <a href="#"><i class="fa fa-desktop"></i> 学生通讯录</a>
                 </li>
                 <li>
-                    <a  href="index_stu.jsp"><i class="fa fa-dashboard"></i> 老师通讯录</a>
+                    <a  href="#"><i class="fa fa-dashboard"></i> 老师通讯录</a>
                 </li>
                 <li>
-                <a href="#"><i class="fa fa-bar-chart-o"></i> 成绩查询</a>
+                <a href="score_sno.action"><i class="fa fa-bar-chart-o"></i> 成绩查询</a>
                 </li>
-                <li>
-                    <a href="#"><i class="fa fa-qrcode"></i> kecehngbiao</a>
-                </li>
-
                 <li>
                     <a href="#"><i class="fa fa-fw fa-file"></i> Empty Page</a>
                 </li>

@@ -7,6 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>授课表查询</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
@@ -112,22 +113,22 @@
                                     <tr>
                                         <th>课程号</th>
                                         <th>课程名</th>
-                                        <th>学分</th>
                                         <th>班级</th>
-                                        <th>学期</th>
+                                        <th>学分</th>
                                         <th>授课教室</th>
+                                        <th>学期</th>
                                     </tr>
                                     </thead>
 
                                     <tbody>
-                                    <s:iterator value="" var="tcou">
+                                    <s:iterator value="allByTnoByobj" var="tcou">
                                         <tr>
                                             <td><s:property value="#tcou.Cno"/></td>
                                             <td><s:property value="#tcou.Cname"/></td>
                                             <td><s:property value="#tcou.Sclass"/></td>
-                                            <td><s:property value="#tcou.Term"/></td>
                                             <td><s:property value="#tcou.Credit"/></td>
                                             <td><s:property value="#tcou.Site"/></td>
+                                            <td><s:property value="#tcou.Cterm"/></td>
                                         </tr>
                                     </s:iterator>
                                     </tbody>

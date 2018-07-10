@@ -37,7 +37,7 @@ public class ScoreDaoImp implements ScoreDao {
     }
 
     @Override
-    public List<Score> getAllStuscore() {              //教师查所教课程、所有学生成绩
+    public List<Score> getAllStuscore() {                  //教师查所教课程、所有学生成绩
         List<Score> scores = new ArrayList<>();
         String sql = "select b.Sno,b.Sname,b.Cno,b.Cname,b.Cterm,b.Credit,b.Tno,b.Tname,b.sclass,Score\n" +
                 "FROM\n" +
@@ -74,6 +74,33 @@ public class ScoreDaoImp implements ScoreDao {
 
     }
 
+    @Override
+    public List<Score> stuAllCouscore(String sno) {
+        List<Score> scores = new ArrayList<>();
+        String sql = "select Cno,Cname,Cterm,Credit,Score from TAB_COU,TAB_SCORE where TAB_SCORE.Cno=TAB_COU.Cno and TAB_SCORE.Sno=?";
+        Connection conn = DBConn.getConnection();
+        PreparedStatement ps = DBConn.prepare(conn,sql);
+        try {
+            ps.setString(1,sno);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {// 保存每行的数据
+                Score score = new Score();
+                score.setCno(rs.getString("Cno"));          //课程号、课程名、学期、学分
+                score.setCname(rs.getString("Cname"));
+                score.setCterm(rs.getString("Cterm"));
+                score.setCredit(rs.getInt("Credit"));
+                score.setScore(rs.getInt("Score"));                      //得分
+                scores.add(score);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            DBConn.close(ps);
+            DBConn.close(conn);
+        }
+        return scores;
+
+    }
 
     @Override
     public boolean save(Score score) {

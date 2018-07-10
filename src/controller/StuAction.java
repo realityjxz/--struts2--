@@ -33,7 +33,7 @@ public class StuAction extends ActionSupport {
         boolean isSuc=imp.save(stu);
         return isSuc?SUCCESS:ERROR;
     }
-    public String find() {                     //学生自己查找、修改
+    public String find() {                     //学生自己查看个人信息
         stu=imp.findBySno((String)ActionContext.getContext().getSession().get("sno"));
         System.out.print((String)ActionContext.getContext().getSession().get("sno"));
         return SUCCESS;
@@ -56,7 +56,7 @@ public class StuAction extends ActionSupport {
             return ERROR;
         }
     }
-    public String edit() {
+    public String edit() {                                           //学生修改密码
         System.out.print("111");
         stu=imp.findBySno((String)ActionContext.getContext().getSession().get("sno"));
         System.out.println((String)ActionContext.getContext().getSession().get("sno"));

@@ -12,8 +12,11 @@ import java.util.List;
 public class TcouAction extends ActionSupport {
     private TcouDaoImp imp=new TcouDaoImp();
     private Tcou tcou;
-    private List<Tcou> tcousByObj;
-    private List<Tcou> cnameByTnoByobj;    //查课程——录入成绩
+    private List<Tcou> tcousByObj;          //管理员查所有授课信息
+    private List<Tcou> cnameByTnoByobj;    //老师查所教课程——录入成绩
+    private List<Tcou> allBySnoByobj;    //学生查-课程表-上课地点
+    private List<Tcou> allByTnoByobj;    //老师查-课程表-所教课程上课地点
+
 
     public Tcou getTcou() {
         return tcou;
@@ -31,12 +34,20 @@ public class TcouAction extends ActionSupport {
         return cnameByTnoByobj;
     }
 
+    public List<Tcou> getAllBySnoByobj() {
+        return allBySnoByobj;
+    }
+
+    public List<Tcou> getAllByTnoByobj() {
+        return allByTnoByobj;
+    }
+
     public String execute(){
      tcousByObj=imp.getAllTcousByObj();
     return SUCCESS;
     }
 
-    public String getAllCname(){
+    public String getAllCname(){             //老师首页显示所教课程
         cnameByTnoByobj=imp.getAllCname((String)ActionContext.getContext().getSession().get("tno"));
         return SUCCESS;
     }
@@ -45,15 +56,15 @@ public class TcouAction extends ActionSupport {
         return isSuc?SUCCESS:ERROR;
     }
     public String edit() {
-        tcou=imp.findByCno(tcou.getCno());
+        tcou=imp.findByCno(tcou.getCno(),tcou.getTno(),tcou.getSclass());
         return SUCCESS;
     }
-    public String findByTno() {
-        tcou=imp.findByTno(tcou.getTno());
+    public String findByTno() {                  //老师查授课表
+        allByTnoByobj=imp.findByTno((String)ActionContext.getContext().getSession().get("tno"));
         return SUCCESS;
     }
-    public String findBySclass() {
-        tcou=imp.findBySclass(tcou.getSclass());
+    public String findBySno() {                    //学生查课程表
+        allBySnoByobj=imp.findBySno((String)ActionContext.getContext().getSession().get("sno"));
         return SUCCESS;
     }
     public String update(){

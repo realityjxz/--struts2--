@@ -1,5 +1,6 @@
 package controller;
 
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import daoimp.ScoreDaoImp;
 import domain.Score;
@@ -10,8 +11,9 @@ import java.util.List;
 public class ScoreAction extends ActionSupport {
     private ScoreDaoImp imp= new ScoreDaoImp();
     private Score score;
-    private List<Score> scoresByObj;   //查成绩单
+    private List<Score> scoresByObj;   //管理员查所有成绩
     private List<Score> stuscoresByObj;   //查学生——录入成绩
+    private List<Score> scoreBySno;   //学生查成绩
 
 
     Tea tea;
@@ -40,17 +42,23 @@ public class ScoreAction extends ActionSupport {
         return stuscoresByObj;
     }
 
-
+    public List<Score> getScoreBySno() {
+        return scoreBySno;
+    }
 
     public String execute(){
         scoresByObj = imp.getAllScoresByObj();
         return SUCCESS;
     }
 
-    public String stuscore(){
+    public String stuscore(){                          //学生成绩录入
         stuscoresByObj=imp.getAllStuscore();
         return SUCCESS;
     }
 
+    public String myscore(){                          //学生自己查询
+        scoreBySno=imp.stuAllCouscore((String)ActionContext.getContext().getSession().get("sno"));
+        return SUCCESS;
+    }
 
 }

@@ -6,7 +6,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>授课表查询</title>
+    <title>课程表查询</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
@@ -22,7 +23,7 @@
 </head>
 <body>
 <div id="wrapper">
-    <s:include value="header_tea.jsp"></s:include>
+    <s:include value="header_stu.jsp"></s:include>
     <!--/. NAV TOP  -->
     <nav class="navbar-default navbar-side" role="navigation">
         <div id="sideNav" href="">
@@ -33,7 +34,7 @@
             <ul class="nav" id="main-menu">
 
                 <li>
-                    <a class="active-menu" href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
+                    <a  href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
                             <a href="stu_find.action">个人信息查询</a>
@@ -45,22 +46,18 @@
                 </li>
 
                 <li>
-                    <a href="table.html"><i class="fa fa-table"></i>课表查询</a>
+                    <a class="active-menu" href="tcou_sno.action"><i class="fa fa-table"></i>课表查询</a>
                 </li>
 
                 <li>
-                    <a href="ui-elements.html"><i class="fa fa-desktop"></i> 学生通讯录</a>
+                    <a href="#"><i class="fa fa-desktop"></i> 学生通讯录</a>
                 </li>
                 <li>
-                    <a  href="index_stu.jsp"><i class="fa fa-dashboard"></i> 老师通讯录</a>
+                    <a  href="#"><i class="fa fa-dashboard"></i> 老师通讯录</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-bar-chart-o"></i> 成绩查询</a>
+                    <a href="score_sno.action"><i class="fa fa-bar-chart-o"></i> 成绩查询</a>
                 </li>
-                <li>
-                    <a href="#"><i class="fa fa-qrcode"></i> kecehngbiao</a>
-                </li>
-
                 <li>
                     <a href="#"><i class="fa fa-fw fa-file"></i> Empty Page</a>
                 </li>
@@ -75,7 +72,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-header">
-                        课表 <small>教师专用</small>
+                        课表 <small>学生专用</small>
                     </h1>
                 </div>
             </div>
@@ -95,22 +92,24 @@
                                     <tr>
                                         <th>课程号</th>
                                         <th>课程名</th>
-                                        <th>学分</th>
-                                        <th>班级</th>
-                                        <th>学期</th>
+                                        <th>老师工号</th>
+                                        <th>老师姓名</th>
                                         <th>授课教室</th>
+                                        <th>学分</th>
+                                        <th>学期</th>
                                     </tr>
                                     </thead>
 
                                     <tbody>
-                                    <s:iterator value="" var="tcou">
+                                    <s:iterator value="allBySnoByobj" var="tcou">
                                         <tr>
                                             <td><s:property value="#tcou.Cno"/></td>
                                             <td><s:property value="#tcou.Cname"/></td>
-                                            <td><s:property value="#tcou.Sclass"/></td>
-                                            <td><s:property value="#tcou.Term"/></td>
-                                            <td><s:property value="#tcou.Credit"/></td>
+                                            <td><s:property value="#tcou.Tno"/></td>
+                                            <td><s:property value="#tcou.Tname"/></td>
                                             <td><s:property value="#tcou.Site"/></td>
+                                            <td><s:property value="#tcou.Credit"/></td>
+                                            <td><s:property value="#tcou.Cterm"/></td>
                                         </tr>
                                     </s:iterator>
                                     </tbody>
