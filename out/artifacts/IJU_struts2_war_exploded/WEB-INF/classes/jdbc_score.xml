@@ -11,13 +11,18 @@
                 <!--显示成绩表-->
             </action>
             <action name="score_input" class="controller.ScoreAction" method="stuscore">
-            <result>/index_tea_logscore.jsp</result>
-            <!--录入成绩-->
+            <result>/index_tea_logscore_before.jsp</result>
+            <!--老师录入成绩-->
+        </action>
+            <action name="score_tno" class="controller.ScoreAction" method="quryscore">
+            <result>/index_tea_score_before.jsp</result>
+            <!--老师查成绩-->
         </action>
             <action name="score_sno" class="controller.ScoreAction" method="myscore">
                 <result>/index_stu_score.jsp</result>
                 <!--学生查成绩-->
             </action>
+
             <action name="score_edit" class="controller.ScoreAction" method="edit">
                 <result>/table_allscore.jsp</result>
             </action>

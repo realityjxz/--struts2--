@@ -63,11 +63,11 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="index_tea_logscore.jsp"><i class="fa fa-edit"></i>学生成绩录入</a>
+                    <a href="score_input.action"><i class="fa fa-edit"></i>学生成绩录入</a>
                 </li>
 
                 <li>
-                    <a href=""><i class="fa fa-table"></i> 学生成绩查询</a>
+                    <a href="score_tno.action"><i class="fa fa-table"></i> 学生成绩查询</a>
                 </li>
                 <li>
                     <a href="tcou_tno.action"><i class="fa fa-bar-chart-o"></i> 授课表查询</a>

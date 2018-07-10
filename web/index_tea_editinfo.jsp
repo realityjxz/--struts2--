@@ -65,10 +65,10 @@
                 </li>
 
                 <li>
-                    <a  href="score_list.action"><i class="fa fa-table"></i> 学生成绩查询</a>
+                    <a  href="score_tno.action"><i class="fa fa-table"></i> 学生成绩查询</a>
                 </li>
                 <li>
-                    <a href="index_tea_tcou.jsp"><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
+                    <a href="tcou_tno.action"><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
                 </li>
                 <li>
                     <a  href="table.html"><i class="fa fa-dashboard"></i> 图表展示</a>

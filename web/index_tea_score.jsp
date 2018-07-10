@@ -65,22 +65,22 @@
                 </li>
 
                 <li>
-                    <a class="active-menu" href="score_list.action"><i class="fa fa-table"></i> 学生成绩查询</a>
+                    <a class="active-menu" href="score_tno.action"><i class="fa fa-table"></i> 学生成绩查询</a>
                 </li>
                 <li>
-                    <a href="index_tea_tcou.jsp"><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
+                    <a href="tcou_tno.action"><i class="fa fa-bar-chart-o"></i> 授课表查询</a>
                 </li>
                 <li>
-                    <a  href="table.html"><i class="fa fa-dashboard"></i> 图表展示</a>
+                    <a  href="#"><i class="fa fa-dashboard"></i> 图表展示</a>
                 </li>
                 <li>
-                    <a href="tab-panel.html"><i class="fa fa-qrcode"></i> Tabs & Panels</a>
+                    <a href="#"><i class="fa fa-qrcode"></i> Tabs & Panels</a>
                 </li>
                 <li>
-                    <a href="form.html"><i class="fa fa-desktop"></i> Forms </a>
+                    <a href="#"><i class="fa fa-desktop"></i> Forms </a>
                 </li>
                 <li>
-                    <a href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
+                    <a href="#"><i class="fa fa-fw fa-file"></i> Empty Page</a>
                 </li>
             </ul>
 
@@ -93,7 +93,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-header">
-                        成绩 <small>所有学生</small>
+                        成绩 查询<small>班级-学生</small>
                     </h1>
                 </div>
             </div>
@@ -117,8 +117,6 @@
                                         <th>课程名</th>
                                         <th>班级</th>
                                         <th>成绩</th>
-                                        <th>修改</th>
-                                        <th>删除</th>
                                     </tr>
                                     </thead>
 
@@ -136,16 +134,7 @@
                                             <s:else>
                                                 <td style="background-color: #00a1cb"><s:property value="#score.Score"/></td>
                                             </s:else>
-                                            <td><s:url var="editUrl" action="score_edit">
-                                                <s:param name="score.score" value="#score.Score"/>
-                                            </s:url>
-                                                <a href="${editUrl}">edit</a></td>
-                                            <td>
-                                                <s:url var="delUrl" action="score_del">
-                                                    <s:param name="score.score" value="#score.score"/>
-                                                </s:url>
-                                                <a href="${delUrl}" onClick="return readyDel(<s:property
-                                                        value='#score.score'/>);">del</a></td>
+
                                         </tr>
                                     </s:iterator>
                                     </tbody>

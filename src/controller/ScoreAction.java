@@ -13,6 +13,7 @@ public class ScoreAction extends ActionSupport {
     private Score score;
     private List<Score> scoresByObj;   //管理员查所有成绩
     private List<Score> stuscoresByObj;   //查学生——录入成绩
+    private List<Score> scoreBYTno;   //查学生——录入成绩
     private List<Score> scoreBySno;   //学生查成绩
 
 
@@ -46,19 +47,28 @@ public class ScoreAction extends ActionSupport {
         return scoreBySno;
     }
 
+    public List<Score> getScoreBYTno() {
+        return scoreBYTno;
+    }
+
     public String execute(){
         scoresByObj = imp.getAllScoresByObj();
         return SUCCESS;
     }
 
-    public String stuscore(){                          //学生成绩录入
-        stuscoresByObj=imp.getAllStuscore();
+    public String stuscore(){                          //老师通过工号Tno查询---学生成绩录入
+        stuscoresByObj=imp.getAllStuscore((String)ActionContext.getContext().getSession().get("tno"));
         return SUCCESS;
     }
 
-    public String myscore(){                          //学生自己查询
+    public String myscore(){                        //学生自己查询
         scoreBySno=imp.stuAllCouscore((String)ActionContext.getContext().getSession().get("sno"));
         return SUCCESS;
     }
+    public String quryscore(){                          //教师查所教课程、所有班级
+        scoreBYTno=imp.getAllStuscore((String)ActionContext.getContext().getSession().get("tno"));
+        return SUCCESS;
+    }
+
 
 }

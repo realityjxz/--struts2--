@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>个人信息</title>
+    <title>录入成绩</title>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
@@ -34,13 +34,13 @@
             <ul class="nav" id="main-menu">
 
                 <li>
-                    <a  class="active-menu" href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
+                    <a  href="#"><i class="fa fa-sitemap"></i> 个人信息<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
                             <a href="tea_find.action">个人信息查询</a>
                         </li>
                         <li>
-                            <a  href="index_tea_editinfo.jsp">修改密码</a>
+                            <a href="index_tea_editinfo.jsp">修改密码</a>
                         </li>
                         <%--<li>
                             <a href="#">Second Level Link<span class="fa arrow"></span></a>
@@ -61,7 +61,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="score_input.action"><i class="fa fa-edit"></i>学生成绩录入</a>
+                    <a class="active-menu" href="score_input.action"><i class="fa fa-edit"></i>学生成绩录入</a>
                 </li>
 
                 <li>
@@ -93,47 +93,60 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-header">
-                        edit <small>password</small>
+                        成绩 录入<small>所教课程-班级</small>
                     </h1>
                 </div>
             </div>
             <!-- /. ROW  -->
+
             <div class="row">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <form role="form">
-                                    <div class="form-group">
-                                        <label>工号：</label>
-                                        <input value="<s:property value="tea.Tno"/>" class="form-control"  type="text"  disabled="">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>姓名：</label>
-                                        <input value="<s:property value="tea.Tname"/>" class="form-control"  type="text"  disabled="">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>性别：</label>
-                                        <select name="tea.Tsex" id="disabledSelect" class="form-control" disabled="">
-                                            <option><s:property value="tea.Tsex"/> </option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>生日：</label>
-                                        <input vlaue="<s:property value="tea.Tbirth"/>" class="form-control"  type="text"  disabled="">
-                                    </div>
-                                    <div class="form-group">
-                                    <label>手机号：</label>
-                                    <input value="<s:property value="tea.Tphone"/>" class="form-control"  type="text"  disabled="">
-                                </div>
-                                </form>
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Advanced Tables
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                    <tr>
+                                        <th>课程号</th>
+                                        <th>课程名</th>
+                                        <th>班级</th>
+                                        <th>学期</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <s:iterator value="stuscoresByObj" var="tcou">
+                                        <tr>
+                                            <td><s:property value="#tcou.Cno"/></td>
+                                            <td><s:property value="#tcou.Cname"/></td>
+                                            <a href=".action?sclass=<s:property value='#tcou.Sclass'/>">
+                                                <td><s:property value="#tcou.Sclass"/></td></a>
+                                            <td><s:property value="#tcou.Cterm"/></td>
+                                        </tr>
+
+                                    </s:iterator>
+                                    </tbody>
+                                </table>
                             </div>
+
                         </div>
                     </div>
+                    <!--End Advanced Tables -->
                 </div>
             </div>
-
-
+            <!-- /. ROW  -->
+            <div class="row" style="float: right">
+                <button type="submit" class="btn btn-info btn-circle"><i class="fa fa-check"></i>
+                </button>
+                <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-money"></i>
+                </button>
+                <button type="reset" class="btn btn-danger btn-circle"><i class="fa fa-heart"></i>
+                </button>
+            </div>
         </div>
         <!-- /. PAGE INNER  -->
     </div>
