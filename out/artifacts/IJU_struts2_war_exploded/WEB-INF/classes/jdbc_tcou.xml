@@ -6,7 +6,19 @@
 
 <struts>
         <package name="jdbc_tcou" extends="struts-default">
+            <interceptors>
+                <interceptor name="secCheck" class="controller.Interceptor" />
+                <interceptor-stack name="secStack">
+                    <interceptor-ref name="secCheck"/>
+                    <interceptor-ref name="defaultStack"/>
+                </interceptor-stack>
+            </interceptors>
+            <default-interceptor-ref name="secStack"/>
+            <global-results>
+                <result name="login">/nologin.jsp</result>
+            </global-results>
             <action name="tcou_list" class="controller.TcouAction">
+                <interceptor-ref name="secCheck"/>
                 <result>/index_user_alltcou.jsp</result>
             </action>
             <action name="tcou_Cname" class="controller.TcouAction" method="getAllCname">

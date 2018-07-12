@@ -28,7 +28,7 @@
         <div role="tabpanel" class="tab-pane" id="cla">
             <div class="check-div form-inline">
                 <div class="col-xs-3">
-                    <button class="btn btn-yellow btn-xs" data-toggle="modal" data-target="#addUser">添加学生 </button>
+                    <button class="btn btn-yellow btn-xs" data-toggle="modal" data-target="#addUser">添加课程</button>
                 </div>
                 <div class="col-xs-4">
                     <input type="text" class="form-control input-sm" placeholder="输入文字搜索">

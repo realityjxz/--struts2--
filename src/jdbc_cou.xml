@@ -6,11 +6,23 @@
 
 <struts>
         <package name="jdbc_cou" extends="struts-default">
+            <interceptors>
+                <interceptor name="secCheck" class="controller.Interceptor" />
+                <interceptor-stack name="secStack">
+                    <interceptor-ref name="secCheck"/>
+                    <interceptor-ref name="defaultStack"/>
+                </interceptor-stack>
+            </interceptors>
+            <default-interceptor-ref name="secStack"/>
+            <global-results>
+                <result name="login">/nologin.jsp</result>
+            </global-results>
             <action name="cou_list" class="controller.CouAction">
+                <interceptor-ref name="secCheck"/>
                 <result>/index_user_allcou.jsp</result>
             </action>
             <action name="cou_edit" class="controller.CouAction" method="edit">
-                <result>/table_allcou.jsp</result>
+                <result>/index_user_allcou.jsp</result>
             </action>
             <action name="cou_save" class="controller.CouAction" method="save">
                 <result type="redirect">/cou_save_suc.jsp</result>

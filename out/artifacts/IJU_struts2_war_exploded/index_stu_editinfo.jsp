@@ -86,7 +86,7 @@
                                     <div class="form-group">
                                         <s:actionerror/>
                                         <s:fielderror/>
-                                        <input name="stu.Sno" value="<s:property value="stu.Sno"/>" />
+                                        <input name="stu.Sno" value="<s:property value="stu.Sno"/>" hidden/>
                                         <label>原密码：</label>
                                         <input name="stu.Spass" class="form-control"  placeholder="Enter old password">
                                         <p class="help-block">Example block-level help text here.</p>

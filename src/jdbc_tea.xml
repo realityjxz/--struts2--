@@ -6,7 +6,19 @@
 
 <struts>
         <package name="jdbc_tea" extends="struts-default">
+            <interceptors>
+                <interceptor name="secCheck" class="controller.Interceptor" />
+                <interceptor-stack name="secStack">
+                    <interceptor-ref name="secCheck"/>
+                    <interceptor-ref name="defaultStack"/>
+                </interceptor-stack>
+            </interceptors>
+            <default-interceptor-ref name="secStack"/>
+            <global-results>
+                <result name="login">/nologin.jsp</result>
+            </global-results>
             <action name="tea_list" class="controller.TeaAction">
+                <interceptor-ref name="secCheck"/>
                 <result>/index_user_alltea.jsp</result>
             </action>
             <action name="tea_find" class="controller.TeaAction" method="find">

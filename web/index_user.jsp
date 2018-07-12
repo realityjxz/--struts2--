@@ -135,7 +135,7 @@
                                             1
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4   levl3">
-                                            <span></span><span>地区管理</span>
+                                            <span></span><span>教室管理</span>
                                         </div>
                                         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
                                             /admin/system/userlist/software/
@@ -195,36 +195,7 @@
                         </div>
                     </div>
                     <!--页码块-->
-                    <footer class="footer">
-                        <ul class="pagination">
-                            <li>
-                                <select>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                    <option>9</option>
-                                    <option>10</option>
-                                </select>
-                                页
-                            </li>
-                            <li class="gray">
-                                共20页
-                            </li>
-                            <li>
-                                <i class="glyphicon glyphicon-menu-left">
-                                </i>
-                            </li>
-                            <li>
-                                <i class="glyphicon glyphicon-menu-right">
-                                </i>
-                            </li>
-                        </ul>
-                    </footer>
+
                     <!--弹出窗口 添加资源-->
                     <div class="modal fade" id="addSource" role="dialog" aria-labelledby="gridSystemModalLabel">
                         <div class="modal-dialog" role="document">

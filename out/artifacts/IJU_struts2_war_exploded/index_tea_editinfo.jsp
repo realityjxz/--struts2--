@@ -107,7 +107,7 @@
                                     <div class="form-group">
                                         <s:actionerror/>
                                         <s:fielderror/>
-                                        <input name="tea.tno" value="<s:property value="tea.tno"/>" />
+                                        <input name="tea.tno" value="<s:property value="tea.tno"/>" hidden/>
                                         <label>原密码：</label>
                                         <input name="tea.Tpass" class="form-control"  placeholder="Enter old password">
                                         <p class="help-block">Example block-level help text here.</p>

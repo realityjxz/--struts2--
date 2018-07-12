@@ -137,9 +137,9 @@
 
         <h1>杯具啊！</h1>
 
-        <div class="p">HTTP 404……<br/>可能这个页面已经飞走了</div>
+        <div class="p">未登录<br/>请返回重新登录</div>
 
-        <div class="p"><button type="button" onclick="window.location.href='/'">回首页</button></div>
+        <div class="p"><button type="button" onclick="window.location.href='login.jsp'">回去登录</button></div>
     </div>
 </div>
 <div class="footer text-center">

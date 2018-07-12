@@ -71,7 +71,14 @@
                             <div class="col-xs-1"><s:property value="#stu.Ssex"/></div>
                             <div class="col-xs-2"><s:property value="#stu.Sphone"/></div>
                             <div class="col-xs-1"><s:property value="#stu.Sbirth"/></div>
-                            <div class="col-xs-2"><s:property value="#stu.Sclass"/></div>
+                            <div class="col-xs-2">
+                        <select>
+                            <option><s:property value="#stu.Sclass"/></option>
+                            <s:iterator value="clasByObj" var="cla">
+                            <option> <s:property value="#cla.Sclass"/></option>
+                            </s:iterator>
+                            </select>
+                            </div>
                             <div class="col-xs-1">
                                 <s:url var="editUrl" action="stu_edit">
                                     <s:param name="stu.sno" value="#stu.sno"/>
