@@ -37,7 +37,7 @@
     <s:fielderror/>
     <s:form action="regedit" method="post" theme="simple">
         <div>
-            <span>用户:</span>
+            <span>用户名:</span>
             <s:textfield name="user.username" label="" cssClass="name"  requiredLabel="true"
                          requiredPosition="left" placeholder="请输入用户名"/>
             <div class="clear"></div>

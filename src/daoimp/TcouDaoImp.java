@@ -56,6 +56,9 @@ public  class TcouDaoImp implements TcouDao {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            DBConn.close(ps);
+            DBConn.close(conn);
         }
         return couscores;
     }
@@ -107,6 +110,9 @@ public  class TcouDaoImp implements TcouDao {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            DBConn.close(ps);
+            DBConn.close(conn);
         }
         return tcous;
     }
@@ -134,6 +140,9 @@ public  class TcouDaoImp implements TcouDao {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            DBConn.close(ps);
+            DBConn.close(conn);
         }
         return tcous;
     }

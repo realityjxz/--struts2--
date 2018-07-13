@@ -50,7 +50,7 @@ public class ScoreDaoImp implements ScoreDao {
                 score.setCname(rs.getString("Cname"));
                 score.setCredit(rs.getInt("Credit"));           //学分
                 score.setSclass(rs.getString("Sclass"));           //班级
-                score.setCterm(rs.getString("Cterm"));           //班级
+                score.setCterm(rs.getString("Cterm"));           //学期
                 scores.add(score);
             }
         } catch (SQLException e) {

@@ -38,7 +38,7 @@
     <s:form action="user_update" method="post" theme="simple">
                 <s:hidden name="user.id"></s:hidden>
         <div>
-            <span>用户:</span>
+            <span>用户名:</span>
             <s:textfield name="user.username" label="" cssClass="name"/>
             <div class="clear"></div>
         </div>

@@ -6,19 +6,7 @@
 
 <struts>
         <package name="jdbc_score" extends="struts-default">
-            <interceptors>
-                <interceptor name="secCheck" class="controller.Interceptor" />
-                <interceptor-stack name="secStack">
-                    <interceptor-ref name="secCheck"/>
-                    <interceptor-ref name="defaultStack"/>
-                </interceptor-stack>
-            </interceptors>
-            <default-interceptor-ref name="secStack"/>
-            <global-results>
-                <result name="login">/nologin.jsp</result>
-            </global-results>
             <action name="score_list" class="controller.ScoreAction">
-                <interceptor-ref name="secCheck"/>
                 <result>/index_user_score.jsp</result>
                 <!--显示成绩表-->
             </action>

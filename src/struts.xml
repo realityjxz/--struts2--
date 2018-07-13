@@ -35,6 +35,7 @@
         <action name="regedit" class="controller.Regedit">
             <result name ="success">/regedit_suc.jsp</result>
             <result name ="error">/regedit.jsp</result>
+            <result name ="fail">/regedit.jsp</result>
             <result name="input">/regedit.jsp</result>
         </action>
     </package>

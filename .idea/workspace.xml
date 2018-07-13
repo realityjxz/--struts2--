@@ -10,37 +10,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c57c0699-13b2-44a6-b12c-494953312aa8" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/daoimp/TcouDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/daoimp/TcouDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/jdbc_score.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/jdbc_score.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/jdbc_stu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/jdbc_stu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/jdbc_tcou.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/jdbc_tcou.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/jdbc_tea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/jdbc_tea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/jdbc_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/jdbc_user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/WEB-INF/classes/struts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.lck" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.script" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/ant/lib/test.script" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_stu_editinfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_stu_editinfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_stu_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_stu_info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_tea_editinfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_tea_editinfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_user_allcou.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_user_allcou.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_user_allstu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_user_allstu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_tea_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_tea_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_user_edituser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/index_user_edituser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/regedit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IJU_struts2_war_exploded/regedit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/daoimp/TcouDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/daoimp/TcouDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/jdbc_score.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/jdbc_score.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/jdbc_stu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/jdbc_stu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/jdbc_tcou.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/jdbc_tcou.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/jdbc_tea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/jdbc_tea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/jdbc_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/jdbc_user.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc_cla.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc_cla.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc_cou.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc_cou.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IJU-struts2/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IJU-struts2/struts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoimp/ScoreDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoimp/ScoreDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoimp/TcouDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoimp/TcouDaoImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jdbc_score.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc_score.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jdbc_stu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc_stu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jdbc_tcou.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc_tcou.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jdbc_tea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc_tea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc_user.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/nologin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/struts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/ant/lib/test.lck" beforeDir="false" afterPath="$PROJECT_DIR$/web/ant/lib/test.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/ant/lib/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/web/ant/lib/test.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/ant/lib/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/ant/lib/test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ant/lib/test.script" beforeDir="false" afterPath="$PROJECT_DIR$/web/ant/lib/test.script" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index_stu_editinfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_stu_editinfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_stu_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_stu_info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index_tea_editinfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_tea_editinfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index_user_allcou.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_user_allcou.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index_user_allstu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_user_allstu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_tea_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_tea_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_user_edituser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_user_edituser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/regedit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/regedit.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,97 +97,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index_user.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index_user.jsp">
+      <file leaf-file-name="index_tea_score_before.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index_tea_score_before.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="137" column="65" selection-start-line="137" selection-start-column="65" selection-end-line="137" selection-end-column="65" />
+            <state relative-caret-position="374">
+              <caret line="122" column="57" selection-start-line="122" selection-start-column="57" selection-end-line="122" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_user_alluser.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index_user_alluser.jsp">
+      <file leaf-file-name="ScoreDaoImp.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/daoimp/ScoreDaoImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+            <state relative-caret-position="187">
+              <caret line="52" column="69" selection-start-line="52" selection-start-column="69" selection-end-line="52" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_user_allstu.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index_user_allstu.jsp">
+      <file leaf-file-name="index_tea_score.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index_tea_score.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="76" column="68" lean-forward="true" selection-start-line="76" selection-start-column="68" selection-end-line="76" selection-end-column="68" />
+            <state relative-caret-position="-799">
+              <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jdbc_tea.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jdbc_tea.xml">
+      <file leaf-file-name="ScoreAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/ScoreAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-        </entry>
-      </file>
-      <file leaf-file-name="jdbc_score.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/jdbc_score.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-        </entry>
-      </file>
-      <file leaf-file-name="jdbc_tcou.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jdbc_tcou.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-        </entry>
-      </file>
-      <file leaf-file-name="jdbc_cou.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jdbc_cou.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-        </entry>
-      </file>
-      <file leaf-file-name="jdbc_cla.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jdbc_cla.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-        </entry>
-      </file>
-      <file leaf-file-name="CheckLogin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/CheckLogin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1547">
-              <caret line="113" column="45" lean-forward="true" selection-start-line="113" selection-start-column="45" selection-end-line="113" selection-end-column="45" />
+            <state relative-caret-position="289">
+              <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/UserAction.java">
+      <file leaf-file-name="StuDaoImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/daoimp/StuDaoImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="-119">
+              <caret line="66" column="15" lean-forward="true" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDaoImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/daoimp/UserDaoImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="179" column="31" lean-forward="true" selection-start-line="179" selection-start-column="31" selection-end-line="179" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -242,10 +213,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/index_user_alltea.jsp" />
-        <option value="$PROJECT_DIR$/web/index_user_alltcou.jsp" />
         <option value="$PROJECT_DIR$/src/domain/Tcou.java" />
-        <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/web/header_tea.jsp" />
         <option value="$PROJECT_DIR$/web/index_tea_allscore.jsp" />
         <option value="$PROJECT_DIR$/web/side_user.jsp" />
@@ -261,24 +229,18 @@
         <option value="$PROJECT_DIR$/src/dao/TcouDao.java" />
         <option value="$PROJECT_DIR$/src/controller/TcouAction.java" />
         <option value="$PROJECT_DIR$/src/controller/StuAction.java" />
-        <option value="$PROJECT_DIR$/src/daoimp/TcouDaoImp.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b5a378e-9fdc-488b-93c3-0679b8369412/console.sql" />
         <option value="$PROJECT_DIR$/web/index_stu.jsp" />
-        <option value="$PROJECT_DIR$/web/index_stu_info.jsp" />
         <option value="$PROJECT_DIR$/web/index_stu_score.jsp" />
         <option value="$PROJECT_DIR$/web/index_stu_tcou.jsp" />
         <option value="$PROJECT_DIR$/src/dao/ScoreDao.java" />
         <option value="$PROJECT_DIR$/src/controller/ScoreAction.java" />
-        <option value="$PROJECT_DIR$/src/daoimp/ScoreDaoImp.java" />
         <option value="$PROJECT_DIR$/web/index_tea.jsp" />
-        <option value="$PROJECT_DIR$/web/index_tea_info.jsp" />
         <option value="$PROJECT_DIR$/web/index_tea_logscore.jsp" />
         <option value="$PROJECT_DIR$/web/index_tea_score.jsp" />
         <option value="$PROJECT_DIR$/web/index_tea_tcou.jsp" />
         <option value="$PROJECT_DIR$/web/index_tea_logscore_before.jsp" />
         <option value="$PROJECT_DIR$/web/index_tea_score_before.jsp" />
-        <option value="$PROJECT_DIR$/web/index_tea_editinfo.jsp" />
-        <option value="$PROJECT_DIR$/web/index_stu_editinfo.jsp" />
         <option value="$PROJECT_DIR$/src/controller/sec.xml" />
         <option value="$PROJECT_DIR$/src/controller/Interceptor.java" />
         <option value="$PROJECT_DIR$/web/index_user_allstu.jsp" />
@@ -287,12 +249,21 @@
         <option value="$PROJECT_DIR$/web/404.jsp" />
         <option value="$PROJECT_DIR$/src/jdbc_user.xml" />
         <option value="$PROJECT_DIR$/web/nologin.jsp" />
+        <option value="$PROJECT_DIR$/src/jdbc_cou.xml" />
+        <option value="$PROJECT_DIR$/src/jdbc_cla.xml" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/web/index_user_edituser.jsp" />
+        <option value="$PROJECT_DIR$/web/regedit.jsp" />
         <option value="$PROJECT_DIR$/src/jdbc_tea.xml" />
         <option value="$PROJECT_DIR$/src/jdbc_stu.xml" />
         <option value="$PROJECT_DIR$/src/jdbc_tcou.xml" />
-        <option value="$PROJECT_DIR$/src/jdbc_cou.xml" />
-        <option value="$PROJECT_DIR$/src/jdbc_cla.xml" />
         <option value="$PROJECT_DIR$/src/jdbc_score.xml" />
+        <option value="$PROJECT_DIR$/web/index_stu_info.jsp" />
+        <option value="$PROJECT_DIR$/web/index_stu_editinfo.jsp" />
+        <option value="$PROJECT_DIR$/src/daoimp/TcouDaoImp.java" />
+        <option value="$PROJECT_DIR$/web/index_tea_info.jsp" />
+        <option value="$PROJECT_DIR$/web/index_tea_editinfo.jsp" />
+        <option value="$PROJECT_DIR$/src/daoimp/ScoreDaoImp.java" />
       </list>
     </option>
   </component>
@@ -339,6 +310,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -354,6 +327,18 @@
             <path>
               <item name="IJU-struts2" type="b2602c69:ProjectViewProjectNode" />
               <item name="IJU-struts2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IJU-struts2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IJU-struts2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="daoimp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IJU-struts2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IJU-struts2" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -364,8 +349,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -580,11 +563,12 @@
       <workItem from="1531182659584" duration="10544000" />
       <workItem from="1531197102971" duration="20811000" />
       <workItem from="1531356318813" duration="5720000" />
+      <workItem from="1531386516367" duration="15390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="481051000" />
+    <option name="totallyTimeSpent" value="496441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
@@ -607,9 +591,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="8" weight="0.3293919" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32994923" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.34348562" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.37225044" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3282572" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49591282" visible="true" weight="0.20726173" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49591282" visible="true" weight="0.21028744" />
       <window_info anchor="bottom" id="Problems" order="17" weight="0.21150592" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info id="设计器" order="5" />
@@ -653,69 +637,10 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/db/DBConn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Regedit-validation.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Regedit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="48" column="42" lean-forward="true" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/header_tea.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="155" column="20" lean-forward="true" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/header_stu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="154" column="20" lean-forward="true" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/StuDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/TeaDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/daoimp/TeaDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="826">
-          <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/TeaAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/daoimp/StuDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="60" column="61" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -733,31 +658,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/StuAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b5a378e-9fdc-488b-93c3-0679b8369412/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index_stu_score.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index_stu_info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -775,38 +679,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/daoimp/TcouDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index_stu_tcou.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/TcouAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="65" column="59" lean-forward="true" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/ScoreDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ScoreAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
@@ -817,31 +693,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index_tea_score.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index_tea_tcou.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index_tea.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
           <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index_tea_score_before.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -852,44 +707,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/sec.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index_stu_editinfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="88" column="106" selection-start-line="88" selection-start-column="106" selection-end-line="88" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index_tea_editinfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="107" column="56" lean-forward="true" selection-start-line="107" selection-start-column="56" selection-end-line="107" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index_tea_info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697">
-          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/daoimp/ScoreDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/sec.xml" />
     <entry file="file://$PROJECT_DIR$/web/index_user_allcla.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -904,23 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/UserAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Interceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/nologin.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2346">
@@ -928,93 +729,278 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index_user.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="137" column="65" selection-start-line="137" selection-start-column="65" selection-end-line="137" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index_user_alluser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbc_stu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbc_user.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/struts.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/CheckLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
-          <caret line="113" column="45" lean-forward="true" selection-start-line="113" selection-start-column="45" selection-end-line="113" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbc_tcou.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index_user_allstu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="76" column="68" lean-forward="true" selection-start-line="76" selection-start-column="68" selection-end-line="76" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbc_tea.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbc_cou.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jdbc_cla.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="170">
           <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbc_score.xml">
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        <state relative-caret-position="117">
+          <caret line="117" column="35" lean-forward="true" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_user.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_user_alluser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="98" column="35" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="137" column="65" selection-start-line="137" selection-start-column="65" selection-end-line="137" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_user_allstu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="99" column="30" lean-forward="true" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Regedit-validation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="35" column="50" lean-forward="true" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/regedit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Regedit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/CheckLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="64" column="56" lean-forward="true" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_user_edituser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/UserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/daoimp/UserDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="179" column="31" lean-forward="true" selection-start-line="179" selection-start-column="31" selection-end-line="179" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Interceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_tea.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_stu_info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="109" column="31" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_score.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/daoimp/StuDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="66" column="15" lean-forward="true" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_cou.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="35" column="61" lean-forward="true" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_tcou.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_stu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_stu_editinfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="88" column="40" selection-start-line="88" selection-start-column="40" selection-end-line="88" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_stu_tcou.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="109" column="42" selection-start-line="109" selection-start-column="42" selection-end-line="109" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_stu_score.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="115" column="45" lean-forward="true" selection-start-line="115" selection-start-column="45" selection-end-line="115" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_tea_tcou.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="129" column="27" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/daoimp/TcouDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="116" column="21" lean-forward="true" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_tea_info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="95" column="43" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_tea_editinfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="129" column="34" lean-forward="true" selection-start-line="129" selection-start-column="34" selection-end-line="129" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/TcouAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/TeaAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/StuAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/daoimp/TeaDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_tea_score_before.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="122" column="57" selection-start-line="122" selection-start-column="57" selection-end-line="122" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ScoreAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index_tea_score.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-799">
+          <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/daoimp/ScoreDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="52" column="69" selection-start-line="52" selection-start-column="69" selection-end-line="52" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
