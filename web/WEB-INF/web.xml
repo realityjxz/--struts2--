@@ -12,13 +12,13 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
     <jsp-config>
-        <taglib>
+        <!--<taglib>
             <taglib-uri>/struts-tags</taglib-uri>
             <taglib-location>WEB-INF/struts-tags.tld</taglib-location>
         </taglib>
         <taglib>
             <taglib-uri>/struts-jquery-tags</taglib-uri>
             <taglib-location>WEB-INF/struts-jquery-tags.tld</taglib-location>
-        </taglib>
+        </taglib>-->
     </jsp-config>
 </web-app>

@@ -121,10 +121,31 @@ public class ScoreDaoImp implements ScoreDao {
     @Override
     public List<Score> sclassAllStuscore(String cno,String sclass) {
         List<Score> scores = new ArrayList<>();
-        String sql = "select Sno,Sname,Cno,Cname,Score from TAB_STU,TAB_COU,TAB_SCORE where TAB_STU.Sno=TAB_SCORE.Sno and TAB_SCORE.Cno=TAB_COU.Cno  () ";
+        String sql = "SELECT Sno,Sname,Cno,Cname,Score FROM (SELECT TAB_STU.Sno,Sname,Cno,Score FROM TAB_STU LEFT OUTER JOIN  TAB_SCORE ON TAB_STU.Sno=TAB_SCORE.Sno WHERE Sclass=? AND Cno=?) as A left outer join TAB_COU ON A.Cno=TAB_COU.Cno";
         Connection conn = DBConn.getConnection();
         PreparedStatement ps = DBConn.prepare(conn,sql);
+        try {
+            ps.setString(1,sclass);
+            ps.setString(2,cno);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {// 保存每行的数据
+                Score score = new Score();
+                score.setCno(rs.getString("Cno"));          //课程号、课程名
+                score.setCname(rs.getString("Cname"));
+                score.setSno(rs.getString("Sno"));
+                score.setSname(rs.getString("Sname"));
+//              score.setSclass(sclass);                                  //班级
+                score.setScore(rs.getInt("Score"));
 
+                System.out.println(rs.getString("Sname"));
+                scores.add(score);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            DBConn.close(ps);
+            DBConn.close(conn);
+        }
         return scores;
     }
 

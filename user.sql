@@ -200,6 +200,7 @@ PRIMARY KEY (Cno,Sno)
 --插入成绩
 insert into tab_score(Cno,Sno,Score)values('010101','2015010101',96);
 insert into tab_score(Cno,Sno,Score)values('010101','2015010102',90);
+insert into tab_score(Cno,Sno,Score)values('010101','2015010105',56);
 insert into tab_score(Cno,Sno,Score)values('010101','2015010201',80);
 insert into tab_score(Cno,Sno,Score)values('010102','2015010101',89);
 insert into tab_score(Cno,Sno,Score)values('010201','2015010201',91);

@@ -14,10 +14,14 @@
             <result>/index_tea_logscore_before.jsp</result>
             <!--老师录入成绩-->
         </action>
-            <action name="score_tno" class="controller.ScoreAction" method="quryscore">
+            <action name="score_tno" class="controller.ScoreAction" method="queryscore">
             <result>/index_tea_score_before.jsp</result>
             <!--老师查成绩-->
         </action>
+            <action name="score_tnoByClass" class="controller.ScoreAction" method="queryscoreByClass">
+                <result>/index_tea_score.jsp</result>
+                <!--老师查某一班级所有学生成绩-->
+            </action>
             <action name="score_sno" class="controller.ScoreAction" method="myscore">
                 <result>/index_stu_score.jsp</result>
                 <!--学生查成绩-->

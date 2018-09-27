@@ -120,12 +120,15 @@
                                     </thead>
 
                                     <tbody>
-                                    <s:iterator value="scoreBYTno" var="tcou">
+                                    <s:iterator value="scoreByTno" var="tcou">
                                         <a href="">
                                             <tr>
                                             <td><s:property value="#tcou.Cno"/></td>
                                             <td><s:property value="#tcou.Cname"/></td>
-                                            <td><s:property value="#tcou.Sclass"/></td>
+                                            <td><s:a href="score_tnoByClass.action?Cno=%{#tcou.Cno}&Sclass=%{#tcou.Sclass}">
+                                                <s:property value="#tcou.Sclass"/>
+                                                </s:a>
+                                            </td>
                                             <td><s:property value="#tcou.Credit"/></td>
                                             <td><s:property value="#tcou.Cterm"/></td>
                                         </tr>

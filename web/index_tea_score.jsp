@@ -115,19 +115,19 @@
                                         <th>学生姓名</th>
                                         <th>课程号</th>
                                         <th>课程名</th>
-                                        <th>班级</th>
+                                        <%--<th>班级</th>--%>
                                         <th>成绩</th>
                                     </tr>
                                     </thead>
 
                                     <tbody>
-                                    <s:iterator value="scoresByObj" var="score">
+                                    <s:iterator value="scoreByClass" var="score">
                                         <tr>
                                             <td><s:property value="#score.Sno"/></td>
                                             <td><s:property value="#score.Sname"/></td>
                                             <td><s:property value="#score.Cno"/></td>
                                             <td><s:property value="#score.Cname"/></td>
-                                            <td><s:property value="#score.Sclass"/></td>
+                                            <%--<td><s:property value="#score.Sclass"/></td>--%>
                                             <s:if test="#score.Score>=60">
                                                 <td><s:property value="#score.Score"/></td>
                                             </s:if>
