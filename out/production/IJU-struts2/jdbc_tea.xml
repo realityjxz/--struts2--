@@ -19,8 +19,13 @@
                 <result type="redirect">/index_tea_info.jsp</result>
                 <result name="error" type="redirect">/index_tea_info.jsp</result>
             </action>
-            <action name="tea_updatepass" class="controller.TeaAction" method="updatepass">           <!--老师修改密码-->
-                <result type="redirect">/index_tea_info.jsp</result>
+            <action name="tea_updatePassCheck" class="controller.CheckLogin" method="checkTea">           <!--老师修改密码先核对密码-->
+                <result name="suc" type="redirect">tea_updatePass.action</result>
+                <result name="fail" type="redirect">/index_tea_editinfo.jsp</result>
+                <result name="input" type="redirect">/index_tea_editinfo.jsp</result>
+            </action>
+            <action name="tea_updatePass" class="controller.TeaAction" method="updatepass">           <!--老师修改密码-->
+                <result type="redirect">logout.action</result>
                 <result name="error" type="redirect">/index_tea_editinfo.jsp</result>
             </action>
             <action name="tea_update" class="controller.TeaAction" method="update">

@@ -85,14 +85,16 @@ public class TeaDaoImp implements TeaDao {
     }
 
     @Override
-    public boolean updatepass(Tea tea) {               //老师自己修改密码
+    public boolean updatepass(String Tno,String pass) {               //老师自己修改密码
         boolean isSuc=false;
         String sql = "update tab_tea set Tpass=? where Tno=?";
         Connection conn = DBConn.getConnection();
         PreparedStatement ps = DBConn.prepare(conn,sql);
         try{
-            ps.setString(1,tea.getTpass());
-            ps.setString(2,tea.getTno());
+            ps.setString(1,pass);
+            System.out.println(pass);
+            ps.setString(2,Tno);
+            System.out.println(Tno);
             int row = ps.executeUpdate();
             isSuc = row > 0;
         } catch (SQLException e) {

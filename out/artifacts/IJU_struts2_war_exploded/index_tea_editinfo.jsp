@@ -103,18 +103,18 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-6">
-                                <form role="form" action="tea_updatepass.action">
+                                <form role="form" action="tea_updatePassCheck.action">
                                     <div class="form-group">
                                         <s:actionerror/>
                                         <s:fielderror/>
-                                        <input name="tea.tno" value="<s:property value="tea.tno"/>" hidden/>
+                                        <input name="tea.Tno" value="<s:property value="#session.tno"/>" hidden/>
                                         <label>原密码：</label>
                                         <input name="tea.Tpass" class="form-control"  placeholder="Enter old password">
                                         <p class="help-block">Example block-level help text here.</p>
                                     </div>
                                     <div class="form-group">
                                         <label>新密码：</label>
-                                        <input name="pass" class="form-control" placeholder="Enter new password">
+                                        <input name="Tnewpass" class="form-control" placeholder="Enter new password">
                                         <p class="help-block">Example block-level help text here.</p>
                                     </div>
                                     <div class="form-group">

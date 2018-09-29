@@ -17,6 +17,7 @@ public class CheckLogin extends ActionSupport {
     private User user;
     private Stu stu;
     private Tea tea;
+    private String tnewpass;
 
     public Stu getStu() {
         return stu;
@@ -42,6 +43,13 @@ public class CheckLogin extends ActionSupport {
         this.user = user;
     }
 
+    public String getTnewpass() {
+        return tnewpass;
+    }
+
+    public void setTnewpass(String tnewpass) {
+        this.tnewpass = tnewpass;
+    }
 
     public void validateCheckuser() {
         if (user.getUsername().isEmpty()) {
@@ -112,6 +120,7 @@ public class CheckLogin extends ActionSupport {
         if(isHave){
             Map session=ActionContext.getContext().getSession();
             session.put("tno", tea.getTno());
+            session.put("tnewpass", tnewpass);
             List args = new ArrayList();
             args.add(tea.getTno());
             args.add(tea.getTname());

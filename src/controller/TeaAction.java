@@ -42,21 +42,10 @@ public class TeaAction extends ActionSupport {
         return SUCCESS;
     }
     public String updatepass() {                 //老师修改密码
-        System.out.print("修改");
-        boolean isHave = imp.check(tea.getTno(), tea.getTpass());
-        if (isHave) {
-            boolean isSuc = imp.updatepass(tea);
-            if(isSuc){
-                return SUCCESS;//自定义指向的页面
-            }else{
-                addActionError(getText("update.fail"));
-                return ERROR;
-            }
-
-        } else {
-            addActionError(getText("login.fail"));
-            return ERROR;
-        }
+        System.out.println("修改教师密码");
+        boolean isSuc=imp.updatepass((String)ActionContext.getContext().getSession().get("tno"),
+                (String)ActionContext.getContext().getSession().get("tnewpass"));
+        return isSuc?SUCCESS:ERROR;
     }
 
     public String update(){
